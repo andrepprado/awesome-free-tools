@@ -1,0 +1,326 @@
+[
+    {
+        "categoria":  "Automacao",
+        "nome":  "AutoHotkey",
+        "descricao":  "Automacao de teclado e mouse no Windows",
+        "url":  "https://www.autohotkey.com/"
+    },
+    {
+        "categoria":  "Automacao",
+        "nome":  "Bruno",
+        "descricao":  "Cliente de APIs com armazenamento local",
+        "url":  "https://www.usebruno.com/"
+    },
+    {
+        "categoria":  "Automacao",
+        "nome":  "n8n",
+        "descricao":  "Automacao de fluxos com instalacao propria",
+        "url":  "https://github.com/n8n-io/n8n"
+    },
+    {
+        "categoria":  "Automacao",
+        "nome":  "Node-RED",
+        "descricao":  "Automacao visual de fluxos e integracoes",
+        "url":  "https://nodered.org/"
+    },
+    {
+        "categoria":  "Automacao",
+        "nome":  "Playwright",
+        "descricao":  "Automacao e testes de navegadores",
+        "url":  "https://playwright.dev/"
+    },
+    {
+        "categoria":  "Automacao",
+        "nome":  "Robot Framework",
+        "descricao":  "Framework open source de automacao",
+        "url":  "https://robotframework.org/"
+    },
+    {
+        "categoria":  "Automacao",
+        "nome":  "Selenium",
+        "descricao":  "Automacao de navegadores",
+        "url":  "https://www.selenium.dev/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "Can I Use",
+        "descricao":  "Compatibilidade de tecnologias web",
+        "url":  "https://caniuse.com/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "CyberChef",
+        "descricao":  "Transformacao codificacao e analise de dados",
+        "url":  "https://gchq.github.io/CyberChef/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "Hoppscotch",
+        "descricao":  "Teste de APIs HTTP",
+        "url":  "https://hoppscotch.io/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "IT Tools",
+        "descricao":  "Colecao de ferramentas para desenvolvedores",
+        "url":  "https://it-tools.tech/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "JSFiddle",
+        "descricao":  "Editor online HTML CSS e JavaScript",
+        "url":  "https://jsfiddle.net/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "JSON Crack",
+        "descricao":  "Visualizacao de estruturas JSON",
+        "url":  "https://jsoncrack.com/editor"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "JSONPlaceholder",
+        "descricao":  "API publica para testes",
+        "url":  "https://jsonplaceholder.typicode.com/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "Regex101",
+        "descricao":  "Teste de expressoes regulares",
+        "url":  "https://regex101.com/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "RegExr",
+        "descricao":  "Editor visual de expressoes regulares",
+        "url":  "https://regexr.com/"
+    },
+    {
+        "categoria":  "Desenvolvimento",
+        "nome":  "Transform Tools",
+        "descricao":  "Conversao entre formatos de codigo",
+        "url":  "https://transform.tools/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "Excalidraw",
+        "descricao":  "Desenhos wireframes e diagramas",
+        "url":  "https://excalidraw.com/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "Free iPhone Mockup",
+        "descricao":  "Mockups 3D de iPhone",
+        "url":  "https://freeiphonemockup.com/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "Google Fonts",
+        "descricao":  "Fontes gratuitas para projetos",
+        "url":  "https://fonts.google.com/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "Haikei",
+        "descricao":  "Gerador de fundos SVG e formas abstratas",
+        "url":  "https://haikei.app/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "Mockbooth",
+        "descricao":  "Mockups de dispositivos eletronicos",
+        "url":  "https://www.mockbooth.com/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "Photopea",
+        "descricao":  "Editor avancado de imagens no navegador",
+        "url":  "https://www.photopea.com/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "Plinth Mockups",
+        "descricao":  "Mockups de celulares notebooks tablets e relogios",
+        "url":  "https://plinthmockups.com/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "Shotframe",
+        "descricao":  "Mockups de aplicativos e dispositivos",
+        "url":  "https://shotframe.app/"
+    },
+    {
+        "categoria":  "Design e Mockups",
+        "nome":  "SVG Repo",
+        "descricao":  "Biblioteca de icones e vetores",
+        "url":  "https://www.svgrepo.com/"
+    },
+    {
+        "categoria":  "Documentos e PDF",
+        "nome":  "LibreOffice",
+        "descricao":  "Editor gratuito de documentos e planilhas",
+        "url":  "https://www.libreoffice.org/"
+    },
+    {
+        "categoria":  "Documentos e PDF",
+        "nome":  "PDF24 Creator",
+        "descricao":  "Editor de PDF instalado localmente",
+        "url":  "https://www.pdf24.org/pt/"
+    },
+    {
+        "categoria":  "Documentos e PDF",
+        "nome":  "PDF24 Tools",
+        "descricao":  "Ferramentas gratuitas para PDF",
+        "url":  "https://tools.pdf24.org/pt/"
+    },
+    {
+        "categoria":  "Documentos e PDF",
+        "nome":  "Stirling PDF",
+        "descricao":  "Ferramenta open source para PDF",
+        "url":  "https://github.com/Stirling-Tools/Stirling-PDF"
+    },
+    {
+        "categoria":  "Imagens",
+        "nome":  "Background Remover fal.ai",
+        "descricao":  "Remocao automatica de fundo com IA",
+        "url":  "https://fal.ai/tools/background-remover"
+    },
+    {
+        "categoria":  "Imagens",
+        "nome":  "Ezgif",
+        "descricao":  "Edicao conversao e criacao de GIF",
+        "url":  "https://ezgif.com/"
+    },
+    {
+        "categoria":  "Imagens",
+        "nome":  "fal.ai Tools",
+        "descricao":  "Ferramentas online de tratamento de imagens",
+        "url":  "https://fal.ai/tools"
+    },
+    {
+        "categoria":  "Imagens",
+        "nome":  "Squoosh",
+        "descricao":  "Compactacao e conversao local de imagens",
+        "url":  "https://squoosh.app/"
+    },
+    {
+        "categoria":  "Imagens",
+        "nome":  "SVGOMG",
+        "descricao":  "Otimizacao de arquivos SVG",
+        "url":  "https://jakearchibald.github.io/svgomg/"
+    },
+    {
+        "categoria":  "Imagens",
+        "nome":  "TinyPNG",
+        "descricao":  "Compactacao de imagens com limites gratuitos",
+        "url":  "https://tinypng.com/"
+    },
+    {
+        "categoria":  "Inteligencia Artificial",
+        "nome":  "Ollama",
+        "descricao":  "Execucao local de modelos de IA",
+        "url":  "https://ollama.com/"
+    },
+    {
+        "categoria":  "Inteligencia Artificial",
+        "nome":  "Transformers.js",
+        "descricao":  "Modelos de IA executados no navegador",
+        "url":  "https://huggingface.co/docs/transformers.js"
+    },
+    {
+        "categoria":  "Inteligencia Artificial",
+        "nome":  "Upscayl",
+        "descricao":  "Ampliacao local de imagens com IA",
+        "url":  "https://upscayl.org/"
+    },
+    {
+        "categoria":  "Inteligencia Artificial",
+        "nome":  "WebLLM",
+        "descricao":  "Modelos de linguagem executados no navegador",
+        "url":  "https://webllm.mlc.ai/"
+    },
+    {
+        "categoria":  "Produtividade",
+        "nome":  "BPMN.io",
+        "descricao":  "Editor de processos BPMN",
+        "url":  "https://demo.bpmn.io/"
+    },
+    {
+        "categoria":  "Produtividade",
+        "nome":  "diagrams.net",
+        "descricao":  "Fluxogramas BPMN e arquitetura de sistemas",
+        "url":  "https://app.diagrams.net/"
+    },
+    {
+        "categoria":  "Produtividade",
+        "nome":  "Markmap",
+        "descricao":  "Mapas mentais em Markdown",
+        "url":  "https://markmap.js.org/repl"
+    },
+    {
+        "categoria":  "Produtividade",
+        "nome":  "Mermaid Live",
+        "descricao":  "Diagramas gerados por texto",
+        "url":  "https://mermaid.live/"
+    },
+    {
+        "categoria":  "Utilitarios",
+        "nome":  "ConvertCase",
+        "descricao":  "Conversao de letras maiusculas e minusculas",
+        "url":  "https://convertcase.net/"
+    },
+    {
+        "categoria":  "Utilitarios",
+        "nome":  "LocalSend",
+        "descricao":  "Transferencia de arquivos em rede local",
+        "url":  "https://localsend.org/"
+    },
+    {
+        "categoria":  "Utilitarios",
+        "nome":  "PairDrop",
+        "descricao":  "Compartilhamento de arquivos pelo navegador",
+        "url":  "https://pairdrop.net/"
+    },
+    {
+        "categoria":  "Utilitarios",
+        "nome":  "QR Code Monkey",
+        "descricao":  "Geracao de QR Codes personalizados",
+        "url":  "https://www.qrcode-monkey.com/"
+    },
+    {
+        "categoria":  "Utilitarios",
+        "nome":  "Time.is",
+        "descricao":  "Consulta de horarios e fusos",
+        "url":  "https://time.is/"
+    },
+    {
+        "categoria":  "Video e Audio",
+        "nome":  "Audacity",
+        "descricao":  "Edicao de audio",
+        "url":  "https://www.audacityteam.org/"
+    },
+    {
+        "categoria":  "Video e Audio",
+        "nome":  "FFmpeg",
+        "descricao":  "Processamento de audio e video",
+        "url":  "https://ffmpeg.org/"
+    },
+    {
+        "categoria":  "Video e Audio",
+        "nome":  "HandBrake",
+        "descricao":  "Conversao e compactacao de videos",
+        "url":  "https://handbrake.fr/"
+    },
+    {
+        "categoria":  "Video e Audio",
+        "nome":  "OBS Studio",
+        "descricao":  "Gravacao de tela e transmissao",
+        "url":  "https://obsproject.com/"
+    },
+    {
+        "categoria":  "Video e Audio",
+        "nome":  "Shotcut",
+        "descricao":  "Editor de video open source",
+        "url":  "https://www.shotcut.org/"
+    }
+]

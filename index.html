@@ -1,0 +1,135 @@
+﻿<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Biblioteca gratuita de ferramentas para o dia a dia">
+<title>Daily Tools - Minha biblioteca</title>
+
+<style>
+:root{
+  --primary:#00A091;
+  --dark:#003640;
+  --lime:#C9D200;
+  --bg:#f4f7f8;
+  --border:#e3e9eb;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:#18373a;font-family:Arial,Helvetica,sans-serif}
+header{background:var(--dark);color:white;padding:48px 20px;text-align:center}
+header h1{font-size:38px;margin:0 0 12px}
+header p{color:#d7e8e8;line-height:1.6}
+main{max-width:1250px;margin:auto;padding:28px 20px}
+.toolbar{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:20px}
+input,select{padding:14px;border:1px solid var(--border);border-radius:10px;font-size:15px;background:white}
+input{flex:1;min-width:220px}
+select{min-width:190px}
+.info{margin:20px 0;color:#547071}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:16px}
+.card{background:white;border:1px solid var(--border);border-radius:15px;padding:20px;display:flex;flex-direction:column;gap:12px}
+.card:hover{border-color:var(--primary);box-shadow:0 8px 24px #00364012}
+.category{color:var(--primary);font-size:12px;font-weight:bold;text-transform:uppercase}
+.card h3{font-size:19px;margin:0}
+.card p{font-size:14px;color:#53696b;line-height:1.6;flex:1;margin:0}
+.card a{background:var(--dark);color:white;padding:11px;border-radius:8px;text-decoration:none;text-align:center;font-weight:bold}
+.card a:hover{background:var(--primary)}
+footer{text-align:center;padding:35px;color:#637879}
+.notice{font-size:13px;color:#617577;margin-bottom:18px}
+@media(max-width:600px){header h1{font-size:30px}}
+</style>
+</head>
+<body>
+
+<header>
+<h1>🧰 Daily Tools</h1>
+<p>Ferramentas gratuitas para desenvolvimento, design, IA, automacao e produtividade.</p>
+</header>
+
+<main>
+<div class="toolbar">
+<input id="busca" placeholder="Buscar ferramenta..." aria-label="Buscar ferramenta">
+<select id="categoria" aria-label="Filtrar categoria">
+<option value="">Todas as categorias</option>
+</select>
+</div>
+
+<div class="info" id="contador"></div>
+<p class="notice">Prefira processamento local para dados confidenciais. Recursos gratuitos e politicas dos sites podem mudar.</p>
+<div class="grid" id="lista"></div>
+</main>
+
+<footer>Daily Tools · Catalogo pessoal de ferramentas</footer>
+
+<script>
+let tools=[];
+
+const busca=document.getElementById('busca');
+const categoria=document.getElementById('categoria');
+const lista=document.getElementById('lista');
+const contador=document.getElementById('contador');
+
+function render(){
+  const q=busca.value.toLocaleLowerCase('pt-BR');
+  const cat=categoria.value;
+
+  const filtradas=tools.filter(t=>
+    (!cat||t.categoria===cat)&&
+    (t.nome+' '+t.descricao+' '+t.categoria)
+      .toLocaleLowerCase('pt-BR').includes(q)
+  );
+
+  lista.replaceChildren();
+
+  filtradas.forEach(t=>{
+    const card=document.createElement('article');
+    card.className='card';
+
+    const tag=document.createElement('span');
+    tag.className='category';
+    tag.textContent=t.categoria;
+
+    const titulo=document.createElement('h3');
+    titulo.textContent=t.nome;
+
+    const desc=document.createElement('p');
+    desc.textContent=t.descricao;
+
+    const link=document.createElement('a');
+    link.href=t.url;
+    link.target='_blank';
+    link.rel='noopener noreferrer';
+    link.textContent='Acessar ferramenta';
+
+    card.append(tag,titulo,desc,link);
+    lista.appendChild(card);
+  });
+
+  contador.textContent=filtradas.length+' de '+tools.length+' ferramentas';
+}
+
+fetch('./tools.json')
+  .then(r=>{
+    if(!r.ok)throw new Error('Falha ao carregar catalogo');
+    return r.json();
+  })
+  .then(data=>{
+    tools=data;
+    const cats=[...new Set(tools.map(t=>t.categoria))].sort();
+    cats.forEach(c=>{
+      const option=document.createElement('option');
+      option.value=c;
+      option.textContent=c;
+      categoria.appendChild(option);
+    });
+    render();
+  })
+  .catch(()=>{
+    contador.textContent='Nao foi possivel carregar tools.json';
+  });
+
+busca.addEventListener('input',render);
+categoria.addEventListener('change',render);
+</script>
+
+</body>
+</html>
