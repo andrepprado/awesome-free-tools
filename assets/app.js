@@ -47,30 +47,62 @@ function normalize(text) {
 
 function safeUrl(raw) {
   try {
+    if (typeof raw !== "string") return false;
+
     const u = new URL(raw);
-    return u.protocol === "https:" &&
-      u.hostname.includes(".") &&
-      !u.username &&
-      !u.password &&
-      !u.port &&
-      u.hostname !== "localhost";
+
+    if (u.protocol !== "https:") return false;
+    if (u.username || u.password) return false;
+    if (u.port && u.port !== "443") return false;
+    if (!u.hostname.includes(".")) return false;
+
+    const host = u.hostname.toLowerCase();
+
+    if (
+      host === "localhost" ||
+      host.endsWith(".localhost") ||
+      host.endsWith(".local") ||
+      host.endsWith(".internal") ||
+      host.endsWith(".test") ||
+      host.endsWith(".invalid") ||
+      host.endsWith(".arpa") ||
+      host.includes(":") ||
+      host.includes("[")
+    ) return false;
+
+    if (/^\d+\.\d+\.\d+\.\d+$/.test(host)) {
+      const p = host.split(".").map(Number);
+
+      if (
+        p.some(n => n < 0 || n > 255) ||
+        p[0] === 0 ||
+        p[0] === 10 ||
+        p[0] === 127 ||
+        p[0] >= 224 ||
+        (p[0] === 169 && p[1] === 254) ||
+        (p[0] === 172 && p[1] >= 16 && p[1] <= 31) ||
+        (p[0] === 192 && p[1] === 168) ||
+        (p[0] === 100 && p[1] >= 64 && p[1] <= 127)
+      ) return false;
+    }
+
+    return true;
   } catch {
     return false;
   }
 }
 
-function approved(t) {
+function isApproved(t) {
   return t.homologado === true &&
     t.nivelFirewall === 3 &&
     t.privacidadeVerificada === true &&
     t.loginVerificado === true &&
-    t.gratuidadeVerificada === true &&
-    safeUrl(t.url);
+    t.gratuidadeVerificada === true;
 }
 
 function safePreview(t) {
   return typeof t.preview === "string" &&
-    /^\/assets\/previews\/[a-z0-9_-]+\.(png|webp|jpg)$/i.test(t.preview);
+    /^\/assets\/previews\/[a-z0-9_-]+\.(png|webp|jpg|jpeg)$/i.test(t.preview);
 }
 
 function placeholder(symbol, title) {
@@ -85,7 +117,10 @@ function openPreview(t) {
   const dialog = $("previewDialog");
   const content = $("previewContent");
 
+  if (!dialog || !content) return;
+
   content.replaceChildren();
+
   $("previewTitle").textContent = t.nome;
 
   const image = element("img");
@@ -94,18 +129,24 @@ function openPreview(t) {
   image.referrerPolicy = "no-referrer";
 
   content.append(image);
-  dialog.showModal();
+
+  if (!dialog.open) dialog.showModal();
 }
 
 function makeCard(t) {
   const symbol = ICONS[t.categoria] || "grid";
   const card = element("article", "card");
 
+  // ========================================================
+  // PREVIEW LOCAL
+  // ========================================================
+
   const preview = element("button", "preview");
   preview.type = "button";
 
   if (safePreview(t)) {
     const image = element("img");
+
     image.src = t.preview;
     image.alt = "Prévia do site " + t.nome;
     image.loading = "lazy";
@@ -113,9 +154,11 @@ function makeCard(t) {
     image.referrerPolicy = "no-referrer";
 
     image.addEventListener("error", () => {
-      preview.replaceChildren(placeholder(symbol, t.nome));
+      preview.replaceChildren(
+        placeholder(symbol, t.nome)
+      );
       preview.disabled = true;
-    }, {once:true});
+    }, { once: true });
 
     preview.append(
       image,
@@ -124,50 +167,77 @@ function makeCard(t) {
 
     preview.addEventListener("click", () => openPreview(t));
   } else {
-    preview.append(placeholder(symbol, "Prévia ainda não disponível"));
+    preview.append(
+      placeholder(symbol, "Prévia não cadastrada")
+    );
     preview.disabled = true;
   }
+
+  // ========================================================
+  // INFORMACOES
+  // ========================================================
 
   const body = element("div", "card-body");
 
   body.append(
     element("span", "card-category", t.categoria),
     element("h3", "", t.nome),
-    element("p", "", t.descricao)
+    element("p", "", t.descricao || "")
   );
 
-  const ok = approved(t);
+  // ========================================================
+  // STATUS DE HOMOLOGACAO
+  // NAO BLOQUEIA O LINK POR SI SO
+  // ========================================================
 
-  body.append(
-    element(
-      "span",
-      "card-status",
-      ok ? "Acesso homologado" : "Pendente de homologação"
-    )
+  const approved = isApproved(t);
+
+  const status = element(
+    "span",
+    "card-status",
+    approved
+      ? "Homologação registrada"
+      : "Homologação corporativa pendente"
   );
 
-  if (ok) {
+  body.append(status);
+
+  // ========================================================
+  // LINK REAL DA FERRAMENTA
+  // ========================================================
+
+  if (safeUrl(t.url)) {
     const link = element("a", "card-link");
+
     link.href = t.url;
     link.target = "_blank";
     link.rel = "noopener noreferrer";
     link.referrerPolicy = "no-referrer";
 
+    link.setAttribute(
+      "aria-label",
+      "Abrir " + t.nome + " em nova aba"
+    );
+
     link.append(
       element("span", "", "Acessar ferramenta"),
       icon("arrow-up-right")
     );
+
     body.append(link);
   } else {
     const disabled = element("div", "card-link disabled");
+
     disabled.append(
-      element("span", "", "Aguardando validação"),
-      icon("lock")
+      element("span", "", "URL inválida"),
+      icon("exclamation-triangle")
     );
+
     body.append(disabled);
   }
 
   card.append(preview, body);
+
   return card;
 }
 
@@ -175,16 +245,20 @@ function getCategories() {
   const counts = new Map();
 
   state.tools.forEach(t => {
-    counts.set(t.categoria, (counts.get(t.categoria) || 0) + 1);
+    counts.set(
+      t.categoria,
+      (counts.get(t.categoria) || 0) + 1
+    );
   });
 
-  return [...counts.entries()].sort((a,b) =>
+  return [...counts.entries()].sort((a, b) =>
     a[0].localeCompare(b[0], "pt-BR")
   );
 }
 
 function renderCategories() {
   const container = $("categories");
+
   container.replaceChildren();
 
   const categories = getCategories();
@@ -194,13 +268,17 @@ function renderCategories() {
 
   function button(label, value, count, symbol) {
     const b = element("button", "category-button");
+
     b.type = "button";
 
     if (state.category === value) {
       b.classList.add("active");
     }
 
-    b.setAttribute("aria-pressed", String(state.category === value));
+    b.setAttribute(
+      "aria-pressed",
+      String(state.category === value)
+    );
 
     b.append(
       icon(symbol),
@@ -211,19 +289,17 @@ function renderCategories() {
     b.addEventListener("click", () => {
       state.category = value;
       render();
-
-      if (window.innerWidth < 700) {
-        $("currentCategory").scrollIntoView({
-          behavior: "smooth",
-          block: "start"
-        });
-      }
     });
 
     container.append(b);
   }
 
-  button("Todas", "", state.tools.length, "grid");
+  button(
+    "Todas",
+    "",
+    state.tools.length,
+    "grid"
+  );
 
   for (const [category, count] of categories) {
     button(
@@ -240,7 +316,8 @@ function getFiltered() {
 
   const filtered = state.tools.filter(t => {
     const categoryMatch =
-      !state.category || t.categoria === state.category;
+      !state.category ||
+      t.categoria === state.category;
 
     const textMatch = normalize(
       [t.nome, t.descricao, t.categoria].join(" ")
@@ -249,9 +326,11 @@ function getFiltered() {
     return categoryMatch && textMatch;
   });
 
-  filtered.sort((a,b) => {
-    const result = a.nome.localeCompare(b.nome,"pt-BR");
-    return state.sort === "reverse" ? -result : result;
+  filtered.sort((a, b) => {
+    const result = a.nome.localeCompare(b.nome, "pt-BR");
+    return state.sort === "reverse"
+      ? -result
+      : result;
   });
 
   return filtered;
@@ -266,9 +345,13 @@ function render() {
     state.category || "Todas as ferramentas";
 
   $("resultCount").textContent =
-    filtered.length + " de " + state.tools.length + " ferramentas";
+    filtered.length +
+    " de " +
+    state.tools.length +
+    " ferramentas";
 
   const cards = $("cards");
+
   cards.replaceChildren();
 
   if (!filtered.length) {
@@ -336,13 +419,13 @@ async function initialize() {
     });
 
     if (!response.ok) {
-      throw new Error("Erro ao carregar tools.json");
+      throw new Error("Erro HTTP " + response.status);
     }
 
     const data = await response.json();
 
     if (!Array.isArray(data)) {
-      throw new Error("Catalogo JSON invalido");
+      throw new Error("Catálogo JSON inválido");
     }
 
     state.tools = data.filter(t =>
@@ -350,13 +433,14 @@ async function initialize() {
       typeof t.nome === "string" &&
       typeof t.descricao === "string" &&
       typeof t.categoria === "string" &&
-      typeof t.url === "string" &&
-      safeUrl(t.url)
+      typeof t.url === "string"
     );
 
     render();
   } catch (error) {
-    $("resultCount").textContent = "Erro ao carregar catálogo";
+    $("resultCount").textContent =
+      "Erro ao carregar catálogo";
+
     console.error(error);
   }
 }
