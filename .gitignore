@@ -1,9 +1,11 @@
-﻿.vercel/
+.vercel/
 node_modules/
 .env
 .env.*
 !.env.example
-.vercel
-.env*
-
+*.log
+*.bak
+*.backup
 index.backup.html
+auditoria/
+relatorios/
