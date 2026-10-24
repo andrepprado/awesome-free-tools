@@ -41,6 +41,7 @@ Minha biblioteca pessoal de ferramentas úteis para desenvolvimento, design, int
 
 | Ferramenta | Descrição | Link |
 |---|---|---|
+| TeslaWraps | Editor gratuito de wraps Tesla no navegador (edicao central + PNG sem conta) | [https://teslawraps.design](https://teslawraps.design) |
 | Excalidraw | Desenhos wireframes e diagramas | [https://excalidraw.com/](https://excalidraw.com/) |
 | Free iPhone Mockup | Mockups 3D de iPhone | [https://freeiphonemockup.com/](https://freeiphonemockup.com/) |
 | Google Fonts | Fontes gratuitas para projetos | [https://fonts.google.com/](https://fonts.google.com/) |
