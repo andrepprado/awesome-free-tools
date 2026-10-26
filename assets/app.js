@@ -516,11 +516,11 @@ initialize();
 })();
 /* FIM AWESOME LINKS E PREVIEWS V2 */
 
-/* INICIO CATALOGO ADMINISTRATIVO V4 */
+/* INICIO CORRECAO LINKS V6 */
 (function () {
   "use strict";
 
-  const ORDER = [
+  const CATEGORY_ORDER = [
     "01 - Documentos, PDF e Contratos",
     "02 - Planilhas, Dados e Relatórios",
     "03 - Automação e Integrações",
@@ -533,261 +533,14 @@ initialize();
     "10 - Vídeo e Áudio"
   ];
 
-  let busy = false;
-  let pending = false;
-
-  function getTools() {
-    if (typeof state !== "undefined" && Array.isArray(state.tools)) {
-      return state.tools;
-    }
-    return [];
-  }
-
-  function nameOf(card) {
-    return (card.querySelector("h3")?.textContent || "").trim();
-  }
-
-  function toolOf(card) {
-    const name = nameOf(card);
-    return getTools().find(t => String(t.nome || "").trim() === name);
-  }
-
-  function safeLink(value) {
-    try {
-      const url = new URL(String(value || ""), location.href);
-      return ["https:", "http:"].includes(url.protocol) ? url.href : "";
-    } catch (_) {
-      return "";
-    }
-  }
-
-  function createLink(text, url, className) {
-    const a = document.createElement("a");
-    a.className = className;
-    a.href = url;
-    a.target = "_blank";
-    a.rel = "noopener noreferrer";
-    a.textContent = text;
-    return a;
-  }
-
-  function enhanceCard(card) {
-    const tool = toolOf(card);
-    if (!tool) return;
-
-    const url = safeLink(tool.url);
-    const body = card.querySelector(".card-body") || card;
-
-    const category = String(tool.categoria || "Sem categoria");
-
-    let categoryElement = card.querySelector(".card-category");
-
-    if (!categoryElement) {
-      categoryElement = document.createElement("span");
-      categoryElement.className = "card-category";
-      body.insertBefore(categoryElement, body.firstChild);
-    }
-
-    categoryElement.textContent = category;
-
-    // A preview continua simples, sem modal.
-    const preview = card.querySelector(".preview");
-
-    if (preview && url) {
-      let anchor = preview;
-
-      if (preview.tagName !== "A") {
-        anchor = document.createElement("a");
-        anchor.className = preview.className;
-        anchor.innerHTML = preview.innerHTML;
-        preview.replaceWith(anchor);
-      }
-
-      anchor.href = url;
-      anchor.target = "_blank";
-      anchor.rel = "noopener noreferrer";
-      anchor.removeAttribute("disabled");
-      anchor.removeAttribute("aria-disabled");
-      anchor.style.pointerEvents = "auto";
-      anchor.style.cursor = "pointer";
-    }
-
-    let link = card.querySelector("a.card-link");
-
-    if (!link && url) {
-      link = createLink("Acessar ferramenta", url, "card-link");
-      body.append(link);
-    }
-
-    if (link && url) {
-      link.href = url;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-    }
-
-    // Remover indicadores antigos e criar um status discreto.
-    card.querySelectorAll(".card-status, .preview-label").forEach(el => {
-      el.remove();
-    });
-
-    const previous = card.querySelector(".access-status");
-    if (previous) previous.remove();
-
-    const status = String(tool.acesso || "NAO_VERIFICADO");
-
-    if (status !== "HTTP_OK") {
-      const badge = document.createElement("span");
-      badge.className = "access-status";
-
-      if (status === "HTTP_403") {
-        badge.textContent = "Acesso restrito (HTTP 403)";
-        badge.classList.add("access-warning");
-      } else if (status === "HTTP_404") {
-        badge.textContent = "Página não encontrada (404)";
-        badge.classList.add("access-error");
-      } else if (status === "HTTP_429") {
-        badge.textContent = "Verificação limitada (429)";
-        badge.classList.add("access-warning");
-      } else {
-        badge.textContent = "Acesso não confirmado";
-        badge.classList.add("access-neutral");
-      }
-
-      body.insertBefore(badge, body.firstChild);
-    }
-
-
-    // Nunca desabilitar o hiperlink por falta de preview.
-    if (!preview && url) {
-      const a = createLink(
-        "Abrir ferramenta",
-        url,
-        "preview preview-simple"
-      );
-      card.insertBefore(a, card.firstChild);
-    }
-  }
-
-  function organize() {
-    const container = document.querySelector("#cards");
-    if (!container || busy) return;
-
-    const cards = Array.from(container.querySelectorAll("article.card"));
-
-    if (!cards.length) return;
-
-    busy = true;
-
-    try {
-      const groups = new Map();
-
-      for (const card of cards) {
-        enhanceCard(card);
-
-        const tool = toolOf(card);
-        const category = String(tool?.categoria || "Sem categoria");
-
-        if (!groups.has(category)) {
-          groups.set(category, []);
-        }
-
-        groups.get(category).push(card);
-      }
-
-      const categories = [...groups.keys()].sort((a, b) => {
-        const ia = ORDER.indexOf(a);
-        const ib = ORDER.indexOf(b);
-
-        return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib) ||
-          a.localeCompare(b, "pt-BR");
-      });
-
-      const fragment = document.createDocumentFragment();
-
-      for (const category of categories) {
-        const section = document.createElement("section");
-        section.className = "tool-category-section";
-
-        const title = document.createElement("h2");
-        title.className = "tool-category-title";
-        title.textContent = category;
-
-        const grid = document.createElement("div");
-        grid.className = "tool-category-grid";
-
-        groups.get(category)
-          .sort((a, b) => nameOf(a).localeCompare(nameOf(b), "pt-BR"))
-          .forEach(card => grid.append(card));
-
-        section.append(title, grid);
-        fragment.append(section);
-      }
-
-      container.replaceChildren(fragment);
-    } finally {
-      busy = false;
-    }
-  }
-
-  function schedule() {
-    if (pending || busy) return;
-
-    pending = true;
-
-    requestAnimationFrame(() => {
-      pending = false;
-      organize();
-    });
-  }
-
-  function install() {
-    const container = document.querySelector("#cards");
-    if (!container) return;
-
-    const observer = new MutationObserver(records => {
-      if (busy) return;
-
-      const relevant = records.some(record =>
-        Array.from(record.addedNodes).some(node =>
-          node.nodeType === 1 &&
-          (
-            node.matches?.("article.card, .tool-category-section") ||
-            node.querySelector?.("article.card")
-          )
-        )
-      );
-
-      if (relevant) schedule();
-    });
-
-    observer.observe(container, {
-      childList: true,
-      subtree: true
-    });
-
-    document.addEventListener("input", schedule);
-    document.addEventListener("change", schedule);
-
-    document.addEventListener("click", event => {
-      if (event.target.closest?.("button")) {
-        schedule();
-      }
-    });
-
-    schedule();
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", install, { once: true });
-  } else {
-    install();
-  }
-})();
-/* FIM CATALOGO ADMINISTRATIVO V4 */
-
-/* INICIO IDENTIFICACAO CARDS ALTERNATIVOS */
-(function () {
-  "use strict";
+  const canonical = new Map(
+    CATEGORY_ORDER.map(category => [
+      category.normalize("NFD")
+        .replace(/[\u0300-\u036f]/g, "")
+        .toLowerCase(),
+      category
+    ])
+  );
 
   function getTools() {
     try {
@@ -799,57 +552,225 @@ initialize();
     return [];
   }
 
-  function updateAlternativeCards() {
-    const cards = document.querySelectorAll("#cards article.card");
+  function normalizeCategory(value) {
+    const key = String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase();
 
-    for (const card of cards) {
-      const name = (card.querySelector("h3")?.textContent || "").trim();
+    if (canonical.has(key)) return canonical.get(key);
 
-      const tool = getTools().find(
-        item => String(item.nome || "").trim() === name
-      );
+    const match = key.match(/^\s*(\d{1,2})\s*[-–—.]/);
 
-      if (!tool) continue;
-
-      const old = card.querySelector(".alternative-card-label");
-
-      if (old) old.remove();
-
-      const oldLink = card.querySelector(".alternative-link");
-
-      if (oldLink) oldLink.remove();
-
-      if (!tool.alternativa_de) continue;
-
-      const body = card.querySelector(".card-body");
-
-      if (!body) continue;
-
-      const label = document.createElement("span");
-      label.className = "alternative-card-label";
-      label.textContent = "Alternativa gratuita a " + tool.alternativa_de;
-
-      body.insertBefore(label, body.firstChild);
+    if (match) {
+      return CATEGORY_ORDER[Number(match[1]) - 1] || value;
     }
+
+    return value;
+  }
+
+  function getTool(card) {
+    const name = (
+      card.querySelector("h3")?.textContent || ""
+    ).trim();
+
+    return getTools().find(tool =>
+      String(tool.nome || "").trim() === name
+    );
+  }
+
+  function safeUrl(value) {
+    try {
+      const url = new URL(String(value || ""), location.href);
+
+      return ["http:", "https:"].includes(url.protocol)
+        ? url.href
+        : "";
+    } catch (_) {
+      return "";
+    }
+  }
+
+  function enhanceCard(card) {
+    const tool = getTool(card);
+    if (!tool) return;
+
+    const url = safeUrl(tool.url);
+    if (!url) return;
+
+    const body = card.querySelector(".card-body") || card;
+
+    // Corrigir links e evitar navegacao para #.
+    for (const anchor of card.querySelectorAll("a")) {
+      const text = (anchor.textContent || "").trim();
+
+      if (
+        /acessar ferramenta|abrir ferramenta|visitar ferramenta/i.test(text) ||
+        anchor.classList.contains("card-link")
+      ) {
+        anchor.href = url;
+        anchor.target = "_blank";
+        anchor.rel = "noopener noreferrer";
+      }
+    }
+
+    let primary = card.querySelector("a.card-link");
+
+    if (!primary) {
+      primary = document.createElement("a");
+      primary.className = "card-link";
+      primary.textContent = "Acessar ferramenta";
+      body.append(primary);
+    }
+
+    primary.href = url;
+    primary.target = "_blank";
+    primary.rel = "noopener noreferrer";
+
+    const previousAlternative = card.querySelector(".alternative-link");
+
+    if (previousAlternative) previousAlternative.remove();
+
+    // A alternativa e um card proprio, nao um hiperlink dentro do original.
+    let alternativeBadge = card.querySelector(".alternative-card-label");
+
+    if (tool.alternativa_de) {
+      if (!alternativeBadge) {
+        alternativeBadge = document.createElement("span");
+        alternativeBadge.className = "alternative-card-label";
+        body.insertBefore(alternativeBadge, body.firstChild);
+      }
+
+      alternativeBadge.textContent =
+        "Alternativa gratuita a " + tool.alternativa_de;
+    } else if (alternativeBadge) {
+      alternativeBadge.remove();
+    }
+
+    // Status de rede inconclusivo nao vira aviso publico.
+    const status = String(tool.status_publico || "");
+
+    let badge = card.querySelector(".access-status");
+
+    if (!status) {
+      if (badge) badge.remove();
+    } else {
+      if (!badge) {
+        badge = document.createElement("span");
+        badge.className = "access-status";
+        body.insertBefore(badge, body.firstChild);
+      }
+
+      const labels = {
+        ACESSO_RESTRITO: "Acesso restrito (HTTP 403)",
+        PAGINA_NAO_ENCONTRADA: "Página não encontrada (404)",
+        LIMITE_REQUISICOES: "Limite de requisições (429)"
+      };
+
+      badge.textContent = labels[status] || "";
+    }
+
+    // Preview real quando existe; fallback identificado quando nao existe.
+    const preview = String(tool.preview || "").trim();
+
+    let image = card.querySelector("img");
+
+    if (preview) {
+      if (image) {
+        image.src = preview;
+        image.alt = "Prévia da interface de " + tool.nome;
+      }
+    } else {
+      if (image && image.closest(".preview")) {
+        image.remove();
+      }
+
+      let fallback = card.querySelector(".preview-unavailable");
+
+      if (!fallback) {
+        fallback = document.createElement("div");
+        fallback.className = "preview-unavailable";
+
+        const icon = document.createElement("span");
+        icon.className = "preview-unavailable-icon";
+        icon.textContent = "▣";
+
+        const label = document.createElement("span");
+        label.textContent = "Sem captura disponível";
+
+        fallback.append(icon, label);
+
+        const previewBox = card.querySelector(".preview");
+
+        if (previewBox) {
+          previewBox.replaceChildren(fallback);
+        } else {
+          card.insertBefore(fallback, card.firstChild);
+        }
+      }
+    }
+  }
+
+  // Interceptar somente acoes de abrir ferramenta.
+  // O evento e tratado na fase de captura, antes de handlers antigos.
+  document.addEventListener("click", event => {
+    const target = event.target.closest?.(
+      "a, button, [role='button']"
+    );
+
+    if (!target) return;
+
+    const card = target.closest("article.card");
+
+    if (!card) return;
+
+    const text = (target.textContent || "").trim();
+
+    const isAccess =
+      /^(acessar ferramenta|abrir ferramenta|visitar ferramenta)$/i.test(text) ||
+      target.classList.contains("card-link");
+
+    if (!isAccess) return;
+
+    const tool = getTool(card);
+    const url = safeUrl(tool?.url);
+
+    if (!url) return;
+
+    event.preventDefault();
+    event.stopImmediatePropagation();
+
+    // Evita rolagem para o topo provocada por href="#".
+    // Abre o endereco real em nova aba.
+    window.open(url, "_blank", "noopener,noreferrer");
+  }, true);
+
+  let scheduled = false;
+
+  function updateCards() {
+    for (const tool of getTools()) {
+      tool.categoria = normalizeCategory(tool.categoria);
+    }
+
+    document.querySelectorAll("#cards article.card")
+      .forEach(enhanceCard);
+  }
+
+  function schedule() {
+    if (scheduled) return;
+
+    scheduled = true;
+
+    requestAnimationFrame(() => {
+      scheduled = false;
+      updateCards();
+    });
   }
 
   function install() {
     const container = document.querySelector("#cards");
 
     if (!container) return;
-
-    let scheduled = false;
-
-    const schedule = () => {
-      if (scheduled) return;
-
-      scheduled = true;
-
-      requestAnimationFrame(() => {
-        scheduled = false;
-        updateAlternativeCards();
-      });
-    };
 
     const observer = new MutationObserver(records => {
       const changed = records.some(record =>
@@ -867,228 +788,10 @@ initialize();
 
     observer.observe(container, {
       childList: true,
-      subtree: true
+      subtree: false
     });
 
     schedule();
-  }
-
-  if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", install, { once: true });
-  } else {
-    install();
-  }
-})();
-/* FIM IDENTIFICACAO CARDS ALTERNATIVOS */
-
-/* INICIO NORMALIZACAO CATEGORIAS V5 */
-(function () {
-  "use strict";
-
-  const OFFICIAL_CATEGORIES = [
-    "01 - Documentos, PDF e Contratos",
-    "02 - Planilhas, Dados e Relatórios",
-    "03 - Automação e Integrações",
-    "04 - Processos, Fluxos e Projetos",
-    "05 - Comunicação e Apresentações",
-    "06 - Inteligência Artificial Local",
-    "07 - Imagens e Materiais Visuais",
-    "08 - Compartilhamento e Utilitários",
-    "09 - Desenvolvimento e Suporte TI",
-    "10 - Vídeo e Áudio"
-  ];
-
-  function normalize(value) {
-    return String(value || "")
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g, "")
-      .toLocaleLowerCase("pt-BR")
-      .replace(/[^\p{L}\p{N}]+/gu, " ")
-      .trim();
-  }
-
-  const canonical = new Map(
-    OFFICIAL_CATEGORIES.map(category => [
-      normalize(category),
-      category
-    ])
-  );
-
-  function canonicalCategory(value) {
-    const text = String(value || "").trim();
-    const normalized = normalize(text);
-
-    if (canonical.has(normalized)) {
-      return canonical.get(normalized);
-    }
-
-    const match = text.match(/^\s*(\d{1,2})\s*[-–—.]/);
-
-    if (match) {
-      const index = Number(match[1]) - 1;
-
-      if (index >= 0 && index < OFFICIAL_CATEGORIES.length) {
-        return OFFICIAL_CATEGORIES[index];
-      }
-    }
-
-    return text;
-  }
-
-  function getTools() {
-    try {
-      if (typeof state !== "undefined" && Array.isArray(state.tools)) {
-        return state.tools;
-      }
-    } catch (_) {}
-
-    return [];
-  }
-
-  function normalizeData() {
-    const tools = getTools();
-
-    for (const tool of tools) {
-      tool.categoria = canonicalCategory(tool.categoria);
-    }
-
-    try {
-      if (typeof state !== "undefined" && state.category) {
-        if (state.category !== "Todas") {
-          state.category = canonicalCategory(state.category);
-        }
-      }
-    } catch (_) {}
-  }
-
-  function fixCategoryButtons() {
-    const buttons = Array.from(
-      document.querySelectorAll("button")
-    );
-
-    const seen = new Set();
-
-    for (const button of buttons) {
-      const text = (button.textContent || "").trim();
-
-      const match = text.match(
-        /^\s*(\d{1,2})\s*[-–—.]\s*/
-      );
-
-      if (!match) continue;
-
-      const number = Number(match[1]);
-
-      if (number < 1 || number > 10) continue;
-
-      const official = OFFICIAL_CATEGORIES[number - 1];
-      const key = normalize(official);
-
-      if (seen.has(key)) {
-        button.remove();
-        continue;
-      }
-
-      seen.add(key);
-
-      // Preserva o botao original e seus eventos.
-      // Atualiza apenas o texto da categoria quando necessario.
-      const textNodes = [];
-
-      const walker = document.createTreeWalker(
-        button,
-        NodeFilter.SHOW_TEXT
-      );
-
-      while (walker.nextNode()) {
-        textNodes.push(walker.currentNode);
-      }
-
-      const labelNode = textNodes.find(node =>
-        /^\s*\d{1,2}\s*[-–—.]/.test(node.textContent || "")
-      );
-
-      if (labelNode) {
-        labelNode.textContent = official;
-      }
-    }
-
-    const counters = Array.from(
-      document.querySelectorAll("*")
-    ).filter(element =>
-      element.children.length === 0 &&
-      /^\s*\d+\s+categorias\s*$/i.test(
-        element.textContent || ""
-      )
-    );
-
-    for (const counter of counters) {
-      const visibleCategories = new Set();
-
-      for (const button of document.querySelectorAll("button")) {
-        const text = (button.textContent || "").trim();
-        const match = text.match(/^\s*(\d{1,2})\s*[-–—.]/);
-
-        if (match) {
-          visibleCategories.add(Number(match[1]));
-        }
-      }
-
-      counter.textContent =
-        visibleCategories.size + " categorias";
-    }
-  }
-
-  let fixing = false;
-  let scheduled = false;
-
-  function apply() {
-    if (fixing) return;
-
-    fixing = true;
-
-    try {
-      normalizeData();
-      fixCategoryButtons();
-    } finally {
-      fixing = false;
-    }
-  }
-
-  function schedule() {
-    if (scheduled || fixing) return;
-
-    scheduled = true;
-
-    requestAnimationFrame(() => {
-      scheduled = false;
-      apply();
-    });
-  }
-
-  function install() {
-    normalizeData();
-
-    const observer = new MutationObserver(records => {
-      if (fixing) return;
-
-      const changed = records.some(record =>
-        record.type === "childList" &&
-        (
-          record.addedNodes.length > 0 ||
-          record.removedNodes.length > 0
-        )
-      );
-
-      if (changed) schedule();
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true
-    });
-
-    apply();
   }
 
   if (document.readyState === "loading") {
@@ -1099,4 +802,4 @@ initialize();
     install();
   }
 })();
-/* FIM NORMALIZACAO CATEGORIAS V5 */
+/* FIM CORRECAO LINKS V6 */

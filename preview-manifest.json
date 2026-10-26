@@ -1,0 +1,929 @@
+[
+    {
+        "nome":  "LibreOffice",
+        "url":  "https://www.libreoffice.org/",
+        "preview":  "/assets/previews/80df8c7613bd295ec22a.png",
+        "existe":  true,
+        "destino":  "/assets/previews/80df8c7613bd295ec22a.png",
+        "arquivo":  "80df8c7613bd295ec22a.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "ONLYOFFICE Desktop Editors",
+        "url":  "https://www.onlyoffice.com/desktop.aspx",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/f24eac0fb6775b50ccfe.png",
+        "arquivo":  "f24eac0fb6775b50ccfe.png",
+        "acesso":  "HTTP_308"
+    },
+    {
+        "nome":  "PDF24 Creator",
+        "url":  "https://www.pdf24.org/pt/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/926cf05fd90a4668db62.png",
+        "arquivo":  "926cf05fd90a4668db62.png",
+        "acesso":  "REDE_INDISPONIVEL"
+    },
+    {
+        "nome":  "PDF24 Tools",
+        "url":  "https://tools.pdf24.org/pt/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/3f18fc122b680ae67061.png",
+        "arquivo":  "3f18fc122b680ae67061.png",
+        "acesso":  "REDE_INDISPONIVEL"
+    },
+    {
+        "nome":  "PDFsam Basic",
+        "url":  "https://pdfsam.org/pdfsam-basic/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/9ec15d98f2996b54c813.png",
+        "arquivo":  "9ec15d98f2996b54c813.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Plume PDF",
+        "url":  "https://www.plumedocs.com/",
+        "preview":  "/assets/previews/49e9c5b2fc265450acf3.png",
+        "existe":  true,
+        "destino":  "/assets/previews/49e9c5b2fc265450acf3.png",
+        "arquivo":  "49e9c5b2fc265450acf3.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Stirling PDF",
+        "url":  "https://www.stirlingpdf.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/bd08395c654344bc2215.png",
+        "arquivo":  "bd08395c654344bc2215.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Stirling PDF",
+        "url":  "https://github.com/Stirling-Tools/Stirling-PDF",
+        "preview":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
+        "existe":  true,
+        "destino":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
+        "arquivo":  "a368faa9ac2a6f5c8ae0.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "SumatraPDF",
+        "url":  "https://www.sumatrapdfreader.org/free-pdf-reader",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/5b1c45cc9dcc09ec5d51.png",
+        "arquivo":  "5b1c45cc9dcc09ec5d51.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Unfleece",
+        "url":  "https://unfleece.com/",
+        "preview":  "/assets/previews/8ba6cc1b129efb27ad66.png",
+        "existe":  true,
+        "destino":  "/assets/previews/8ba6cc1b129efb27ad66.png",
+        "arquivo":  "8ba6cc1b129efb27ad66.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "CyberChef",
+        "url":  "https://gchq.github.io/CyberChef/",
+        "preview":  "/assets/previews/965e7c5c27e01c4cc381.png",
+        "existe":  true,
+        "destino":  "/assets/previews/965e7c5c27e01c4cc381.png",
+        "arquivo":  "965e7c5c27e01c4cc381.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "DBeaver Community",
+        "url":  "https://dbeaver.io/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/681d52377e9efb9314f8.png",
+        "arquivo":  "681d52377e9efb9314f8.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Deskbench",
+        "url":  "https://deskbench.app/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/f078c5ad08ebe16396b0.png",
+        "arquivo":  "f078c5ad08ebe16396b0.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "DuckDB",
+        "url":  "https://duckdb.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/e567e1e36a98588256f5.png",
+        "arquivo":  "e567e1e36a98588256f5.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "JSON Crack",
+        "url":  "https://jsoncrack.com/editor",
+        "preview":  "/assets/previews/8b3b6dc451a1b5db22f9.png",
+        "existe":  true,
+        "destino":  "/assets/previews/8b3b6dc451a1b5db22f9.png",
+        "arquivo":  "8b3b6dc451a1b5db22f9.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "KNIME Analytics Platform",
+        "url":  "https://www.knime.com/knime-analytics-platform",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/03c7f189d1749c6978ed.png",
+        "arquivo":  "03c7f189d1749c6978ed.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Metabase",
+        "url":  "https://www.metabase.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/8696305ba7ff9d0c74e1.png",
+        "arquivo":  "8696305ba7ff9d0c74e1.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "OpenRefine",
+        "url":  "https://openrefine.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/7f1d213e0b28fe37e26a.png",
+        "arquivo":  "7f1d213e0b28fe37e26a.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Power Query",
+        "url":  "https://learn.microsoft.com/pt-br/power-query/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/e86c81b661fafa609b6e.png",
+        "arquivo":  "e86c81b661fafa609b6e.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Tabula",
+        "url":  "https://tabula.technology/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/89ab1e254ebd47f26bd7.png",
+        "arquivo":  "89ab1e254ebd47f26bd7.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Transform Tools",
+        "url":  "https://transform.tools/",
+        "preview":  "/assets/previews/6c298bb45b68f6547973.png",
+        "existe":  true,
+        "destino":  "/assets/previews/6c298bb45b68f6547973.png",
+        "arquivo":  "6c298bb45b68f6547973.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "AutoHotkey",
+        "url":  "https://www.autohotkey.com/",
+        "preview":  "/assets/previews/14c12d3bc4532d21042c.png",
+        "existe":  true,
+        "destino":  "/assets/previews/14c12d3bc4532d21042c.png",
+        "arquivo":  "14c12d3bc4532d21042c.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Bruno",
+        "url":  "https://www.usebruno.com/",
+        "preview":  "/assets/previews/ae5d594256a23f537761.png",
+        "existe":  true,
+        "destino":  "/assets/previews/ae5d594256a23f537761.png",
+        "arquivo":  "ae5d594256a23f537761.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Hoppscotch",
+        "url":  "https://hoppscotch.io/",
+        "preview":  "/assets/previews/4a834a22fea5cd28d41e.png",
+        "existe":  true,
+        "destino":  "/assets/previews/4a834a22fea5cd28d41e.png",
+        "arquivo":  "4a834a22fea5cd28d41e.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "n8n",
+        "url":  "https://n8n.io/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/5506ef5e4e0a9e925f64.png",
+        "arquivo":  "5506ef5e4e0a9e925f64.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "n8n",
+        "url":  "https://github.com/n8n-io/n8n",
+        "preview":  "/assets/previews/c37165a31cd3fc399e84.png",
+        "existe":  true,
+        "destino":  "/assets/previews/c37165a31cd3fc399e84.png",
+        "arquivo":  "c37165a31cd3fc399e84.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Node-RED",
+        "url":  "https://nodered.org/",
+        "preview":  "/assets/previews/8ec24459cdceb60d40d6.png",
+        "existe":  true,
+        "destino":  "/assets/previews/8ec24459cdceb60d40d6.png",
+        "arquivo":  "8ec24459cdceb60d40d6.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Playwright",
+        "url":  "https://playwright.dev/",
+        "preview":  "/assets/previews/8960df5ea200923e3c4c.png",
+        "existe":  true,
+        "destino":  "/assets/previews/8960df5ea200923e3c4c.png",
+        "arquivo":  "8960df5ea200923e3c4c.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Robot Framework",
+        "url":  "https://robotframework.org/",
+        "preview":  "/assets/previews/229a65c84d3bc65d10f7.png",
+        "existe":  true,
+        "destino":  "/assets/previews/229a65c84d3bc65d10f7.png",
+        "arquivo":  "229a65c84d3bc65d10f7.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Selenium",
+        "url":  "https://www.selenium.dev/",
+        "preview":  "/assets/previews/d1d9f0e8c01b765eace5.png",
+        "existe":  true,
+        "destino":  "/assets/previews/d1d9f0e8c01b765eace5.png",
+        "arquivo":  "d1d9f0e8c01b765eace5.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "TagUI",
+        "url":  "https://github.com/aisingapore/TagUI",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/3d5f54a3999232be74fc.png",
+        "arquivo":  "3d5f54a3999232be74fc.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "UI.Vision RPA",
+        "url":  "https://ui.vision/rpa",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/5f21135d14e51eab6df7.png",
+        "arquivo":  "5f21135d14e51eab6df7.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "BPMN.io",
+        "url":  "https://bpmn.io/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/72c599636bd85ef63cc0.png",
+        "arquivo":  "72c599636bd85ef63cc0.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "BPMN.io",
+        "url":  "https://demo.bpmn.io/",
+        "preview":  "/assets/previews/159d817e7c62e997bad3.png",
+        "existe":  true,
+        "destino":  "/assets/previews/159d817e7c62e997bad3.png",
+        "arquivo":  "159d817e7c62e997bad3.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "diagrams.net",
+        "url":  "https://app.diagrams.net/",
+        "preview":  "/assets/previews/b829fabaec241d96f7eb.png",
+        "existe":  true,
+        "destino":  "/assets/previews/b829fabaec241d96f7eb.png",
+        "arquivo":  "b829fabaec241d96f7eb.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Excalidraw",
+        "url":  "https://excalidraw.com/",
+        "preview":  "/assets/previews/85794320b9feb680be86.png",
+        "existe":  true,
+        "destino":  "/assets/previews/85794320b9feb680be86.png",
+        "arquivo":  "85794320b9feb680be86.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Free Open Tools",
+        "url":  "https://freeopentools.com/",
+        "preview":  "/assets/previews/df40340926cf10c6d48c.png",
+        "existe":  true,
+        "destino":  "/assets/previews/df40340926cf10c6d48c.png",
+        "arquivo":  "df40340926cf10c6d48c.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "GanttProject",
+        "url":  "https://www.ganttproject.biz/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/16edad42c9b0eb1fc47d.png",
+        "arquivo":  "16edad42c9b0eb1fc47d.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Kanboard",
+        "url":  "https://kanboard.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/4c88bf542ac008ec63f8.png",
+        "arquivo":  "4c88bf542ac008ec63f8.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Markmap",
+        "url":  "https://markmap.js.org/repl",
+        "preview":  "/assets/previews/f01ded7c69ecb174d8ae.png",
+        "existe":  true,
+        "destino":  "/assets/previews/f01ded7c69ecb174d8ae.png",
+        "arquivo":  "f01ded7c69ecb174d8ae.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Mermaid Live",
+        "url":  "https://mermaid.live/",
+        "preview":  "/assets/previews/f311e5f42bb23ce20d5c.png",
+        "existe":  true,
+        "destino":  "/assets/previews/f311e5f42bb23ce20d5c.png",
+        "arquivo":  "f311e5f42bb23ce20d5c.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "ProjectLibre",
+        "url":  "https://www.projectlibre.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/2e4c36eafc6af8ee5167.png",
+        "arquivo":  "2e4c36eafc6af8ee5167.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Vikunja",
+        "url":  "https://vikunja.io/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/b376465e573efd4fdd26.png",
+        "arquivo":  "b376465e573efd4fdd26.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Free iPhone Mockup",
+        "url":  "https://freeiphonemockup.com/",
+        "preview":  "/assets/previews/8ab0ed9a506e990aa9e2.png",
+        "existe":  true,
+        "destino":  "/assets/previews/8ab0ed9a506e990aa9e2.png",
+        "arquivo":  "8ab0ed9a506e990aa9e2.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "Google Fonts",
+        "url":  "https://fonts.google.com/",
+        "preview":  "/assets/previews/4a22810a8447185e1278.png",
+        "existe":  true,
+        "destino":  "/assets/previews/4a22810a8447185e1278.png",
+        "arquivo":  "4a22810a8447185e1278.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Haikei",
+        "url":  "https://haikei.app/",
+        "preview":  "/assets/previews/0b9ed6cb83f06a08712f.png",
+        "existe":  true,
+        "destino":  "/assets/previews/0b9ed6cb83f06a08712f.png",
+        "arquivo":  "0b9ed6cb83f06a08712f.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "LibreOffice Impress",
+        "url":  "https://www.libreoffice.org/discover/impress/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/7a642d82d6e27c0645ab.png",
+        "arquivo":  "7a642d82d6e27c0645ab.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Marp",
+        "url":  "https://marp.app/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/69437a5868b6d7c23e86.png",
+        "arquivo":  "69437a5868b6d7c23e86.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Mockbooth",
+        "url":  "https://www.mockbooth.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/89b4963ef603f1bc38fa.png",
+        "arquivo":  "89b4963ef603f1bc38fa.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "Photopea",
+        "url":  "https://www.photopea.com/",
+        "preview":  "/assets/previews/873756fbe97a13842f69.png",
+        "existe":  true,
+        "destino":  "/assets/previews/873756fbe97a13842f69.png",
+        "arquivo":  "873756fbe97a13842f69.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Plinth Mockups",
+        "url":  "https://plinthmockups.com/",
+        "preview":  "/assets/previews/039044b8040dc8bba148.png",
+        "existe":  true,
+        "destino":  "/assets/previews/039044b8040dc8bba148.png",
+        "arquivo":  "039044b8040dc8bba148.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "Reveal.js",
+        "url":  "https://revealjs.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/4fe41a84b39b49ff3fbd.png",
+        "arquivo":  "4fe41a84b39b49ff3fbd.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Screely",
+        "url":  "https://www.screely.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/1af68910f973e0156ede.png",
+        "arquivo":  "1af68910f973e0156ede.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Scribus",
+        "url":  "https://www.scribus.net/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/2e541101981ebf484bb3.png",
+        "arquivo":  "2e541101981ebf484bb3.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Shotframe",
+        "url":  "https://shotframe.app/",
+        "preview":  "/assets/previews/219810184c4e5247bba7.png",
+        "existe":  true,
+        "destino":  "/assets/previews/219810184c4e5247bba7.png",
+        "arquivo":  "219810184c4e5247bba7.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Shots",
+        "url":  "https://shots.so/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/df52228d478b0b9edb2b.png",
+        "arquivo":  "df52228d478b0b9edb2b.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "SVG Repo",
+        "url":  "https://www.svgrepo.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/dd0ea18b953a1e96e435.png",
+        "arquivo":  "dd0ea18b953a1e96e435.png",
+        "acesso":  "HTTP_429"
+    },
+    {
+        "nome":  "GPT4All",
+        "url":  "https://www.nomic.ai/gpt4all",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/ab0ff2651c596b4ab18b.png",
+        "arquivo":  "ab0ff2651c596b4ab18b.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Jan",
+        "url":  "https://jan.ai/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/83e043b92ce7abe7c183.png",
+        "arquivo":  "83e043b92ce7abe7c183.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Ollama",
+        "url":  "https://ollama.com/",
+        "preview":  "/assets/previews/1d9fc6d9882416d42345.png",
+        "existe":  true,
+        "destino":  "/assets/previews/1d9fc6d9882416d42345.png",
+        "arquivo":  "1d9fc6d9882416d42345.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Open WebUI",
+        "url":  "https://openwebui.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/438dbf870fc24cbed79d.png",
+        "arquivo":  "438dbf870fc24cbed79d.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Transformers.js",
+        "url":  "https://huggingface.co/docs/transformers.js",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/2b9afeeb9fc90e0c3115.png",
+        "arquivo":  "2b9afeeb9fc90e0c3115.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "Transformers.js - GitHub",
+        "url":  "https://github.com/huggingface/transformers.js",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/f1b432b5a8e80728902f.png",
+        "arquivo":  "f1b432b5a8e80728902f.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Upscayl",
+        "url":  "https://upscayl.org/",
+        "preview":  "/assets/previews/cfe28d1101cd81df250a.png",
+        "existe":  true,
+        "destino":  "/assets/previews/cfe28d1101cd81df250a.png",
+        "arquivo":  "cfe28d1101cd81df250a.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "WebLLM",
+        "url":  "https://webllm.mlc.ai/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/d3445ca5fa18723dce0e.png",
+        "arquivo":  "d3445ca5fa18723dce0e.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "Background Remover fal.ai",
+        "url":  "https://fal.ai/tools/background-remover",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/1d75183b8e8b243e51f6.png",
+        "arquivo":  "1d75183b8e8b243e51f6.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "ComfyUI",
+        "url":  "https://github.com/comfyanonymous/ComfyUI",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/0b07245c3c0c6db65292.png",
+        "arquivo":  "0b07245c3c0c6db65292.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Ezgif",
+        "url":  "https://ezgif.com/",
+        "preview":  "/assets/previews/b5caa85941f32e986e1a.png",
+        "existe":  true,
+        "destino":  "/assets/previews/b5caa85941f32e986e1a.png",
+        "arquivo":  "b5caa85941f32e986e1a.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "fal.ai Tools",
+        "url":  "https://fal.ai/tools",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/547ee1d5b56170ef7ccc.png",
+        "arquivo":  "547ee1d5b56170ef7ccc.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "GIMP",
+        "url":  "https://www.gimp.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/4b2e49b4ba52939fadc9.png",
+        "arquivo":  "4b2e49b4ba52939fadc9.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "ImageMagick",
+        "url":  "https://imagemagick.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/102d43ebb8529001e4d0.png",
+        "arquivo":  "102d43ebb8529001e4d0.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Inkscape",
+        "url":  "https://inkscape.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/7e26ead2ab970d600d3b.png",
+        "arquivo":  "7e26ead2ab970d600d3b.png",
+        "acesso":  "HTTP_403"
+    },
+    {
+        "nome":  "Krita",
+        "url":  "https://krita.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/eac6aaf5ae564bc704b5.png",
+        "arquivo":  "eac6aaf5ae564bc704b5.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Lucide Icons",
+        "url":  "https://lucide.dev/icons/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/3c0fba0acd062639b2ca.png",
+        "arquivo":  "3c0fba0acd062639b2ca.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Penpot",
+        "url":  "https://penpot.app/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/5c1849993c1cb4f15a06.png",
+        "arquivo":  "5c1849993c1cb4f15a06.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "rembg",
+        "url":  "https://github.com/danielgatis/rembg",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/501a8b8f944cd3792ce6.png",
+        "arquivo":  "501a8b8f944cd3792ce6.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Squoosh",
+        "url":  "https://squoosh.app/",
+        "preview":  "/assets/previews/59e95f4c62f018f43b2c.png",
+        "existe":  true,
+        "destino":  "/assets/previews/59e95f4c62f018f43b2c.png",
+        "arquivo":  "59e95f4c62f018f43b2c.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "SVGOMG",
+        "url":  "https://jakearchibald.github.io/svgomg/",
+        "preview":  "/assets/previews/c470a93eaf1fe54b7a3e.png",
+        "existe":  true,
+        "destino":  "/assets/previews/c470a93eaf1fe54b7a3e.png",
+        "arquivo":  "c470a93eaf1fe54b7a3e.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "TinyPNG",
+        "url":  "https://tinypng.com/",
+        "preview":  "/assets/previews/b962f490995ec215c79b.png",
+        "existe":  true,
+        "destino":  "/assets/previews/b962f490995ec215c79b.png",
+        "arquivo":  "b962f490995ec215c79b.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "7-Zip",
+        "url":  "https://www.7-zip.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/da54eed2fb3a54e38574.png",
+        "arquivo":  "da54eed2fb3a54e38574.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Bundle Tools",
+        "url":  "https://bundle.tools/",
+        "preview":  "/assets/previews/11cee4d50404ef1dd83a.png",
+        "existe":  true,
+        "destino":  "/assets/previews/11cee4d50404ef1dd83a.png",
+        "arquivo":  "11cee4d50404ef1dd83a.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "ConvertCase",
+        "url":  "https://convertcase.net/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/46eff049213b2c912371.png",
+        "arquivo":  "46eff049213b2c912371.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "KeePass",
+        "url":  "https://keepass.info/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/1622ddfe53cce6787be5.png",
+        "arquivo":  "1622ddfe53cce6787be5.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "LocalSend",
+        "url":  "https://localsend.org/",
+        "preview":  "/assets/previews/d0c48581e1659fb4fea2.png",
+        "existe":  true,
+        "destino":  "/assets/previews/d0c48581e1659fb4fea2.png",
+        "arquivo":  "d0c48581e1659fb4fea2.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "PairDrop",
+        "url":  "https://pairdrop.net/",
+        "preview":  "/assets/previews/65b15b71fa6f508fea67.png",
+        "existe":  true,
+        "destino":  "/assets/previews/65b15b71fa6f508fea67.png",
+        "arquivo":  "65b15b71fa6f508fea67.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "QR Code Monkey",
+        "url":  "https://www.qrcode-monkey.com/",
+        "preview":  "/assets/previews/7a05d9d2ca26b5dce018.png",
+        "existe":  true,
+        "destino":  "/assets/previews/7a05d9d2ca26b5dce018.png",
+        "arquivo":  "7a05d9d2ca26b5dce018.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Time.is",
+        "url":  "https://time.is/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/436b164b2fcd8844b931.png",
+        "arquivo":  "436b164b2fcd8844b931.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Can I Use",
+        "url":  "https://caniuse.com/",
+        "preview":  "/assets/previews/3952e3aaa8ca5af66538.png",
+        "existe":  true,
+        "destino":  "/assets/previews/3952e3aaa8ca5af66538.png",
+        "arquivo":  "3952e3aaa8ca5af66538.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Git",
+        "url":  "https://git-scm.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/94c5655da22a143da4d6.png",
+        "arquivo":  "94c5655da22a143da4d6.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "IT Tools",
+        "url":  "https://it-tools.tech/",
+        "preview":  "/assets/previews/e173c09a7713b5b0a417.png",
+        "existe":  true,
+        "destino":  "/assets/previews/e173c09a7713b5b0a417.png",
+        "arquivo":  "e173c09a7713b5b0a417.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "JSFiddle",
+        "url":  "https://jsfiddle.net/",
+        "preview":  "/assets/previews/47eab744c738f260b393.png",
+        "existe":  true,
+        "destino":  "/assets/previews/47eab744c738f260b393.png",
+        "arquivo":  "47eab744c738f260b393.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "JSONPlaceholder",
+        "url":  "https://jsonplaceholder.typicode.com/",
+        "preview":  "/assets/previews/71d06732be3e7a3a1433.png",
+        "existe":  true,
+        "destino":  "/assets/previews/71d06732be3e7a3a1433.png",
+        "arquivo":  "71d06732be3e7a3a1433.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Postman",
+        "url":  "https://www.postman.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/b8c9ebd233da8c4b70f4.png",
+        "arquivo":  "b8c9ebd233da8c4b70f4.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Regex101",
+        "url":  "https://regex101.com/",
+        "preview":  "/assets/previews/33711997423abbb0bfa5.png",
+        "existe":  true,
+        "destino":  "/assets/previews/33711997423abbb0bfa5.png",
+        "arquivo":  "33711997423abbb0bfa5.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "RegExr",
+        "url":  "https://regexr.com/",
+        "preview":  "/assets/previews/eb44d756013f2ff8478a.png",
+        "existe":  true,
+        "destino":  "/assets/previews/eb44d756013f2ff8478a.png",
+        "arquivo":  "eb44d756013f2ff8478a.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "VS Code",
+        "url":  "https://code.visualstudio.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/177f0934751badde8cc4.png",
+        "arquivo":  "177f0934751badde8cc4.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "VSCodium",
+        "url":  "https://vscodium.com/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/b79c090e609cb75cb61e.png",
+        "arquivo":  "b79c090e609cb75cb61e.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Audacity",
+        "url":  "https://www.audacityteam.org/",
+        "preview":  "/assets/previews/d130cc2e9c59f88a59b0.png",
+        "existe":  true,
+        "destino":  "/assets/previews/d130cc2e9c59f88a59b0.png",
+        "arquivo":  "d130cc2e9c59f88a59b0.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "FFmpeg",
+        "url":  "https://ffmpeg.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/7b0b08959e5d070ad0f7.png",
+        "arquivo":  "7b0b08959e5d070ad0f7.png",
+        "acesso":  "REDE_INDISPONIVEL"
+    },
+    {
+        "nome":  "HandBrake",
+        "url":  "https://handbrake.fr/",
+        "preview":  "/assets/previews/3b8949850320796f7cef.png",
+        "existe":  true,
+        "destino":  "/assets/previews/3b8949850320796f7cef.png",
+        "arquivo":  "3b8949850320796f7cef.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "OBS Studio",
+        "url":  "https://obsproject.com/",
+        "preview":  "/assets/previews/5cc0e67257c0cc091d1b.png",
+        "existe":  true,
+        "destino":  "/assets/previews/5cc0e67257c0cc091d1b.png",
+        "arquivo":  "5cc0e67257c0cc091d1b.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Shotcut",
+        "url":  "https://shotcut.org/",
+        "preview":  "",
+        "existe":  false,
+        "destino":  "/assets/previews/8bfdde1ed95baae25a2c.png",
+        "arquivo":  "8bfdde1ed95baae25a2c.png",
+        "acesso":  "HTTP_OK"
+    },
+    {
+        "nome":  "Shotcut",
+        "url":  "https://www.shotcut.org/",
+        "preview":  "/assets/previews/e647cf4fae3d0ef68d50.png",
+        "existe":  true,
+        "destino":  "/assets/previews/e647cf4fae3d0ef68d50.png",
+        "arquivo":  "e647cf4fae3d0ef68d50.png",
+        "acesso":  "HTTP_OK"
+    }
+]

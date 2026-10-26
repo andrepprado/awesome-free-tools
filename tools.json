@@ -7,7 +7,8 @@
         "preview":  "/assets/previews/80df8c7613bd295ec22a.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "ONLYOFFICE Desktop Editors",
@@ -17,7 +18,8 @@
         "preview":  "",
         "acesso":  "HTTP_308",
         "http_status":  308,
-        "alternativa_url":  "https://www.libreoffice.org/"
+        "alternativa_url":  "https://www.libreoffice.org/",
+        "status_publico":  ""
     },
     {
         "categoria":  "01 - Documentos, PDF e Contratos",
@@ -27,7 +29,8 @@
         "preview":  "",
         "acesso":  "REDE_INDISPONIVEL",
         "http_status":  0,
-        "alternativa_url":  "https://www.stirlingpdf.com/"
+        "alternativa_url":  "https://www.stirlingpdf.com/",
+        "status_publico":  ""
     },
     {
         "categoria":  "01 - Documentos, PDF e Contratos",
@@ -37,7 +40,8 @@
         "preview":  "",
         "acesso":  "REDE_INDISPONIVEL",
         "http_status":  0,
-        "alternativa_url":  "https://pdfsam.org/pdfsam-basic/"
+        "alternativa_url":  "https://pdfsam.org/pdfsam-basic/",
+        "status_publico":  ""
     },
     {
         "nome":  "PDFsam Basic",
@@ -48,7 +52,8 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "PDF24 Tools"
+        "alternativa_de":  "PDF24 Tools",
+        "status_publico":  ""
     },
     {
         "descricao":  "Editar, converter e organizar PDF localmente no navegador, sem cadastro.",
@@ -58,7 +63,19 @@
         "preview":  "/assets/previews/49e9c5b2fc265450acf3.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
+    },
+    {
+        "categoria":  "01 - Documentos, PDF e Contratos",
+        "nome":  "Stirling PDF",
+        "descricao":  "Ferramenta open source para PDF",
+        "url":  "https://github.com/Stirling-Tools/Stirling-PDF",
+        "preview":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Stirling PDF",
@@ -69,17 +86,8 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "PDF24 Creator"
-    },
-    {
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "nome":  "Stirling PDF",
-        "descricao":  "Ferramenta open source para PDF",
-        "url":  "https://github.com/Stirling-Tools/Stirling-PDF",
-        "preview":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_de":  "PDF24 Creator",
+        "status_publico":  ""
     },
     {
         "nome":  "SumatraPDF",
@@ -89,7 +97,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "descricao":  "Unir, dividir, converter e assinar PDFs sem enviar arquivos ao servidor.",
@@ -99,7 +108,8 @@
         "preview":  "/assets/previews/8ba6cc1b129efb27ad66.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "02 - Planilhas, Dados e Relatórios",
@@ -109,7 +119,8 @@
         "preview":  "/assets/previews/965e7c5c27e01c4cc381.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "DBeaver Community",
@@ -119,7 +130,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "descricao":  "Ferramentas locais para documentos, imagens, planilhas e comparacao de dados.",
@@ -129,7 +141,8 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://openrefine.org/"
+        "alternativa_url":  "https://openrefine.org/",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "nome":  "DuckDB",
@@ -139,7 +152,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "02 - Planilhas, Dados e Relatórios",
@@ -149,7 +163,8 @@
         "preview":  "/assets/previews/8b3b6dc451a1b5db22f9.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "KNIME Analytics Platform",
@@ -159,7 +174,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Metabase",
@@ -169,7 +185,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "OpenRefine",
@@ -180,7 +197,8 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "Deskbench"
+        "alternativa_de":  "Deskbench",
+        "status_publico":  ""
     },
     {
         "nome":  "Power Query",
@@ -190,7 +208,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Tabula",
@@ -200,7 +219,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "02 - Planilhas, Dados e Relatórios",
@@ -210,7 +230,8 @@
         "preview":  "/assets/previews/6c298bb45b68f6547973.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "03 - Automação e Integrações",
@@ -220,7 +241,8 @@
         "preview":  "/assets/previews/14c12d3bc4532d21042c.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "03 - Automação e Integrações",
@@ -230,7 +252,8 @@
         "preview":  "/assets/previews/ae5d594256a23f537761.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "03 - Automação e Integrações",
@@ -240,17 +263,8 @@
         "preview":  "/assets/previews/4a834a22fea5cd28d41e.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "nome":  "n8n",
-        "descricao":  "Automacao de fluxos com opcao de hospedagem propria.",
-        "url":  "https://n8n.io/",
-        "categoria":  "03 - Automação e Integrações",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "03 - Automação e Integrações",
@@ -260,7 +274,19 @@
         "preview":  "/assets/previews/c37165a31cd3fc399e84.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
+    },
+    {
+        "nome":  "n8n",
+        "descricao":  "Automacao de fluxos com opcao de hospedagem propria.",
+        "url":  "https://n8n.io/",
+        "categoria":  "03 - Automação e Integrações",
+        "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "03 - Automação e Integrações",
@@ -270,7 +296,8 @@
         "preview":  "/assets/previews/8ec24459cdceb60d40d6.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "03 - Automação e Integrações",
@@ -280,7 +307,8 @@
         "preview":  "/assets/previews/8960df5ea200923e3c4c.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "03 - Automação e Integrações",
@@ -291,7 +319,8 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "UI.Vision RPA"
+        "alternativa_de":  "UI.Vision RPA",
+        "status_publico":  ""
     },
     {
         "categoria":  "03 - Automação e Integrações",
@@ -301,7 +330,8 @@
         "preview":  "/assets/previews/d1d9f0e8c01b765eace5.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "TagUI",
@@ -311,7 +341,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "UI.Vision RPA",
@@ -321,17 +352,8 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://robotframework.org/"
-    },
-    {
-        "nome":  "BPMN.io",
-        "descricao":  "Modelagem de processos BPMN.",
-        "url":  "https://bpmn.io/",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://robotframework.org/",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "categoria":  "04 - Processos, Fluxos e Projetos",
@@ -341,7 +363,19 @@
         "preview":  "/assets/previews/159d817e7c62e997bad3.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
+    },
+    {
+        "nome":  "BPMN.io",
+        "descricao":  "Modelagem de processos BPMN.",
+        "url":  "https://bpmn.io/",
+        "categoria":  "04 - Processos, Fluxos e Projetos",
+        "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "04 - Processos, Fluxos e Projetos",
@@ -351,7 +385,8 @@
         "preview":  "/assets/previews/b829fabaec241d96f7eb.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "04 - Processos, Fluxos e Projetos",
@@ -361,7 +396,8 @@
         "preview":  "/assets/previews/85794320b9feb680be86.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "descricao":  "Diagramas, Markdown e visualizacao de dados diretamente no navegador.",
@@ -371,7 +407,8 @@
         "preview":  "/assets/previews/df40340926cf10c6d48c.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "GanttProject",
@@ -381,7 +418,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Kanboard",
@@ -391,7 +429,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "04 - Processos, Fluxos e Projetos",
@@ -401,7 +440,8 @@
         "preview":  "/assets/previews/f01ded7c69ecb174d8ae.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "04 - Processos, Fluxos e Projetos",
@@ -411,7 +451,8 @@
         "preview":  "/assets/previews/f311e5f42bb23ce20d5c.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "ProjectLibre",
@@ -421,7 +462,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Vikunja",
@@ -431,7 +473,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "05 - Comunicação e Apresentações",
@@ -441,7 +484,8 @@
         "preview":  "/assets/previews/8ab0ed9a506e990aa9e2.png",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://shots.so/"
+        "alternativa_url":  "https://shots.so/",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "categoria":  "05 - Comunicação e Apresentações",
@@ -451,7 +495,8 @@
         "preview":  "/assets/previews/4a22810a8447185e1278.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "05 - Comunicação e Apresentações",
@@ -461,7 +506,8 @@
         "preview":  "/assets/previews/0b9ed6cb83f06a08712f.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "LibreOffice Impress",
@@ -471,7 +517,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Marp",
@@ -481,7 +528,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "05 - Comunicação e Apresentações",
@@ -491,7 +539,8 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://www.screely.com/"
+        "alternativa_url":  "https://www.screely.com/",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "categoria":  "05 - Comunicação e Apresentações",
@@ -501,7 +550,8 @@
         "preview":  "/assets/previews/873756fbe97a13842f69.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "05 - Comunicação e Apresentações",
@@ -511,7 +561,8 @@
         "preview":  "/assets/previews/039044b8040dc8bba148.png",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://penpot.app/"
+        "alternativa_url":  "https://penpot.app/",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "nome":  "Reveal.js",
@@ -521,7 +572,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Screely",
@@ -529,10 +581,11 @@
         "url":  "https://www.screely.com/",
         "categoria":  "05 - Comunicação e Apresentações",
         "preview":  "",
-        "acesso":  "NAO_VERIFICADO",
-        "http_status":  0,
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "Mockbooth"
+        "alternativa_de":  "Mockbooth",
+        "status_publico":  ""
     },
     {
         "nome":  "Scribus",
@@ -542,7 +595,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "05 - Comunicação e Apresentações",
@@ -552,7 +606,8 @@
         "preview":  "/assets/previews/219810184c4e5247bba7.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Shots",
@@ -560,10 +615,11 @@
         "url":  "https://shots.so/",
         "categoria":  "05 - Comunicação e Apresentações",
         "preview":  "",
-        "acesso":  "NAO_VERIFICADO",
-        "http_status":  0,
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "Free iPhone Mockup"
+        "alternativa_de":  "Free iPhone Mockup",
+        "status_publico":  ""
     },
     {
         "categoria":  "05 - Comunicação e Apresentações",
@@ -573,7 +629,8 @@
         "preview":  "",
         "acesso":  "HTTP_429",
         "http_status":  429,
-        "alternativa_url":  "https://lucide.dev/icons/"
+        "alternativa_url":  "https://lucide.dev/icons/",
+        "status_publico":  "LIMITE_REQUISICOES"
     },
     {
         "nome":  "GPT4All",
@@ -583,7 +640,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Jan",
@@ -593,7 +651,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "06 - Inteligência Artificial Local",
@@ -604,7 +663,8 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "WebLLM"
+        "alternativa_de":  "WebLLM",
+        "status_publico":  ""
     },
     {
         "nome":  "Open WebUI",
@@ -614,7 +674,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "06 - Inteligência Artificial Local",
@@ -624,7 +685,8 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://github.com/huggingface/transformers.js"
+        "alternativa_url":  "https://github.com/huggingface/transformers.js",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "nome":  "Transformers.js - GitHub",
@@ -632,10 +694,11 @@
         "url":  "https://github.com/huggingface/transformers.js",
         "categoria":  "06 - Inteligência Artificial Local",
         "preview":  "",
-        "acesso":  "NAO_VERIFICADO",
-        "http_status":  0,
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "Transformers.js"
+        "alternativa_de":  "Transformers.js",
+        "status_publico":  ""
     },
     {
         "categoria":  "06 - Inteligência Artificial Local",
@@ -645,7 +708,8 @@
         "preview":  "/assets/previews/cfe28d1101cd81df250a.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "06 - Inteligência Artificial Local",
@@ -655,7 +719,8 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://ollama.com/"
+        "alternativa_url":  "https://ollama.com/",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -665,7 +730,8 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://github.com/danielgatis/rembg"
+        "alternativa_url":  "https://github.com/danielgatis/rembg",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "nome":  "ComfyUI",
@@ -673,10 +739,11 @@
         "url":  "https://github.com/comfyanonymous/ComfyUI",
         "categoria":  "07 - Imagens e Materiais Visuais",
         "preview":  "",
-        "acesso":  "NAO_VERIFICADO",
-        "http_status":  0,
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "fal.ai Tools"
+        "alternativa_de":  "fal.ai Tools",
+        "status_publico":  ""
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -686,7 +753,8 @@
         "preview":  "/assets/previews/b5caa85941f32e986e1a.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -696,7 +764,8 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://github.com/comfyanonymous/ComfyUI"
+        "alternativa_url":  "https://github.com/comfyanonymous/ComfyUI",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "nome":  "GIMP",
@@ -706,7 +775,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "ImageMagick",
@@ -716,7 +786,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Inkscape",
@@ -724,9 +795,10 @@
         "categoria":  "07 - Imagens e Materiais Visuais",
         "descricao":  "Editor gratuito de imagens vetoriais.",
         "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
+        "acesso":  "HTTP_403",
+        "http_status":  403,
+        "alternativa_url":  "",
+        "status_publico":  "ACESSO_RESTRITO"
     },
     {
         "nome":  "Krita",
@@ -736,7 +808,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Lucide Icons",
@@ -744,10 +817,11 @@
         "url":  "https://lucide.dev/icons/",
         "categoria":  "07 - Imagens e Materiais Visuais",
         "preview":  "",
-        "acesso":  "NAO_VERIFICADO",
-        "http_status":  0,
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "SVG Repo"
+        "alternativa_de":  "SVG Repo",
+        "status_publico":  ""
     },
     {
         "nome":  "Penpot",
@@ -755,10 +829,11 @@
         "url":  "https://penpot.app/",
         "categoria":  "07 - Imagens e Materiais Visuais",
         "preview":  "",
-        "acesso":  "NAO_VERIFICADO",
-        "http_status":  0,
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "Plinth Mockups"
+        "alternativa_de":  "Plinth Mockups",
+        "status_publico":  ""
     },
     {
         "nome":  "rembg",
@@ -766,10 +841,11 @@
         "url":  "https://github.com/danielgatis/rembg",
         "categoria":  "07 - Imagens e Materiais Visuais",
         "preview":  "",
-        "acesso":  "NAO_VERIFICADO",
-        "http_status":  0,
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "Background Remover fal.ai"
+        "alternativa_de":  "Background Remover fal.ai",
+        "status_publico":  ""
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -779,7 +855,8 @@
         "preview":  "/assets/previews/59e95f4c62f018f43b2c.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -789,7 +866,8 @@
         "preview":  "/assets/previews/c470a93eaf1fe54b7a3e.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -799,7 +877,8 @@
         "preview":  "/assets/previews/b962f490995ec215c79b.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "7-Zip",
@@ -809,7 +888,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "descricao":  "Utilitarios gratuitos e de codigo aberto para documentos e imagens.",
@@ -819,7 +899,8 @@
         "preview":  "/assets/previews/11cee4d50404ef1dd83a.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "08 - Compartilhamento e Utilitários",
@@ -829,7 +910,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "KeePass",
@@ -839,7 +921,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "08 - Compartilhamento e Utilitários",
@@ -849,7 +932,8 @@
         "preview":  "/assets/previews/d0c48581e1659fb4fea2.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "08 - Compartilhamento e Utilitários",
@@ -859,7 +943,8 @@
         "preview":  "/assets/previews/65b15b71fa6f508fea67.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "08 - Compartilhamento e Utilitários",
@@ -869,7 +954,8 @@
         "preview":  "/assets/previews/7a05d9d2ca26b5dce018.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "08 - Compartilhamento e Utilitários",
@@ -879,7 +965,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "09 - Desenvolvimento e Suporte TI",
@@ -889,7 +976,8 @@
         "preview":  "/assets/previews/3952e3aaa8ca5af66538.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Git",
@@ -899,7 +987,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "09 - Desenvolvimento e Suporte TI",
@@ -909,7 +998,8 @@
         "preview":  "/assets/previews/e173c09a7713b5b0a417.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "09 - Desenvolvimento e Suporte TI",
@@ -919,7 +1009,8 @@
         "preview":  "/assets/previews/47eab744c738f260b393.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "09 - Desenvolvimento e Suporte TI",
@@ -929,7 +1020,8 @@
         "preview":  "/assets/previews/71d06732be3e7a3a1433.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "Postman",
@@ -939,7 +1031,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "09 - Desenvolvimento e Suporte TI",
@@ -949,7 +1042,8 @@
         "preview":  "/assets/previews/33711997423abbb0bfa5.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "09 - Desenvolvimento e Suporte TI",
@@ -959,7 +1053,8 @@
         "preview":  "/assets/previews/eb44d756013f2ff8478a.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "VS Code",
@@ -969,7 +1064,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "nome":  "VSCodium",
@@ -979,7 +1075,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "10 - Vídeo e Áudio",
@@ -989,7 +1086,8 @@
         "preview":  "/assets/previews/d130cc2e9c59f88a59b0.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "10 - Vídeo e Áudio",
@@ -999,7 +1097,8 @@
         "preview":  "",
         "acesso":  "REDE_INDISPONIVEL",
         "http_status":  0,
-        "alternativa_url":  "https://handbrake.fr/"
+        "alternativa_url":  "https://handbrake.fr/",
+        "status_publico":  ""
     },
     {
         "categoria":  "10 - Vídeo e Áudio",
@@ -1010,7 +1109,8 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
-        "alternativa_de":  "FFmpeg"
+        "alternativa_de":  "FFmpeg",
+        "status_publico":  ""
     },
     {
         "categoria":  "10 - Vídeo e Áudio",
@@ -1020,17 +1120,8 @@
         "preview":  "/assets/previews/5cc0e67257c0cc091d1b.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "nome":  "Shotcut",
-        "descricao":  "Edicao gratuita de video.",
-        "url":  "https://shotcut.org/",
-        "categoria":  "10 - Vídeo e Áudio",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
     },
     {
         "categoria":  "10 - Vídeo e Áudio",
@@ -1040,6 +1131,18 @@
         "preview":  "/assets/previews/e647cf4fae3d0ef68d50.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "status_publico":  ""
+    },
+    {
+        "nome":  "Shotcut",
+        "descricao":  "Edicao gratuita de video.",
+        "url":  "https://shotcut.org/",
+        "categoria":  "10 - Vídeo e Áudio",
+        "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  "",
+        "status_publico":  ""
     }
 ]
