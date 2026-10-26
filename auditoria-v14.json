@@ -1,0 +1,198 @@
+{
+  "versao": 14,
+  "executadoEm": "2026-10-26T15:32:53.349Z",
+  "totalFerramentas": 37,
+  "capturasExistentes": [
+    {
+      "nome": "Plume PDF",
+      "arquivo": "/assets/previews/49e9c5b2fc265450acf3.png"
+    },
+    {
+      "nome": "Unfleece",
+      "arquivo": "/assets/previews/8ba6cc1b129efb27ad66.png"
+    },
+    {
+      "nome": "CyberChef",
+      "arquivo": "/assets/previews/965e7c5c27e01c4cc381.png"
+    },
+    {
+      "nome": "JSON Crack",
+      "arquivo": "/assets/previews/8b3b6dc451a1b5db22f9.png"
+    },
+    {
+      "nome": "Transform Tools",
+      "arquivo": "/assets/previews/6c298bb45b68f6547973.png"
+    },
+    {
+      "nome": "Hoppscotch",
+      "arquivo": "/assets/previews/4a834a22fea5cd28d41e.png"
+    },
+    {
+      "nome": "BPMN.io",
+      "arquivo": "/assets/previews/159d817e7c62e997bad3.png"
+    },
+    {
+      "nome": "diagrams.net",
+      "arquivo": "/assets/previews/b829fabaec241d96f7eb.png"
+    },
+    {
+      "nome": "Excalidraw",
+      "arquivo": "/assets/previews/85794320b9feb680be86.png"
+    },
+    {
+      "nome": "Free Open Tools",
+      "arquivo": "/assets/previews/df40340926cf10c6d48c.png"
+    },
+    {
+      "nome": "Markmap",
+      "arquivo": "/assets/previews/f01ded7c69ecb174d8ae.png"
+    },
+    {
+      "nome": "Mermaid Live",
+      "arquivo": "/assets/previews/f311e5f42bb23ce20d5c.png"
+    },
+    {
+      "nome": "Free iPhone Mockup",
+      "arquivo": "/assets/previews/8ab0ed9a506e990aa9e2.png"
+    },
+    {
+      "nome": "Google Fonts",
+      "arquivo": "/assets/previews/4a22810a8447185e1278.png"
+    },
+    {
+      "nome": "Haikei",
+      "arquivo": "/assets/previews/0b9ed6cb83f06a08712f.png"
+    },
+    {
+      "nome": "Photopea",
+      "arquivo": "/assets/previews/873756fbe97a13842f69.png"
+    },
+    {
+      "nome": "Shotframe",
+      "arquivo": "/assets/previews/219810184c4e5247bba7.png"
+    },
+    {
+      "nome": "Ezgif",
+      "arquivo": "/assets/previews/b5caa85941f32e986e1a.png"
+    },
+    {
+      "nome": "Squoosh",
+      "arquivo": "/assets/previews/59e95f4c62f018f43b2c.png"
+    },
+    {
+      "nome": "SVGOMG",
+      "arquivo": "/assets/previews/c470a93eaf1fe54b7a3e.png"
+    },
+    {
+      "nome": "TinyPNG",
+      "arquivo": "/assets/previews/b962f490995ec215c79b.png"
+    },
+    {
+      "nome": "Bundle Tools",
+      "arquivo": "/assets/previews/11cee4d50404ef1dd83a.png"
+    },
+    {
+      "nome": "PairDrop",
+      "arquivo": "/assets/previews/65b15b71fa6f508fea67.png"
+    },
+    {
+      "nome": "QR Code Monkey",
+      "arquivo": "/assets/previews/7a05d9d2ca26b5dce018.png"
+    },
+    {
+      "nome": "Can I Use",
+      "arquivo": "/assets/previews/3952e3aaa8ca5af66538.png"
+    },
+    {
+      "nome": "IT Tools",
+      "arquivo": "/assets/previews/e173c09a7713b5b0a417.png"
+    },
+    {
+      "nome": "JSFiddle",
+      "arquivo": "/assets/previews/47eab744c738f260b393.png"
+    },
+    {
+      "nome": "JSONPlaceholder",
+      "arquivo": "/assets/previews/71d06732be3e7a3a1433.png"
+    },
+    {
+      "nome": "Regex101",
+      "arquivo": "/assets/previews/33711997423abbb0bfa5.png"
+    },
+    {
+      "nome": "RegExr",
+      "arquivo": "/assets/previews/eb44d756013f2ff8478a.png"
+    }
+  ],
+  "capturasNovas": [
+    {
+      "nome": "Screely",
+      "url": "https://www.screely.com/",
+      "arquivo": "/assets/previews/1af68910f973e0156ede.png"
+    },
+    {
+      "nome": "Shots",
+      "url": "https://shots.so/",
+      "arquivo": "/assets/previews/df52228d478b0b9edb2b.png"
+    },
+    {
+      "nome": "Bootstrap Icons",
+      "url": "https://icons.getbootstrap.com/",
+      "arquivo": "/assets/previews/ffbc0d79b710a57e593e.png"
+    },
+    {
+      "nome": "Lucide Icons",
+      "url": "https://lucide.dev/icons/",
+      "arquivo": "/assets/previews/3c0fba0acd062639b2ca.png"
+    }
+  ],
+  "capturasPendentes": [
+    {
+      "nome": "PDF24 Tools",
+      "url": "https://tools.pdf24.org/pt/",
+      "erro": "page.goto: Timeout 16000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://tools.pdf24.org/pt/\", waiting until \"commit\"\u001b[22m\n",
+      "observacao": "Falha automatizada nao comprova bloqueio na rede corporativa."
+    },
+    {
+      "nome": "ConvertCase",
+      "url": "https://convertcase.net/",
+      "erro": "HTTP 403 na sessao automatizada",
+      "observacao": "Falha automatizada nao comprova bloqueio na rede corporativa."
+    },
+    {
+      "nome": "Time.is",
+      "url": "https://time.is/",
+      "erro": "HTTP 403 na sessao automatizada",
+      "observacao": "Falha automatizada nao comprova bloqueio na rede corporativa."
+    }
+  ],
+  "verificacaoFirewall": "Nao comprovada por automacao HTTP",
+  "verificacaoLogin": "Nao comprovada apenas pela pagina inicial",
+  "verificacaoPagamento": "Nao comprovada apenas pela pagina inicial",
+  "browser": {
+    "desktop": {
+      "cards": 37,
+      "columns": 3,
+      "categorias": 8,
+      "linksInvalidos": 0
+    },
+    "tablet": {
+      "cards": 37,
+      "columns": 2,
+      "categorias": 8,
+      "linksInvalidos": 0
+    },
+    "mobile": {
+      "cards": 37,
+      "columns": 1,
+      "categorias": 8,
+      "linksInvalidos": 0
+    },
+    "duplicidades": 0,
+    "bootstrapIcons": "OK",
+    "freeIphoneMockup": "OK",
+    "pesquisa": "OK",
+    "filtros": "OK",
+    "errosJavaScript": []
+  }
+}

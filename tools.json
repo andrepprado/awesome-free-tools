@@ -1,290 +1,298 @@
 [
-    {
-        "nome":  "PDF24 Tools",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "descricao":  "Ferramentas gratuitas para PDF",
-        "url":  "https://tools.pdf24.org/pt/",
-        "preview":  "",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Plume PDF",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "descricao":  "Editar, converter e organizar PDF localmente no navegador, sem cadastro.",
-        "url":  "https://www.plumedocs.com/",
-        "preview":  "/assets/previews/49e9c5b2fc265450acf3.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Unfleece",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "descricao":  "Unir, dividir, converter e assinar PDFs sem enviar arquivos ao servidor.",
-        "url":  "https://unfleece.com/",
-        "preview":  "/assets/previews/8ba6cc1b129efb27ad66.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "CyberChef",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "descricao":  "Transformacao codificacao e analise de dados",
-        "url":  "https://gchq.github.io/CyberChef/",
-        "preview":  "/assets/previews/965e7c5c27e01c4cc381.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "JSON Crack",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "descricao":  "Visualizacao de estruturas JSON",
-        "url":  "https://jsoncrack.com/editor",
-        "preview":  "/assets/previews/8b3b6dc451a1b5db22f9.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Transform Tools",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "descricao":  "Conversao entre formatos de codigo",
-        "url":  "https://transform.tools/",
-        "preview":  "/assets/previews/6c298bb45b68f6547973.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Hoppscotch",
-        "categoria":  "03 - Automação e Integrações",
-        "descricao":  "Teste de APIs HTTP",
-        "url":  "https://hoppscotch.io/",
-        "preview":  "/assets/previews/4a834a22fea5cd28d41e.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "BPMN.io",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "descricao":  "Editor de processos BPMN",
-        "url":  "https://demo.bpmn.io/",
-        "preview":  "/assets/previews/159d817e7c62e997bad3.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "diagrams.net",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "descricao":  "Fluxogramas BPMN e arquitetura de sistemas",
-        "url":  "https://app.diagrams.net/",
-        "preview":  "/assets/previews/b829fabaec241d96f7eb.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Excalidraw",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "descricao":  "Desenhos wireframes e diagramas",
-        "url":  "https://excalidraw.com/",
-        "preview":  "/assets/previews/85794320b9feb680be86.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Free Open Tools",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "descricao":  "Diagramas, Markdown e visualizacao de dados diretamente no navegador.",
-        "url":  "https://freeopentools.com/",
-        "preview":  "/assets/previews/df40340926cf10c6d48c.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Markmap",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "descricao":  "Mapas mentais em Markdown",
-        "url":  "https://markmap.js.org/repl",
-        "preview":  "/assets/previews/f01ded7c69ecb174d8ae.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Mermaid Live",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "descricao":  "Diagramas gerados por texto",
-        "url":  "https://mermaid.live/",
-        "preview":  "/assets/previews/f311e5f42bb23ce20d5c.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Free iPhone Mockup",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "descricao":  "Mockups 3D de iPhone",
-        "url":  "https://freeiphonemockup.com/",
-        "preview":  "/assets/previews/8ab0ed9a506e990aa9e2.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Google Fonts",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "descricao":  "Fontes gratuitas para projetos",
-        "url":  "https://fonts.google.com/",
-        "preview":  "/assets/previews/4a22810a8447185e1278.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Haikei",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "descricao":  "Gerador de fundos SVG e formas abstratas",
-        "url":  "https://haikei.app/",
-        "preview":  "/assets/previews/0b9ed6cb83f06a08712f.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Photopea",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "descricao":  "Editor avancado de imagens no navegador",
-        "url":  "https://www.photopea.com/",
-        "preview":  "/assets/previews/873756fbe97a13842f69.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Screely",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "descricao":  "Criacao de mockups a partir de capturas de tela.",
-        "url":  "https://www.screely.com/",
-        "preview":  "",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Shotframe",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "descricao":  "Mockups de aplicativos e dispositivos",
-        "url":  "https://shotframe.app/",
-        "preview":  "/assets/previews/219810184c4e5247bba7.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Shots",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "descricao":  "Criacao de mockups de telas com recursos gratuitos.",
-        "url":  "https://shots.so/",
-        "preview":  "",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Ezgif",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Edicao conversao e criacao de GIF",
-        "url":  "https://ezgif.com/",
-        "preview":  "/assets/previews/b5caa85941f32e986e1a.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Lucide Icons",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Biblioteca gratuita de icones vetoriais.",
-        "url":  "https://lucide.dev/icons/",
-        "preview":  "",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Squoosh",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Compactacao e conversao local de imagens",
-        "url":  "https://squoosh.app/",
-        "preview":  "/assets/previews/59e95f4c62f018f43b2c.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "SVGOMG",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Otimizacao de arquivos SVG",
-        "url":  "https://jakearchibald.github.io/svgomg/",
-        "preview":  "/assets/previews/c470a93eaf1fe54b7a3e.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "TinyPNG",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Compactacao de imagens com limites gratuitos",
-        "url":  "https://tinypng.com/",
-        "preview":  "/assets/previews/b962f490995ec215c79b.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Bundle Tools",
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "descricao":  "Utilitarios gratuitos e de codigo aberto para documentos e imagens.",
-        "url":  "https://bundle.tools/",
-        "preview":  "/assets/previews/11cee4d50404ef1dd83a.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "ConvertCase",
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "descricao":  "Conversao de letras maiusculas e minusculas",
-        "url":  "https://convertcase.net/",
-        "preview":  "",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "PairDrop",
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "descricao":  "Compartilhamento de arquivos pelo navegador",
-        "url":  "https://pairdrop.net/",
-        "preview":  "/assets/previews/65b15b71fa6f508fea67.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "QR Code Monkey",
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "descricao":  "Geracao de QR Codes personalizados",
-        "url":  "https://www.qrcode-monkey.com/",
-        "preview":  "/assets/previews/7a05d9d2ca26b5dce018.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Time.is",
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "descricao":  "Consulta de horarios e fusos",
-        "url":  "https://time.is/",
-        "preview":  "",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Can I Use",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "descricao":  "Compatibilidade de tecnologias web",
-        "url":  "https://caniuse.com/",
-        "preview":  "/assets/previews/3952e3aaa8ca5af66538.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "IT Tools",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "descricao":  "Colecao de ferramentas para desenvolvedores",
-        "url":  "https://it-tools.tech/",
-        "preview":  "/assets/previews/e173c09a7713b5b0a417.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "JSFiddle",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "descricao":  "Editor online HTML CSS e JavaScript",
-        "url":  "https://jsfiddle.net/",
-        "preview":  "/assets/previews/47eab744c738f260b393.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "JSONPlaceholder",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "descricao":  "API publica para testes",
-        "url":  "https://jsonplaceholder.typicode.com/",
-        "preview":  "/assets/previews/71d06732be3e7a3a1433.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "Regex101",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "descricao":  "Teste de expressoes regulares",
-        "url":  "https://regex101.com/",
-        "preview":  "/assets/previews/33711997423abbb0bfa5.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    },
-    {
-        "nome":  "RegExr",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "descricao":  "Editor visual de expressoes regulares",
-        "url":  "https://regexr.com/",
-        "preview":  "/assets/previews/eb44d756013f2ff8478a.png",
-        "tipo_acesso":  "ONLINE_CANDIDATO"
-    }
+  {
+    "nome": "PDF24 Tools",
+    "categoria": "01 - Documentos, PDF e Contratos",
+    "descricao": "Ferramentas gratuitas para PDF",
+    "url": "https://tools.pdf24.org/pt/",
+    "preview": "",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Plume PDF",
+    "categoria": "01 - Documentos, PDF e Contratos",
+    "descricao": "Editar, converter e organizar PDF localmente no navegador, sem cadastro.",
+    "url": "https://www.plumedocs.com/",
+    "preview": "/assets/previews/49e9c5b2fc265450acf3.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Unfleece",
+    "categoria": "01 - Documentos, PDF e Contratos",
+    "descricao": "Unir, dividir, converter e assinar PDFs sem enviar arquivos ao servidor.",
+    "url": "https://unfleece.com/",
+    "preview": "/assets/previews/8ba6cc1b129efb27ad66.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "CyberChef",
+    "categoria": "02 - Planilhas, Dados e Relatórios",
+    "descricao": "Transformacao codificacao e analise de dados",
+    "url": "https://gchq.github.io/CyberChef/",
+    "preview": "/assets/previews/965e7c5c27e01c4cc381.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "JSON Crack",
+    "categoria": "02 - Planilhas, Dados e Relatórios",
+    "descricao": "Visualizacao de estruturas JSON",
+    "url": "https://jsoncrack.com/editor",
+    "preview": "/assets/previews/8b3b6dc451a1b5db22f9.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Transform Tools",
+    "categoria": "02 - Planilhas, Dados e Relatórios",
+    "descricao": "Conversao entre formatos de codigo",
+    "url": "https://transform.tools/",
+    "preview": "/assets/previews/6c298bb45b68f6547973.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Hoppscotch",
+    "categoria": "03 - Automação e Integrações",
+    "descricao": "Teste de APIs HTTP",
+    "url": "https://hoppscotch.io/",
+    "preview": "/assets/previews/4a834a22fea5cd28d41e.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "BPMN.io",
+    "categoria": "04 - Processos, Fluxos e Projetos",
+    "descricao": "Editor de processos BPMN",
+    "url": "https://demo.bpmn.io/",
+    "preview": "/assets/previews/159d817e7c62e997bad3.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "diagrams.net",
+    "categoria": "04 - Processos, Fluxos e Projetos",
+    "descricao": "Fluxogramas BPMN e arquitetura de sistemas",
+    "url": "https://app.diagrams.net/",
+    "preview": "/assets/previews/b829fabaec241d96f7eb.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Excalidraw",
+    "categoria": "04 - Processos, Fluxos e Projetos",
+    "descricao": "Desenhos wireframes e diagramas",
+    "url": "https://excalidraw.com/",
+    "preview": "/assets/previews/85794320b9feb680be86.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Free Open Tools",
+    "categoria": "04 - Processos, Fluxos e Projetos",
+    "descricao": "Diagramas, Markdown e visualizacao de dados diretamente no navegador.",
+    "url": "https://freeopentools.com/",
+    "preview": "/assets/previews/df40340926cf10c6d48c.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Markmap",
+    "categoria": "04 - Processos, Fluxos e Projetos",
+    "descricao": "Mapas mentais em Markdown",
+    "url": "https://markmap.js.org/repl",
+    "preview": "/assets/previews/f01ded7c69ecb174d8ae.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Mermaid Live",
+    "categoria": "04 - Processos, Fluxos e Projetos",
+    "descricao": "Diagramas gerados por texto",
+    "url": "https://mermaid.live/",
+    "preview": "/assets/previews/f311e5f42bb23ce20d5c.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Free iPhone Mockup",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Mockups 3D de iPhone",
+    "url": "https://freeiphonemockup.com/",
+    "preview": "/assets/previews/8ab0ed9a506e990aa9e2.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Google Fonts",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Fontes gratuitas para projetos",
+    "url": "https://fonts.google.com/",
+    "preview": "/assets/previews/4a22810a8447185e1278.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Haikei",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Gerador de fundos SVG e formas abstratas",
+    "url": "https://haikei.app/",
+    "preview": "/assets/previews/0b9ed6cb83f06a08712f.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Photopea",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Editor avancado de imagens no navegador",
+    "url": "https://www.photopea.com/",
+    "preview": "/assets/previews/873756fbe97a13842f69.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Screely",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Criacao de mockups a partir de capturas de tela.",
+    "url": "https://www.screely.com/",
+    "preview": "/assets/previews/1af68910f973e0156ede.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Shotframe",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Mockups de aplicativos e dispositivos",
+    "url": "https://shotframe.app/",
+    "preview": "/assets/previews/219810184c4e5247bba7.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Shots",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Criacao de mockups de telas com recursos gratuitos.",
+    "url": "https://shots.so/",
+    "preview": "/assets/previews/df52228d478b0b9edb2b.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Bootstrap Icons",
+    "categoria": "07 - Imagens e Materiais Visuais",
+    "descricao": "Biblioteca gratuita de icones SVG para pesquisar, visualizar, copiar e baixar diretamente no navegador, sem cadastro.",
+    "url": "https://icons.getbootstrap.com/",
+    "preview": "/assets/previews/ffbc0d79b710a57e593e.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Ezgif",
+    "categoria": "07 - Imagens e Materiais Visuais",
+    "descricao": "Edicao conversao e criacao de GIF",
+    "url": "https://ezgif.com/",
+    "preview": "/assets/previews/b5caa85941f32e986e1a.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Lucide Icons",
+    "categoria": "07 - Imagens e Materiais Visuais",
+    "descricao": "Biblioteca gratuita de icones vetoriais.",
+    "url": "https://lucide.dev/icons/",
+    "preview": "/assets/previews/3c0fba0acd062639b2ca.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Squoosh",
+    "categoria": "07 - Imagens e Materiais Visuais",
+    "descricao": "Compactacao e conversao local de imagens",
+    "url": "https://squoosh.app/",
+    "preview": "/assets/previews/59e95f4c62f018f43b2c.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "SVGOMG",
+    "categoria": "07 - Imagens e Materiais Visuais",
+    "descricao": "Otimizacao de arquivos SVG",
+    "url": "https://jakearchibald.github.io/svgomg/",
+    "preview": "/assets/previews/c470a93eaf1fe54b7a3e.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "TinyPNG",
+    "categoria": "07 - Imagens e Materiais Visuais",
+    "descricao": "Compactacao de imagens com limites gratuitos",
+    "url": "https://tinypng.com/",
+    "preview": "/assets/previews/b962f490995ec215c79b.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Bundle Tools",
+    "categoria": "08 - Compartilhamento e Utilitários",
+    "descricao": "Utilitarios gratuitos e de codigo aberto para documentos e imagens.",
+    "url": "https://bundle.tools/",
+    "preview": "/assets/previews/11cee4d50404ef1dd83a.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "ConvertCase",
+    "categoria": "08 - Compartilhamento e Utilitários",
+    "descricao": "Conversao de letras maiusculas e minusculas",
+    "url": "https://convertcase.net/",
+    "preview": "",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "PairDrop",
+    "categoria": "08 - Compartilhamento e Utilitários",
+    "descricao": "Compartilhamento de arquivos pelo navegador",
+    "url": "https://pairdrop.net/",
+    "preview": "/assets/previews/65b15b71fa6f508fea67.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "QR Code Monkey",
+    "categoria": "08 - Compartilhamento e Utilitários",
+    "descricao": "Geracao de QR Codes personalizados",
+    "url": "https://www.qrcode-monkey.com/",
+    "preview": "/assets/previews/7a05d9d2ca26b5dce018.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Time.is",
+    "categoria": "08 - Compartilhamento e Utilitários",
+    "descricao": "Consulta de horarios e fusos",
+    "url": "https://time.is/",
+    "preview": "",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Can I Use",
+    "categoria": "09 - Desenvolvimento e Suporte TI",
+    "descricao": "Compatibilidade de tecnologias web",
+    "url": "https://caniuse.com/",
+    "preview": "/assets/previews/3952e3aaa8ca5af66538.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "IT Tools",
+    "categoria": "09 - Desenvolvimento e Suporte TI",
+    "descricao": "Colecao de ferramentas para desenvolvedores",
+    "url": "https://it-tools.tech/",
+    "preview": "/assets/previews/e173c09a7713b5b0a417.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "JSFiddle",
+    "categoria": "09 - Desenvolvimento e Suporte TI",
+    "descricao": "Editor online HTML CSS e JavaScript",
+    "url": "https://jsfiddle.net/",
+    "preview": "/assets/previews/47eab744c738f260b393.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "JSONPlaceholder",
+    "categoria": "09 - Desenvolvimento e Suporte TI",
+    "descricao": "API publica para testes",
+    "url": "https://jsonplaceholder.typicode.com/",
+    "preview": "/assets/previews/71d06732be3e7a3a1433.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "Regex101",
+    "categoria": "09 - Desenvolvimento e Suporte TI",
+    "descricao": "Teste de expressoes regulares",
+    "url": "https://regex101.com/",
+    "preview": "/assets/previews/33711997423abbb0bfa5.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "RegExr",
+    "categoria": "09 - Desenvolvimento e Suporte TI",
+    "descricao": "Editor visual de expressoes regulares",
+    "url": "https://regexr.com/",
+    "preview": "/assets/previews/eb44d756013f2ff8478a.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  }
 ]
