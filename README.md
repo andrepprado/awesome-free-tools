@@ -173,3 +173,23 @@ Não tentar contornar bloqueios de firewall, proxy ou outras políticas de segur
 | `verificacao-links.csv` | Resultado dos testes HTTP |
 | `pesquisas-google-imagens.csv` | Pesquisas para imagens de prévia |
 | `README.md` | Documentação |
+
+<!-- INICIO CARDS ALTERNATIVOS -->
+
+## Alternativas gratuitas em cards independentes
+
+Cada alternativa gratuita e cadastrada como ferramenta independente no `tools.json`, com:
+
+- Nome proprio.
+- Descricao da funcionalidade.
+- Categoria correspondente.
+- URL de acesso.
+- Imagem de preview quando disponivel.
+- Card completo no catalogo.
+- Identificacao da ferramenta que pode substituir.
+
+As alternativas nao sao apresentadas como simples hiperlinks dentro de outros cards.
+
+A disponibilidade no firewall corporativo depende das politicas de rede. Respostas HTTP nao garantem liberacao institucional.
+
+<!-- FIM CARDS ALTERNATIVOS -->

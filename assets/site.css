@@ -679,3 +679,29 @@ dialog#previewDialog {
 }
 
 /* FIM CATALOGO VISUAL V4 */
+/* INICIO ESTILO CARDS ALTERNATIVOS */
+
+.alternative-link {
+    display: none !important;
+}
+
+.alternative-card-label {
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 10px;
+    padding: 6px 10px;
+    border-radius: 6px;
+    background: #e5f5f0;
+    color: #007f73;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+.card:has(.alternative-card-label) {
+    border-color: #00A091;
+}
+
+/* FIM ESTILO CARDS ALTERNATIVOS */

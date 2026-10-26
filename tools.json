@@ -27,7 +27,7 @@
         "preview":  "",
         "acesso":  "REDE_INDISPONIVEL",
         "http_status":  0,
-        "alternativa_url":  "https://www.libreoffice.org/"
+        "alternativa_url":  "https://www.stirlingpdf.com/"
     },
     {
         "categoria":  "01 - Documentos, PDF e Contratos",
@@ -37,7 +37,7 @@
         "preview":  "",
         "acesso":  "REDE_INDISPONIVEL",
         "http_status":  0,
-        "alternativa_url":  "https://www.libreoffice.org/"
+        "alternativa_url":  "https://pdfsam.org/pdfsam-basic/"
     },
     {
         "nome":  "PDFsam Basic",
@@ -47,7 +47,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "alternativa_de":  "PDF24 Tools"
     },
     {
         "descricao":  "Editar, converter e organizar PDF localmente no navegador, sem cadastro.",
@@ -55,16 +56,6 @@
         "url":  "https://www.plumedocs.com/",
         "nome":  "Plume PDF",
         "preview":  "/assets/previews/49e9c5b2fc265450acf3.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "nome":  "Stirling PDF",
-        "descricao":  "Ferramentas de PDF com possibilidade de uso local.",
-        "url":  "https://www.stirlingpdf.com/",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
@@ -78,6 +69,17 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
+    },
+    {
+        "nome":  "Stirling PDF",
+        "descricao":  "Ferramentas de PDF com possibilidade de uso local.",
+        "url":  "https://www.stirlingpdf.com/",
+        "categoria":  "01 - Documentos, PDF e Contratos",
+        "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  "",
+        "alternativa_de":  "PDF24 Creator"
     },
     {
         "nome":  "SumatraPDF",
@@ -117,7 +119,7 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://openrefine.org/"
     },
     {
         "categoria":  "02 - Planilhas, Dados e Relatorios",
@@ -187,7 +189,8 @@
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "alternativa_de":  "Deskbench"
     },
     {
         "nome":  "Power Query",
@@ -277,7 +280,8 @@
         "preview":  "/assets/previews/229a65c84d3bc65d10f7.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "alternativa_de":  "UI.Vision RPA"
     },
     {
         "categoria":  "03 - Automacao e Integracoes",
@@ -317,17 +321,7 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://n8n.io/"
-    },
-    {
-        "nome":  "BPMN.io",
-        "descricao":  "Modelagem de processos BPMN.",
-        "url":  "https://bpmn.io/",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://robotframework.org/"
     },
     {
         "categoria":  "04 - Processos, Fluxos e Projetos",
@@ -335,6 +329,16 @@
         "descricao":  "Editor de processos BPMN",
         "url":  "https://demo.bpmn.io/",
         "preview":  "/assets/previews/159d817e7c62e997bad3.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "nome":  "BPMN.io",
+        "descricao":  "Modelagem de processos BPMN.",
+        "url":  "https://bpmn.io/",
+        "categoria":  "04 - Processos, Fluxos e Projetos",
+        "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
@@ -437,7 +441,7 @@
         "preview":  "/assets/previews/8ab0ed9a506e990aa9e2.png",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://shots.so/"
     },
     {
         "categoria":  "05 - Comunicacao e Apresentacoes",
@@ -467,7 +471,7 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://www.screely.com/"
     },
     {
         "categoria":  "05 - Comunicacao e Apresentacoes",
@@ -487,7 +491,7 @@
         "preview":  "/assets/previews/039044b8040dc8bba148.png",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://penpot.app/"
     },
     {
         "categoria":  "05 - Comunicacao e Apresentacoes",
@@ -507,7 +511,7 @@
         "preview":  "",
         "acesso":  "HTTP_429",
         "http_status":  429,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://lucide.dev/icons/"
     },
     {
         "nome":  "LibreOffice Impress",
@@ -540,6 +544,17 @@
         "alternativa_url":  ""
     },
     {
+        "nome":  "Screely",
+        "descricao":  "Criacao de mockups a partir de capturas de tela.",
+        "url":  "https://www.screely.com/",
+        "categoria":  "05 - Comunicação e Apresentações",
+        "preview":  "",
+        "acesso":  "NAO_VERIFICADO",
+        "http_status":  0,
+        "alternativa_url":  "",
+        "alternativa_de":  "Mockbooth"
+    },
+    {
         "nome":  "Scribus",
         "descricao":  "Diagramacao gratuita de materiais corporativos.",
         "url":  "https://www.scribus.net/",
@@ -550,6 +565,17 @@
         "alternativa_url":  ""
     },
     {
+        "nome":  "Shots",
+        "descricao":  "Criacao de mockups de telas com recursos gratuitos.",
+        "url":  "https://shots.so/",
+        "categoria":  "05 - Comunicação e Apresentações",
+        "preview":  "",
+        "acesso":  "NAO_VERIFICADO",
+        "http_status":  0,
+        "alternativa_url":  "",
+        "alternativa_de":  "Free iPhone Mockup"
+    },
+    {
         "categoria":  "06 - Inteligencia Artificial Local",
         "nome":  "Ollama",
         "descricao":  "Execucao local de modelos de IA",
@@ -557,7 +583,8 @@
         "preview":  "/assets/previews/1d9fc6d9882416d42345.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "alternativa_de":  "WebLLM"
     },
     {
         "categoria":  "06 - Inteligencia Artificial Local",
@@ -567,7 +594,7 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://github.com/huggingface/transformers.js"
     },
     {
         "categoria":  "06 - Inteligencia Artificial Local",
@@ -587,7 +614,7 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://ollama.com/"
     },
     {
         "nome":  "GPT4All",
@@ -620,6 +647,17 @@
         "alternativa_url":  ""
     },
     {
+        "nome":  "Transformers.js - GitHub",
+        "descricao":  "Biblioteca aberta para executar modelos de IA em JavaScript.",
+        "url":  "https://github.com/huggingface/transformers.js",
+        "categoria":  "06 - Inteligência Artificial Local",
+        "preview":  "",
+        "acesso":  "NAO_VERIFICADO",
+        "http_status":  0,
+        "alternativa_url":  "",
+        "alternativa_de":  "Transformers.js"
+    },
+    {
         "categoria":  "07 - Imagens e Materiais Visuais",
         "nome":  "Background Remover fal.ai",
         "descricao":  "Remocao automatica de fundo com IA",
@@ -627,7 +665,18 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://ezgif.com/"
+        "alternativa_url":  "https://github.com/danielgatis/rembg"
+    },
+    {
+        "nome":  "ComfyUI",
+        "descricao":  "Fluxos de geracao e processamento de imagens com IA local.",
+        "url":  "https://github.com/comfyanonymous/ComfyUI",
+        "categoria":  "07 - Imagens e Materiais Visuais",
+        "preview":  "",
+        "acesso":  "NAO_VERIFICADO",
+        "http_status":  0,
+        "alternativa_url":  "",
+        "alternativa_de":  "fal.ai Tools"
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -647,7 +696,7 @@
         "preview":  "",
         "acesso":  "HTTP_403",
         "http_status":  403,
-        "alternativa_url":  "https://ezgif.com/"
+        "alternativa_url":  "https://github.com/comfyanonymous/ComfyUI"
     },
     {
         "nome":  "GIMP",
@@ -688,6 +737,39 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
+    },
+    {
+        "nome":  "Lucide Icons",
+        "descricao":  "Biblioteca gratuita de icones vetoriais.",
+        "url":  "https://lucide.dev/icons/",
+        "categoria":  "07 - Imagens e Materiais Visuais",
+        "preview":  "",
+        "acesso":  "NAO_VERIFICADO",
+        "http_status":  0,
+        "alternativa_url":  "",
+        "alternativa_de":  "SVG Repo"
+    },
+    {
+        "nome":  "Penpot",
+        "descricao":  "Design de interfaces e prototipos com recursos gratuitos.",
+        "url":  "https://penpot.app/",
+        "categoria":  "07 - Imagens e Materiais Visuais",
+        "preview":  "",
+        "acesso":  "NAO_VERIFICADO",
+        "http_status":  0,
+        "alternativa_url":  "",
+        "alternativa_de":  "Plinth Mockups"
+    },
+    {
+        "nome":  "rembg",
+        "descricao":  "Remocao de fundo de imagens com processamento local.",
+        "url":  "https://github.com/danielgatis/rembg",
+        "categoria":  "07 - Imagens e Materiais Visuais",
+        "preview":  "",
+        "acesso":  "NAO_VERIFICADO",
+        "http_status":  0,
+        "alternativa_url":  "",
+        "alternativa_de":  "Background Remover fal.ai"
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -917,7 +999,7 @@
         "preview":  "",
         "acesso":  "REDE_INDISPONIVEL",
         "http_status":  0,
-        "alternativa_url":  ""
+        "alternativa_url":  "https://handbrake.fr/"
     },
     {
         "categoria":  "10 - Video e Audio",
@@ -927,7 +1009,8 @@
         "preview":  "/assets/previews/3b8949850320796f7cef.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
-        "alternativa_url":  ""
+        "alternativa_url":  "",
+        "alternativa_de":  "FFmpeg"
     },
     {
         "categoria":  "10 - Video e Audio",

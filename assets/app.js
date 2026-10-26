@@ -656,19 +656,6 @@ initialize();
       body.insertBefore(badge, body.firstChild);
     }
 
-    const oldAlternative = card.querySelector(".alternative-link");
-    if (oldAlternative) oldAlternative.remove();
-
-    const alternative = safeLink(tool.alternativa_url);
-
-    if (alternative && status !== "HTTP_OK") {
-      const a = createLink(
-        "Alternativa gratuita com HTTP OK",
-        alternative,
-        "alternative-link"
-      );
-      body.append(a);
-    }
 
     // Nunca desabilitar o hiperlink por falta de preview.
     if (!preview && url) {
@@ -797,3 +784,99 @@ initialize();
   }
 })();
 /* FIM CATALOGO ADMINISTRATIVO V4 */
+
+/* INICIO IDENTIFICACAO CARDS ALTERNATIVOS */
+(function () {
+  "use strict";
+
+  function getTools() {
+    try {
+      if (typeof state !== "undefined" && Array.isArray(state.tools)) {
+        return state.tools;
+      }
+    } catch (_) {}
+
+    return [];
+  }
+
+  function updateAlternativeCards() {
+    const cards = document.querySelectorAll("#cards article.card");
+
+    for (const card of cards) {
+      const name = (card.querySelector("h3")?.textContent || "").trim();
+
+      const tool = getTools().find(
+        item => String(item.nome || "").trim() === name
+      );
+
+      if (!tool) continue;
+
+      const old = card.querySelector(".alternative-card-label");
+
+      if (old) old.remove();
+
+      const oldLink = card.querySelector(".alternative-link");
+
+      if (oldLink) oldLink.remove();
+
+      if (!tool.alternativa_de) continue;
+
+      const body = card.querySelector(".card-body");
+
+      if (!body) continue;
+
+      const label = document.createElement("span");
+      label.className = "alternative-card-label";
+      label.textContent = "Alternativa gratuita a " + tool.alternativa_de;
+
+      body.insertBefore(label, body.firstChild);
+    }
+  }
+
+  function install() {
+    const container = document.querySelector("#cards");
+
+    if (!container) return;
+
+    let scheduled = false;
+
+    const schedule = () => {
+      if (scheduled) return;
+
+      scheduled = true;
+
+      requestAnimationFrame(() => {
+        scheduled = false;
+        updateAlternativeCards();
+      });
+    };
+
+    const observer = new MutationObserver(records => {
+      const changed = records.some(record =>
+        Array.from(record.addedNodes).some(node =>
+          node.nodeType === 1 &&
+          (
+            node.matches?.("article.card") ||
+            node.querySelector?.("article.card")
+          )
+        )
+      );
+
+      if (changed) schedule();
+    });
+
+    observer.observe(container, {
+      childList: true,
+      subtree: true
+    });
+
+    schedule();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", install, { once: true });
+  } else {
+    install();
+  }
+})();
+/* FIM IDENTIFICACAO CARDS ALTERNATIVOS */
