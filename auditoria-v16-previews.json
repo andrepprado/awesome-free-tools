@@ -1,0 +1,25 @@
+{
+  "successful": [
+    {
+      "name": "VibeSlide",
+      "preview": "/assets/previews/343e8a9a61506e5c956a.png",
+      "source": "browser"
+    },
+    {
+      "name": "SlideGen",
+      "preview": "/assets/previews/687554dd1dcbbc47f772.png",
+      "source": "browser"
+    },
+    {
+      "name": "FreeArtGen",
+      "preview": "/assets/previews/e774d2dd9134ae28d70e.png",
+      "source": "browser"
+    },
+    {
+      "name": "ImageSmith AI",
+      "preview": "/assets/previews/61f6dbf49482f08db8f9.png",
+      "source": "browser"
+    }
+  ],
+  "unavailable": []
+}

@@ -136,14 +136,6 @@
     "tipo_acesso": "ONLINE_CANDIDATO"
   },
   {
-    "nome": "Screely",
-    "categoria": "05 - Comunicação e Apresentações",
-    "descricao": "Criacao de mockups a partir de capturas de tela.",
-    "url": "https://www.screely.com/",
-    "preview": "/assets/previews/1af68910f973e0156ede.png",
-    "tipo_acesso": "ONLINE_CANDIDATO"
-  },
-  {
     "nome": "Shotframe",
     "categoria": "05 - Comunicação e Apresentações",
     "descricao": "Mockups de aplicativos e dispositivos",
@@ -160,6 +152,22 @@
     "tipo_acesso": "ONLINE_CANDIDATO"
   },
   {
+    "nome": "SlideGen",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Gerador de apresentações com inteligência artificial a partir de texto, com opção de exportação PowerPoint anunciada pelo serviço.",
+    "url": "https://slidegen.net/",
+    "preview": "/assets/previews/687554dd1dcbbc47f772.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "VibeSlide",
+    "categoria": "05 - Comunicação e Apresentações",
+    "descricao": "Cria apresentações PowerPoint editáveis a partir de texto ou documentos, diretamente no navegador, sem login obrigatório.",
+    "url": "https://vibeslide.app/",
+    "preview": "/assets/previews/343e8a9a61506e5c956a.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
     "nome": "Bootstrap Icons",
     "categoria": "07 - Imagens e Materiais Visuais",
     "descricao": "Biblioteca gratuita de icones SVG para pesquisar, visualizar, copiar e baixar diretamente no navegador, sem cadastro.",
@@ -173,6 +181,22 @@
     "descricao": "Edicao conversao e criacao de GIF",
     "url": "https://ezgif.com/",
     "preview": "/assets/previews/b5caa85941f32e986e1a.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "FreeArtGen",
+    "categoria": "07 - Imagens e Materiais Visuais",
+    "descricao": "Gera imagens por inteligência artificial a partir de texto, sem cadastro ou pagamento obrigatório, com download das imagens.",
+    "url": "https://www.freeartgen.com/pt",
+    "preview": "/assets/previews/e774d2dd9134ae28d70e.png",
+    "tipo_acesso": "ONLINE_CANDIDATO"
+  },
+  {
+    "nome": "ImageSmith AI",
+    "categoria": "07 - Imagens e Materiais Visuais",
+    "descricao": "Gera imagens, ilustrações e materiais visuais por IA diretamente no navegador, sem login ou pagamento obrigatório.",
+    "url": "https://aiimagesmith.com/",
+    "preview": "/assets/previews/61f6dbf49482f08db8f9.png",
     "tipo_acesso": "ONLINE_CANDIDATO"
   },
   {

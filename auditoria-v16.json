@@ -1,0 +1,26 @@
+{
+    "versao":  "16",
+    "data":  "2026-10-26 12:40:42",
+    "quantidadeAnterior":  37,
+    "quantidadeAtual":  40,
+    "adicionadas":  [
+                        "VibeSlide",
+                        "SlideGen",
+                        "FreeArtGen",
+                        "ImageSmith AI"
+                    ],
+    "removidas":  [
+                      "Screely"
+                  ],
+    "regras":  [
+                   "Online",
+                   "Sem instalacao",
+                   "Sem login",
+                   "Sem cadastro",
+                   "Sem pagamento obrigatorio",
+                   "Sem duplicidades"
+               ],
+    "observacao":  "As paginas dos servicos anunciam acesso sem cadastro. A execucao completa de cada funcionalidade e a permissao no firewall corporativo nao foram comprovadas neste script.",
+    "firewall":  "Pendente de verificacao na rede corporativa",
+    "capturas":  "Consultar auditoria-v16-previews.json, quando gerada"
+}
