@@ -446,3 +446,72 @@ async function initialize() {
 }
 
 initialize();
+
+/* AWESOME LINKS E PREVIEWS V2 */
+(function () {
+    "use strict";
+
+    const linkSelector = "a.card-link[href], a[href].card-link";
+    const previewSelector = ".preview, .card-preview, .preview-image";
+    const iconSelector = ".bi.bi-arrow-up-right";
+
+    function validUrl(link) {
+        if (!link) return null;
+        try {
+            const url = new URL(link.getAttribute("href"), document.baseURI);
+            return ["https:", "http:"].includes(url.protocol) ? url.href : null;
+        } catch (_) {
+            return null;
+        }
+    }
+
+    function getLink(node) {
+        const card = node.closest(".card, .tool-card, .tool-item, article");
+        return card ? card.querySelector(linkSelector) : null;
+    }
+
+    document.addEventListener("click", function (event) {
+        const target = event.target;
+        if (!(target instanceof Element)) return;
+
+        const directLink = target.closest(linkSelector);
+        if (directLink) {
+            if (!validUrl(directLink)) {
+                event.preventDefault();
+                return;
+            }
+            directLink.setAttribute("target", "_blank");
+            directLink.setAttribute("rel", "noopener noreferrer");
+            return;
+        }
+
+        const preview = target.closest(previewSelector);
+        const icon = target.closest(iconSelector);
+
+        if (!preview && !icon) return;
+
+        const link = getLink(preview || icon);
+        const url = validUrl(link);
+
+        if (!url) return;
+
+        event.preventDefault();
+        event.stopImmediatePropagation();
+        window.open(url, "_blank", "noopener,noreferrer");
+    }, true);
+
+    function configureLinks() {
+        document.querySelectorAll(linkSelector).forEach(link => {
+            if (!validUrl(link)) return;
+            link.setAttribute("target", "_blank");
+            link.setAttribute("rel", "noopener noreferrer");
+        });
+    }
+
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", configureLinks, { once: true });
+    } else {
+        configureLinks();
+    }
+})();
+/* FIM AWESOME LINKS E PREVIEWS V2 */
