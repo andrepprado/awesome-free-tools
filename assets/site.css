@@ -962,3 +962,102 @@ dialog#previewDialog {
 }
 
 /* FIM GRID V8 */
+
+/* DAILY TOOLS V13 START */
+
+#cards.cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 28px !important;
+    width: 100% !important;
+}
+
+#cards > .tool-category-section {
+    display: block !important;
+    width: 100% !important;
+    min-width: 0 !important;
+}
+
+#cards .tool-category-title {
+    margin: 0 0 18px !important;
+    padding: 0 0 12px !important;
+    border-bottom: 2px solid #00A091 !important;
+    color: #003640 !important;
+    font-size: 20px !important;
+    font-weight: 700 !important;
+}
+
+#cards .tool-category-grid {
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+    gap: 18px !important;
+    width: 100% !important;
+}
+
+#cards .tool-category-grid > article.card {
+    display: flex !important;
+    flex-direction: column !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: 100% !important;
+}
+
+#cards .preview.preview-access-link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    aspect-ratio: 16 / 8 !important;
+    overflow: hidden !important;
+    text-decoration: none !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+}
+
+#cards .preview-access-link img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: cover !important;
+    object-position: top center !important;
+}
+
+#cards .preview-placeholder {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 10px !important;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#cards .card-body {
+    display: flex !important;
+    flex-direction: column !important;
+    flex: 1 !important;
+    min-width: 0 !important;
+}
+
+#cards .card-link {
+    margin-top: auto !important;
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+#previewDialog {
+    display: none !important;
+}
+
+@media (max-width: 950px) {
+    #cards .tool-category-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    }
+}
+
+@media (max-width: 600px) {
+    #cards .tool-category-grid {
+        grid-template-columns: minmax(0, 1fr) !important;
+    }
+}
+
+/* DAILY TOOLS V13 END */

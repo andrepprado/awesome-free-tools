@@ -1,0 +1,287 @@
+{
+    "versao":  "13",
+    "geradoEm":  "2026-10-26 12:19:49",
+    "originais":  103,
+    "candidatosOnline":  36,
+    "duplicidadesRemovidas":  [
+                                  {
+                                      "nome":  "BPMN.io",
+                                      "url":  "https://bpmn.io/"
+                                  }
+                              ],
+    "separadosParaRevisao":  [
+                                 {
+                                     "nome":  "LibreOffice",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "ONLYOFFICE Desktop Editors",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "PDF24 Creator",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "PDFsam Basic",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Stirling PDF",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Stirling PDF",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "SumatraPDF",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "DBeaver Community",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Deskbench",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "DuckDB",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "KNIME Analytics Platform",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Metabase",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "OpenRefine",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Power Query",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Tabula",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "AutoHotkey",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Bruno",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "n8n",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "n8n",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Node-RED",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Playwright",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Robot Framework",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Selenium",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "TagUI",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "UI.Vision RPA",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "GanttProject",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Kanboard",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "ProjectLibre",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Vikunja",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "LibreOffice Impress",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Marp",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Mockbooth",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Plinth Mockups",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Reveal.js",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Scribus",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "SVG Repo",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "GPT4All",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Jan",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Ollama",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Open WebUI",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Transformers.js",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Transformers.js - GitHub",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Upscayl",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "WebLLM",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Background Remover fal.ai",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "ComfyUI",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "fal.ai Tools",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "GIMP",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "ImageMagick",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Inkscape",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Krita",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Penpot",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "rembg",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "7-Zip",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "KeePass",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "LocalSend",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Git",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Postman",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "VS Code",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "VSCodium",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Audacity",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "FFmpeg",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "HandBrake",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "OBS Studio",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Shotcut",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 },
+                                 {
+                                     "nome":  "Shotcut",
+                                     "motivo":  "Fora da lista conservadora de aplicativos online; requer revisao"
+                                 }
+                             ],
+    "requisitos":  [
+                       "Online sem instalacao",
+                       "Sem pagamento obrigatorio",
+                       "Sem login obrigatorio",
+                       "Sem cadastro obrigatorio",
+                       "Permitido pela politica de firewall"
+                   ],
+    "validacaoFirewall":  "PENDENTE: exige consulta da categoria FortiGuard de cada dominio e teste real no nivel corporativo aplicavel.",
+    "ressalva":  "O teste automatizado valida interface, URLs e ausencia de duplicidades. Nao comprova, isoladamente, acesso corporativo, gratuidade ou inexistencia de login. Candidatos devem ser homologados antes de declarados aprovados."
+}

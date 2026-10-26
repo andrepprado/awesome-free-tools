@@ -1,1148 +1,290 @@
 [
     {
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "nome":  "LibreOffice",
-        "descricao":  "Editor gratuito de documentos e planilhas",
-        "url":  "https://www.libreoffice.org/",
-        "preview":  "/assets/previews/80df8c7613bd295ec22a.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "ONLYOFFICE Desktop Editors",
-        "url":  "https://www.onlyoffice.com/desktop.aspx",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "descricao":  "Edicao local gratuita de documentos, planilhas e apresentacoes.",
-        "preview":  "",
-        "acesso":  "HTTP_308",
-        "http_status":  308,
-        "alternativa_url":  "https://www.libreoffice.org/",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "nome":  "PDF24 Creator",
-        "descricao":  "Editor de PDF instalado localmente",
-        "url":  "https://www.pdf24.org/pt/",
-        "preview":  "",
-        "acesso":  "REDE_INDISPONIVEL",
-        "http_status":  0,
-        "alternativa_url":  "https://www.stirlingpdf.com/",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "01 - Documentos, PDF e Contratos",
         "nome":  "PDF24 Tools",
+        "categoria":  "01 - Documentos, PDF e Contratos",
         "descricao":  "Ferramentas gratuitas para PDF",
         "url":  "https://tools.pdf24.org/pt/",
         "preview":  "",
-        "acesso":  "REDE_INDISPONIVEL",
-        "http_status":  0,
-        "alternativa_url":  "https://pdfsam.org/pdfsam-basic/",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "PDFsam Basic",
-        "descricao":  "Aplicativo gratuito para dividir, juntar e reorganizar PDF.",
-        "url":  "https://pdfsam.org/pdfsam-basic/",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "PDF24 Tools",
-        "status_publico":  ""
-    },
-    {
-        "descricao":  "Editar, converter e organizar PDF localmente no navegador, sem cadastro.",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "url":  "https://www.plumedocs.com/",
         "nome":  "Plume PDF",
+        "categoria":  "01 - Documentos, PDF e Contratos",
+        "descricao":  "Editar, converter e organizar PDF localmente no navegador, sem cadastro.",
+        "url":  "https://www.plumedocs.com/",
         "preview":  "/assets/previews/49e9c5b2fc265450acf3.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "Stirling PDF",
-        "descricao":  "Ferramentas de PDF com possibilidade de uso local.",
-        "url":  "https://www.stirlingpdf.com/",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "PDF24 Creator",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "nome":  "Stirling PDF",
-        "descricao":  "Ferramenta open source para PDF",
-        "url":  "https://github.com/Stirling-Tools/Stirling-PDF",
-        "preview":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "SumatraPDF",
-        "descricao":  "Leitor gratuito e leve de PDF e outros documentos.",
-        "url":  "https://www.sumatrapdfreader.org/free-pdf-reader",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "descricao":  "Unir, dividir, converter e assinar PDFs sem enviar arquivos ao servidor.",
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "url":  "https://unfleece.com/",
         "nome":  "Unfleece",
+        "categoria":  "01 - Documentos, PDF e Contratos",
+        "descricao":  "Unir, dividir, converter e assinar PDFs sem enviar arquivos ao servidor.",
+        "url":  "https://unfleece.com/",
         "preview":  "/assets/previews/8ba6cc1b129efb27ad66.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
         "nome":  "CyberChef",
+        "categoria":  "02 - Planilhas, Dados e Relatórios",
         "descricao":  "Transformacao codificacao e analise de dados",
         "url":  "https://gchq.github.io/CyberChef/",
         "preview":  "/assets/previews/965e7c5c27e01c4cc381.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "DBeaver Community",
-        "descricao":  "Gerenciamento gratuito de bancos de dados.",
-        "url":  "https://dbeaver.io/",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "descricao":  "Ferramentas locais para documentos, imagens, planilhas e comparacao de dados.",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "url":  "https://deskbench.app/",
-        "nome":  "Deskbench",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://openrefine.org/",
-        "status_publico":  "ACESSO_RESTRITO"
-    },
-    {
-        "nome":  "DuckDB",
-        "descricao":  "Analise local de arquivos CSV, Parquet e bases de dados.",
-        "url":  "https://duckdb.org/",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
         "nome":  "JSON Crack",
+        "categoria":  "02 - Planilhas, Dados e Relatórios",
         "descricao":  "Visualizacao de estruturas JSON",
         "url":  "https://jsoncrack.com/editor",
         "preview":  "/assets/previews/8b3b6dc451a1b5db22f9.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "KNIME Analytics Platform",
-        "descricao":  "Analise de dados e automacao de fluxos analiticos.",
-        "url":  "https://www.knime.com/knime-analytics-platform",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Metabase",
-        "descricao":  "Dashboards e analise de dados com edicao open source.",
-        "url":  "https://www.metabase.com/",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "OpenRefine",
-        "url":  "https://openrefine.org/",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "descricao":  "Limpeza e transformacao local de bases de dados.",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "Deskbench",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Power Query",
-        "descricao":  "Documentacao do recurso de tratamento de dados do Excel e Power BI.",
-        "url":  "https://learn.microsoft.com/pt-br/power-query/",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Tabula",
-        "url":  "https://tabula.technology/",
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
-        "descricao":  "Extracao de tabelas de documentos PDF.",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "02 - Planilhas, Dados e Relatórios",
         "nome":  "Transform Tools",
+        "categoria":  "02 - Planilhas, Dados e Relatórios",
         "descricao":  "Conversao entre formatos de codigo",
         "url":  "https://transform.tools/",
         "preview":  "/assets/previews/6c298bb45b68f6547973.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "03 - Automação e Integrações",
-        "nome":  "AutoHotkey",
-        "descricao":  "Automacao de teclado e mouse no Windows",
-        "url":  "https://www.autohotkey.com/",
-        "preview":  "/assets/previews/14c12d3bc4532d21042c.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "03 - Automação e Integrações",
-        "nome":  "Bruno",
-        "descricao":  "Cliente de APIs com armazenamento local",
-        "url":  "https://www.usebruno.com/",
-        "preview":  "/assets/previews/ae5d594256a23f537761.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "03 - Automação e Integrações",
         "nome":  "Hoppscotch",
+        "categoria":  "03 - Automação e Integrações",
         "descricao":  "Teste de APIs HTTP",
         "url":  "https://hoppscotch.io/",
         "preview":  "/assets/previews/4a834a22fea5cd28d41e.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "n8n",
-        "descricao":  "Automacao de fluxos com opcao de hospedagem propria.",
-        "url":  "https://n8n.io/",
-        "categoria":  "03 - Automação e Integrações",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "03 - Automação e Integrações",
-        "nome":  "n8n",
-        "descricao":  "Automacao de fluxos com instalacao propria",
-        "url":  "https://github.com/n8n-io/n8n",
-        "preview":  "/assets/previews/c37165a31cd3fc399e84.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "03 - Automação e Integrações",
-        "nome":  "Node-RED",
-        "descricao":  "Automacao visual de fluxos e integracoes",
-        "url":  "https://nodered.org/",
-        "preview":  "/assets/previews/8ec24459cdceb60d40d6.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "03 - Automação e Integrações",
-        "nome":  "Playwright",
-        "descricao":  "Automacao e testes de navegadores",
-        "url":  "https://playwright.dev/",
-        "preview":  "/assets/previews/8960df5ea200923e3c4c.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "03 - Automação e Integrações",
-        "nome":  "Robot Framework",
-        "descricao":  "Framework open source de automacao",
-        "url":  "https://robotframework.org/",
-        "preview":  "/assets/previews/229a65c84d3bc65d10f7.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "UI.Vision RPA",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "03 - Automação e Integrações",
-        "nome":  "Selenium",
-        "descricao":  "Automacao de navegadores",
-        "url":  "https://www.selenium.dev/",
-        "preview":  "/assets/previews/d1d9f0e8c01b765eace5.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "TagUI",
-        "descricao":  "Automacao RPA de codigo aberto.",
-        "url":  "https://github.com/aisingapore/TagUI",
-        "categoria":  "03 - Automação e Integrações",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "UI.Vision RPA",
-        "descricao":  "Automacao de navegador com recursos gratuitos.",
-        "url":  "https://ui.vision/rpa",
-        "categoria":  "03 - Automação e Integrações",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://robotframework.org/",
-        "status_publico":  "ACESSO_RESTRITO"
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
         "nome":  "BPMN.io",
-        "descricao":  "Modelagem de processos BPMN.",
-        "url":  "https://bpmn.io/",
         "categoria":  "04 - Processos, Fluxos e Projetos",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "nome":  "BPMN.io",
         "descricao":  "Editor de processos BPMN",
         "url":  "https://demo.bpmn.io/",
         "preview":  "/assets/previews/159d817e7c62e997bad3.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "04 - Processos, Fluxos e Projetos",
         "nome":  "diagrams.net",
+        "categoria":  "04 - Processos, Fluxos e Projetos",
         "descricao":  "Fluxogramas BPMN e arquitetura de sistemas",
         "url":  "https://app.diagrams.net/",
         "preview":  "/assets/previews/b829fabaec241d96f7eb.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "04 - Processos, Fluxos e Projetos",
         "nome":  "Excalidraw",
+        "categoria":  "04 - Processos, Fluxos e Projetos",
         "descricao":  "Desenhos wireframes e diagramas",
         "url":  "https://excalidraw.com/",
         "preview":  "/assets/previews/85794320b9feb680be86.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "descricao":  "Diagramas, Markdown e visualizacao de dados diretamente no navegador.",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "url":  "https://freeopentools.com/",
         "nome":  "Free Open Tools",
+        "categoria":  "04 - Processos, Fluxos e Projetos",
+        "descricao":  "Diagramas, Markdown e visualizacao de dados diretamente no navegador.",
+        "url":  "https://freeopentools.com/",
         "preview":  "/assets/previews/df40340926cf10c6d48c.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "GanttProject",
-        "url":  "https://www.ganttproject.biz/",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "descricao":  "Gestao gratuita de cronogramas e projetos.",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Kanboard",
-        "descricao":  "Gestao visual de tarefas com instalacao propria.",
-        "url":  "https://kanboard.org/",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "04 - Processos, Fluxos e Projetos",
         "nome":  "Markmap",
+        "categoria":  "04 - Processos, Fluxos e Projetos",
         "descricao":  "Mapas mentais em Markdown",
         "url":  "https://markmap.js.org/repl",
         "preview":  "/assets/previews/f01ded7c69ecb174d8ae.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "04 - Processos, Fluxos e Projetos",
         "nome":  "Mermaid Live",
+        "categoria":  "04 - Processos, Fluxos e Projetos",
         "descricao":  "Diagramas gerados por texto",
         "url":  "https://mermaid.live/",
         "preview":  "/assets/previews/f311e5f42bb23ce20d5c.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "ProjectLibre",
-        "url":  "https://www.projectlibre.com/",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "descricao":  "Planejamento gratuito de projetos.",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Vikunja",
-        "descricao":  "Gerenciamento de tarefas e projetos com opcao de hospedagem propria.",
-        "url":  "https://vikunja.io/",
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "05 - Comunicação e Apresentações",
         "nome":  "Free iPhone Mockup",
+        "categoria":  "05 - Comunicação e Apresentações",
         "descricao":  "Mockups 3D de iPhone",
         "url":  "https://freeiphonemockup.com/",
         "preview":  "/assets/previews/8ab0ed9a506e990aa9e2.png",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://shots.so/",
-        "status_publico":  "ACESSO_RESTRITO"
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "05 - Comunicação e Apresentações",
         "nome":  "Google Fonts",
+        "categoria":  "05 - Comunicação e Apresentações",
         "descricao":  "Fontes gratuitas para projetos",
         "url":  "https://fonts.google.com/",
         "preview":  "/assets/previews/4a22810a8447185e1278.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "05 - Comunicação e Apresentações",
         "nome":  "Haikei",
+        "categoria":  "05 - Comunicação e Apresentações",
         "descricao":  "Gerador de fundos SVG e formas abstratas",
         "url":  "https://haikei.app/",
         "preview":  "/assets/previews/0b9ed6cb83f06a08712f.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "LibreOffice Impress",
-        "descricao":  "Criacao de apresentacoes sem assinatura.",
-        "url":  "https://www.libreoffice.org/discover/impress/",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Marp",
-        "descricao":  "Criacao gratuita de apresentacoes com Markdown.",
-        "url":  "https://marp.app/",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "05 - Comunicação e Apresentações",
-        "nome":  "Mockbooth",
-        "descricao":  "Mockups de dispositivos eletronicos",
-        "url":  "https://www.mockbooth.com/",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://www.screely.com/",
-        "status_publico":  "ACESSO_RESTRITO"
-    },
-    {
-        "categoria":  "05 - Comunicação e Apresentações",
         "nome":  "Photopea",
+        "categoria":  "05 - Comunicação e Apresentações",
         "descricao":  "Editor avancado de imagens no navegador",
         "url":  "https://www.photopea.com/",
         "preview":  "/assets/previews/873756fbe97a13842f69.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "05 - Comunicação e Apresentações",
-        "nome":  "Plinth Mockups",
-        "descricao":  "Mockups de celulares notebooks tablets e relogios",
-        "url":  "https://plinthmockups.com/",
-        "preview":  "/assets/previews/039044b8040dc8bba148.png",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://penpot.app/",
-        "status_publico":  "ACESSO_RESTRITO"
-    },
-    {
-        "nome":  "Reveal.js",
-        "descricao":  "Apresentacoes HTML gratuitas.",
-        "url":  "https://revealjs.com/",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
         "nome":  "Screely",
+        "categoria":  "05 - Comunicação e Apresentações",
         "descricao":  "Criacao de mockups a partir de capturas de tela.",
         "url":  "https://www.screely.com/",
-        "categoria":  "05 - Comunicação e Apresentações",
         "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "Mockbooth",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "Scribus",
-        "descricao":  "Diagramacao gratuita de materiais corporativos.",
-        "url":  "https://www.scribus.net/",
-        "categoria":  "05 - Comunicação e Apresentações",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "05 - Comunicação e Apresentações",
         "nome":  "Shotframe",
+        "categoria":  "05 - Comunicação e Apresentações",
         "descricao":  "Mockups de aplicativos e dispositivos",
         "url":  "https://shotframe.app/",
         "preview":  "/assets/previews/219810184c4e5247bba7.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
         "nome":  "Shots",
+        "categoria":  "05 - Comunicação e Apresentações",
         "descricao":  "Criacao de mockups de telas com recursos gratuitos.",
         "url":  "https://shots.so/",
-        "categoria":  "05 - Comunicação e Apresentações",
         "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "Free iPhone Mockup",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "05 - Comunicação e Apresentações",
-        "nome":  "SVG Repo",
-        "descricao":  "Biblioteca de icones e vetores",
-        "url":  "https://www.svgrepo.com/",
-        "preview":  "",
-        "acesso":  "HTTP_429",
-        "http_status":  429,
-        "alternativa_url":  "https://lucide.dev/icons/",
-        "status_publico":  "LIMITE_REQUISICOES"
-    },
-    {
-        "nome":  "GPT4All",
-        "descricao":  "Assistente de IA local.",
-        "url":  "https://www.nomic.ai/gpt4all",
-        "categoria":  "06 - Inteligência Artificial Local",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Jan",
-        "descricao":  "Aplicativo de inteligencia artificial local.",
-        "url":  "https://jan.ai/",
-        "categoria":  "06 - Inteligência Artificial Local",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "06 - Inteligência Artificial Local",
-        "nome":  "Ollama",
-        "descricao":  "Execucao local de modelos de IA",
-        "url":  "https://ollama.com/",
-        "preview":  "/assets/previews/1d9fc6d9882416d42345.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "WebLLM",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Open WebUI",
-        "descricao":  "Interface para modelos locais e auto-hospedados.",
-        "url":  "https://openwebui.com/",
-        "categoria":  "06 - Inteligência Artificial Local",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "06 - Inteligência Artificial Local",
-        "nome":  "Transformers.js",
-        "descricao":  "Modelos de IA executados no navegador",
-        "url":  "https://huggingface.co/docs/transformers.js",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://github.com/huggingface/transformers.js",
-        "status_publico":  "ACESSO_RESTRITO"
-    },
-    {
-        "nome":  "Transformers.js - GitHub",
-        "descricao":  "Biblioteca aberta para executar modelos de IA em JavaScript.",
-        "url":  "https://github.com/huggingface/transformers.js",
-        "categoria":  "06 - Inteligência Artificial Local",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "Transformers.js",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "06 - Inteligência Artificial Local",
-        "nome":  "Upscayl",
-        "descricao":  "Ampliacao local de imagens com IA",
-        "url":  "https://upscayl.org/",
-        "preview":  "/assets/previews/cfe28d1101cd81df250a.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "06 - Inteligência Artificial Local",
-        "nome":  "WebLLM",
-        "descricao":  "Modelos de linguagem executados no navegador",
-        "url":  "https://webllm.mlc.ai/",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://ollama.com/",
-        "status_publico":  "ACESSO_RESTRITO"
-    },
-    {
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "nome":  "Background Remover fal.ai",
-        "descricao":  "Remocao automatica de fundo com IA",
-        "url":  "https://fal.ai/tools/background-remover",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://github.com/danielgatis/rembg",
-        "status_publico":  "ACESSO_RESTRITO"
-    },
-    {
-        "nome":  "ComfyUI",
-        "descricao":  "Fluxos de geracao e processamento de imagens com IA local.",
-        "url":  "https://github.com/comfyanonymous/ComfyUI",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "fal.ai Tools",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "07 - Imagens e Materiais Visuais",
         "nome":  "Ezgif",
+        "categoria":  "07 - Imagens e Materiais Visuais",
         "descricao":  "Edicao conversao e criacao de GIF",
         "url":  "https://ezgif.com/",
         "preview":  "/assets/previews/b5caa85941f32e986e1a.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "nome":  "fal.ai Tools",
-        "descricao":  "Ferramentas online de tratamento de imagens",
-        "url":  "https://fal.ai/tools",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://github.com/comfyanonymous/ComfyUI",
-        "status_publico":  "ACESSO_RESTRITO"
-    },
-    {
-        "nome":  "GIMP",
-        "url":  "https://www.gimp.org/",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Editor gratuito de imagens para Windows.",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "ImageMagick",
-        "url":  "https://imagemagick.org/",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Conversao e tratamento local de imagens.",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Inkscape",
-        "url":  "https://inkscape.org/",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Editor gratuito de imagens vetoriais.",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "",
-        "status_publico":  "ACESSO_RESTRITO"
-    },
-    {
-        "nome":  "Krita",
-        "url":  "https://krita.org/",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "descricao":  "Editor grafico gratuito.",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
         "nome":  "Lucide Icons",
+        "categoria":  "07 - Imagens e Materiais Visuais",
         "descricao":  "Biblioteca gratuita de icones vetoriais.",
         "url":  "https://lucide.dev/icons/",
-        "categoria":  "07 - Imagens e Materiais Visuais",
         "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "SVG Repo",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "Penpot",
-        "descricao":  "Design de interfaces e prototipos com recursos gratuitos.",
-        "url":  "https://penpot.app/",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "Plinth Mockups",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "rembg",
-        "descricao":  "Remocao de fundo de imagens com processamento local.",
-        "url":  "https://github.com/danielgatis/rembg",
-        "categoria":  "07 - Imagens e Materiais Visuais",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "Background Remover fal.ai",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "07 - Imagens e Materiais Visuais",
         "nome":  "Squoosh",
+        "categoria":  "07 - Imagens e Materiais Visuais",
         "descricao":  "Compactacao e conversao local de imagens",
         "url":  "https://squoosh.app/",
         "preview":  "/assets/previews/59e95f4c62f018f43b2c.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "07 - Imagens e Materiais Visuais",
         "nome":  "SVGOMG",
+        "categoria":  "07 - Imagens e Materiais Visuais",
         "descricao":  "Otimizacao de arquivos SVG",
         "url":  "https://jakearchibald.github.io/svgomg/",
         "preview":  "/assets/previews/c470a93eaf1fe54b7a3e.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "07 - Imagens e Materiais Visuais",
         "nome":  "TinyPNG",
+        "categoria":  "07 - Imagens e Materiais Visuais",
         "descricao":  "Compactacao de imagens com limites gratuitos",
         "url":  "https://tinypng.com/",
         "preview":  "/assets/previews/b962f490995ec215c79b.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "7-Zip",
-        "descricao":  "Compactacao e extracao de arquivos.",
-        "url":  "https://www.7-zip.org/",
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "descricao":  "Utilitarios gratuitos e de codigo aberto para documentos e imagens.",
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "url":  "https://bundle.tools/",
         "nome":  "Bundle Tools",
+        "categoria":  "08 - Compartilhamento e Utilitários",
+        "descricao":  "Utilitarios gratuitos e de codigo aberto para documentos e imagens.",
+        "url":  "https://bundle.tools/",
         "preview":  "/assets/previews/11cee4d50404ef1dd83a.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "08 - Compartilhamento e Utilitários",
         "nome":  "ConvertCase",
+        "categoria":  "08 - Compartilhamento e Utilitários",
         "descricao":  "Conversao de letras maiusculas e minusculas",
         "url":  "https://convertcase.net/",
         "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "KeePass",
-        "descricao":  "Gerenciador local de senhas.",
-        "url":  "https://keepass.info/",
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "08 - Compartilhamento e Utilitários",
-        "nome":  "LocalSend",
-        "descricao":  "Transferencia de arquivos em rede local",
-        "url":  "https://localsend.org/",
-        "preview":  "/assets/previews/d0c48581e1659fb4fea2.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "08 - Compartilhamento e Utilitários",
         "nome":  "PairDrop",
+        "categoria":  "08 - Compartilhamento e Utilitários",
         "descricao":  "Compartilhamento de arquivos pelo navegador",
         "url":  "https://pairdrop.net/",
         "preview":  "/assets/previews/65b15b71fa6f508fea67.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "08 - Compartilhamento e Utilitários",
         "nome":  "QR Code Monkey",
+        "categoria":  "08 - Compartilhamento e Utilitários",
         "descricao":  "Geracao de QR Codes personalizados",
         "url":  "https://www.qrcode-monkey.com/",
         "preview":  "/assets/previews/7a05d9d2ca26b5dce018.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "08 - Compartilhamento e Utilitários",
         "nome":  "Time.is",
+        "categoria":  "08 - Compartilhamento e Utilitários",
         "descricao":  "Consulta de horarios e fusos",
         "url":  "https://time.is/",
         "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "nome":  "Can I Use",
+        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "descricao":  "Compatibilidade de tecnologias web",
         "url":  "https://caniuse.com/",
         "preview":  "/assets/previews/3952e3aaa8ca5af66538.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "Git",
-        "descricao":  "Controle de versao gratuito.",
-        "url":  "https://git-scm.com/",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "nome":  "IT Tools",
+        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "descricao":  "Colecao de ferramentas para desenvolvedores",
         "url":  "https://it-tools.tech/",
         "preview":  "/assets/previews/e173c09a7713b5b0a417.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "nome":  "JSFiddle",
+        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "descricao":  "Editor online HTML CSS e JavaScript",
         "url":  "https://jsfiddle.net/",
         "preview":  "/assets/previews/47eab744c738f260b393.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "nome":  "JSONPlaceholder",
+        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "descricao":  "API publica para testes",
         "url":  "https://jsonplaceholder.typicode.com/",
         "preview":  "/assets/previews/71d06732be3e7a3a1433.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "nome":  "Postman",
-        "descricao":  "Testes e documentacao de APIs com plano gratuito limitado.",
-        "url":  "https://www.postman.com/",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "nome":  "Regex101",
+        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "descricao":  "Teste de expressoes regulares",
         "url":  "https://regex101.com/",
         "preview":  "/assets/previews/33711997423abbb0bfa5.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     },
     {
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "nome":  "RegExr",
+        "categoria":  "09 - Desenvolvimento e Suporte TI",
         "descricao":  "Editor visual de expressoes regulares",
         "url":  "https://regexr.com/",
         "preview":  "/assets/previews/eb44d756013f2ff8478a.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "VS Code",
-        "descricao":  "Editor gratuito de codigo.",
-        "url":  "https://code.visualstudio.com/",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "VSCodium",
-        "descricao":  "Editor de codigo de distribuicao aberta.",
-        "url":  "https://vscodium.com/",
-        "categoria":  "09 - Desenvolvimento e Suporte TI",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "10 - Vídeo e Áudio",
-        "nome":  "Audacity",
-        "descricao":  "Edicao de audio",
-        "url":  "https://www.audacityteam.org/",
-        "preview":  "/assets/previews/d130cc2e9c59f88a59b0.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "10 - Vídeo e Áudio",
-        "nome":  "FFmpeg",
-        "descricao":  "Processamento de audio e video",
-        "url":  "https://ffmpeg.org/",
-        "preview":  "",
-        "acesso":  "REDE_INDISPONIVEL",
-        "http_status":  0,
-        "alternativa_url":  "https://handbrake.fr/",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "10 - Vídeo e Áudio",
-        "nome":  "HandBrake",
-        "descricao":  "Conversao e compactacao de videos",
-        "url":  "https://handbrake.fr/",
-        "preview":  "/assets/previews/3b8949850320796f7cef.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "FFmpeg",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "10 - Vídeo e Áudio",
-        "nome":  "OBS Studio",
-        "descricao":  "Gravacao de tela e transmissao",
-        "url":  "https://obsproject.com/",
-        "preview":  "/assets/previews/5cc0e67257c0cc091d1b.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "nome":  "Shotcut",
-        "descricao":  "Edicao gratuita de video.",
-        "url":  "https://shotcut.org/",
-        "categoria":  "10 - Vídeo e Áudio",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
-        "categoria":  "10 - Vídeo e Áudio",
-        "nome":  "Shotcut",
-        "descricao":  "Editor de video open source",
-        "url":  "https://www.shotcut.org/",
-        "preview":  "/assets/previews/e647cf4fae3d0ef68d50.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
+        "tipo_acesso":  "ONLINE_CANDIDATO"
     }
 ]

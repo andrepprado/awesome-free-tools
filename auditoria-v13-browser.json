@@ -1,0 +1,27 @@
+{
+  "count": 36,
+  "desktop": {
+    "columns": 3,
+    "cards": 36,
+    "categories": 8,
+    "broken": 0
+  },
+  "tablet": {
+    "columns": 2,
+    "cards": 36,
+    "categories": 8,
+    "broken": 0
+  },
+  "mobile": {
+    "columns": 1,
+    "cards": 36,
+    "categories": 8,
+    "broken": 0
+  },
+  "linksInvalidos": 0,
+  "duplicates": 0,
+  "freeIphone": true,
+  "search": true,
+  "filters": true,
+  "javascriptErrors": []
+}
