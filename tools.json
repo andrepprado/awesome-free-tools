@@ -61,16 +61,6 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "nome":  "Stirling PDF",
-        "descricao":  "Ferramenta open source para PDF",
-        "url":  "https://github.com/Stirling-Tools/Stirling-PDF",
-        "preview":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
         "nome":  "Stirling PDF",
         "descricao":  "Ferramentas de PDF com possibilidade de uso local.",
         "url":  "https://www.stirlingpdf.com/",
@@ -80,6 +70,16 @@
         "http_status":  200,
         "alternativa_url":  "",
         "alternativa_de":  "PDF24 Creator"
+    },
+    {
+        "categoria":  "01 - Documentos, PDF e Contratos",
+        "nome":  "Stirling PDF",
+        "descricao":  "Ferramenta open source para PDF",
+        "url":  "https://github.com/Stirling-Tools/Stirling-PDF",
+        "preview":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
     },
     {
         "nome":  "SumatraPDF",
@@ -102,41 +102,11 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "02 - Planilhas, Dados e Relatorios",
+        "categoria":  "02 - Planilhas, Dados e Relatórios",
         "nome":  "CyberChef",
         "descricao":  "Transformacao codificacao e analise de dados",
         "url":  "https://gchq.github.io/CyberChef/",
         "preview":  "/assets/previews/965e7c5c27e01c4cc381.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "descricao":  "Ferramentas locais para documentos, imagens, planilhas e comparacao de dados.",
-        "categoria":  "02 - Planilhas, Dados e Relatorios",
-        "url":  "https://deskbench.app/",
-        "nome":  "Deskbench",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://openrefine.org/"
-    },
-    {
-        "categoria":  "02 - Planilhas, Dados e Relatorios",
-        "nome":  "JSON Crack",
-        "descricao":  "Visualizacao de estruturas JSON",
-        "url":  "https://jsoncrack.com/editor",
-        "preview":  "/assets/previews/8b3b6dc451a1b5db22f9.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "02 - Planilhas, Dados e Relatorios",
-        "nome":  "Transform Tools",
-        "descricao":  "Conversao entre formatos de codigo",
-        "url":  "https://transform.tools/",
-        "preview":  "/assets/previews/6c298bb45b68f6547973.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
@@ -152,11 +122,31 @@
         "alternativa_url":  ""
     },
     {
+        "descricao":  "Ferramentas locais para documentos, imagens, planilhas e comparacao de dados.",
+        "categoria":  "02 - Planilhas, Dados e Relatórios",
+        "url":  "https://deskbench.app/",
+        "nome":  "Deskbench",
+        "preview":  "",
+        "acesso":  "HTTP_403",
+        "http_status":  403,
+        "alternativa_url":  "https://openrefine.org/"
+    },
+    {
         "nome":  "DuckDB",
         "descricao":  "Analise local de arquivos CSV, Parquet e bases de dados.",
         "url":  "https://duckdb.org/",
         "categoria":  "02 - Planilhas, Dados e Relatórios",
         "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "02 - Planilhas, Dados e Relatórios",
+        "nome":  "JSON Crack",
+        "descricao":  "Visualizacao de estruturas JSON",
+        "url":  "https://jsoncrack.com/editor",
+        "preview":  "/assets/previews/8b3b6dc451a1b5db22f9.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
@@ -213,7 +203,17 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "03 - Automacao e Integracoes",
+        "categoria":  "02 - Planilhas, Dados e Relatórios",
+        "nome":  "Transform Tools",
+        "descricao":  "Conversao entre formatos de codigo",
+        "url":  "https://transform.tools/",
+        "preview":  "/assets/previews/6c298bb45b68f6547973.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "03 - Automação e Integrações",
         "nome":  "AutoHotkey",
         "descricao":  "Automacao de teclado e mouse no Windows",
         "url":  "https://www.autohotkey.com/",
@@ -223,7 +223,7 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "03 - Automacao e Integracoes",
+        "categoria":  "03 - Automação e Integrações",
         "nome":  "Bruno",
         "descricao":  "Cliente de APIs com armazenamento local",
         "url":  "https://www.usebruno.com/",
@@ -233,62 +233,11 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "03 - Automacao e Integracoes",
+        "categoria":  "03 - Automação e Integrações",
         "nome":  "Hoppscotch",
         "descricao":  "Teste de APIs HTTP",
         "url":  "https://hoppscotch.io/",
         "preview":  "/assets/previews/4a834a22fea5cd28d41e.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "03 - Automacao e Integracoes",
-        "nome":  "n8n",
-        "descricao":  "Automacao de fluxos com instalacao propria",
-        "url":  "https://github.com/n8n-io/n8n",
-        "preview":  "/assets/previews/c37165a31cd3fc399e84.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "03 - Automacao e Integracoes",
-        "nome":  "Node-RED",
-        "descricao":  "Automacao visual de fluxos e integracoes",
-        "url":  "https://nodered.org/",
-        "preview":  "/assets/previews/8ec24459cdceb60d40d6.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "03 - Automacao e Integracoes",
-        "nome":  "Playwright",
-        "descricao":  "Automacao e testes de navegadores",
-        "url":  "https://playwright.dev/",
-        "preview":  "/assets/previews/8960df5ea200923e3c4c.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "03 - Automacao e Integracoes",
-        "nome":  "Robot Framework",
-        "descricao":  "Framework open source de automacao",
-        "url":  "https://robotframework.org/",
-        "preview":  "/assets/previews/229a65c84d3bc65d10f7.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "UI.Vision RPA"
-    },
-    {
-        "categoria":  "03 - Automacao e Integracoes",
-        "nome":  "Selenium",
-        "descricao":  "Automacao de navegadores",
-        "url":  "https://www.selenium.dev/",
-        "preview":  "/assets/previews/d1d9f0e8c01b765eace5.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
@@ -299,6 +248,57 @@
         "url":  "https://n8n.io/",
         "categoria":  "03 - Automação e Integrações",
         "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "03 - Automação e Integrações",
+        "nome":  "n8n",
+        "descricao":  "Automacao de fluxos com instalacao propria",
+        "url":  "https://github.com/n8n-io/n8n",
+        "preview":  "/assets/previews/c37165a31cd3fc399e84.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "03 - Automação e Integrações",
+        "nome":  "Node-RED",
+        "descricao":  "Automacao visual de fluxos e integracoes",
+        "url":  "https://nodered.org/",
+        "preview":  "/assets/previews/8ec24459cdceb60d40d6.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "03 - Automação e Integrações",
+        "nome":  "Playwright",
+        "descricao":  "Automacao e testes de navegadores",
+        "url":  "https://playwright.dev/",
+        "preview":  "/assets/previews/8960df5ea200923e3c4c.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "03 - Automação e Integrações",
+        "nome":  "Robot Framework",
+        "descricao":  "Framework open source de automacao",
+        "url":  "https://robotframework.org/",
+        "preview":  "/assets/previews/229a65c84d3bc65d10f7.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  "",
+        "alternativa_de":  "UI.Vision RPA"
+    },
+    {
+        "categoria":  "03 - Automação e Integrações",
+        "nome":  "Selenium",
+        "descricao":  "Automacao de navegadores",
+        "url":  "https://www.selenium.dev/",
+        "preview":  "/assets/previews/d1d9f0e8c01b765eace5.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
@@ -324,21 +324,21 @@
         "alternativa_url":  "https://robotframework.org/"
     },
     {
-        "categoria":  "04 - Processos, Fluxos e Projetos",
-        "nome":  "BPMN.io",
-        "descricao":  "Editor de processos BPMN",
-        "url":  "https://demo.bpmn.io/",
-        "preview":  "/assets/previews/159d817e7c62e997bad3.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
         "nome":  "BPMN.io",
         "descricao":  "Modelagem de processos BPMN.",
         "url":  "https://bpmn.io/",
         "categoria":  "04 - Processos, Fluxos e Projetos",
         "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "04 - Processos, Fluxos e Projetos",
+        "nome":  "BPMN.io",
+        "descricao":  "Editor de processos BPMN",
+        "url":  "https://demo.bpmn.io/",
+        "preview":  "/assets/previews/159d817e7c62e997bad3.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
@@ -434,7 +434,7 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "05 - Comunicacao e Apresentacoes",
+        "categoria":  "05 - Comunicação e Apresentações",
         "nome":  "Free iPhone Mockup",
         "descricao":  "Mockups 3D de iPhone",
         "url":  "https://freeiphonemockup.com/",
@@ -444,7 +444,7 @@
         "alternativa_url":  "https://shots.so/"
     },
     {
-        "categoria":  "05 - Comunicacao e Apresentacoes",
+        "categoria":  "05 - Comunicação e Apresentações",
         "nome":  "Google Fonts",
         "descricao":  "Fontes gratuitas para projetos",
         "url":  "https://fonts.google.com/",
@@ -454,7 +454,7 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "05 - Comunicacao e Apresentacoes",
+        "categoria":  "05 - Comunicação e Apresentações",
         "nome":  "Haikei",
         "descricao":  "Gerador de fundos SVG e formas abstratas",
         "url":  "https://haikei.app/",
@@ -462,56 +462,6 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
-    },
-    {
-        "categoria":  "05 - Comunicacao e Apresentacoes",
-        "nome":  "Mockbooth",
-        "descricao":  "Mockups de dispositivos eletronicos",
-        "url":  "https://www.mockbooth.com/",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://www.screely.com/"
-    },
-    {
-        "categoria":  "05 - Comunicacao e Apresentacoes",
-        "nome":  "Photopea",
-        "descricao":  "Editor avancado de imagens no navegador",
-        "url":  "https://www.photopea.com/",
-        "preview":  "/assets/previews/873756fbe97a13842f69.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "05 - Comunicacao e Apresentacoes",
-        "nome":  "Plinth Mockups",
-        "descricao":  "Mockups de celulares notebooks tablets e relogios",
-        "url":  "https://plinthmockups.com/",
-        "preview":  "/assets/previews/039044b8040dc8bba148.png",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://penpot.app/"
-    },
-    {
-        "categoria":  "05 - Comunicacao e Apresentacoes",
-        "nome":  "Shotframe",
-        "descricao":  "Mockups de aplicativos e dispositivos",
-        "url":  "https://shotframe.app/",
-        "preview":  "/assets/previews/219810184c4e5247bba7.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "05 - Comunicacao e Apresentacoes",
-        "nome":  "SVG Repo",
-        "descricao":  "Biblioteca de icones e vetores",
-        "url":  "https://www.svgrepo.com/",
-        "preview":  "",
-        "acesso":  "HTTP_429",
-        "http_status":  429,
-        "alternativa_url":  "https://lucide.dev/icons/"
     },
     {
         "nome":  "LibreOffice Impress",
@@ -532,6 +482,36 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
+    },
+    {
+        "categoria":  "05 - Comunicação e Apresentações",
+        "nome":  "Mockbooth",
+        "descricao":  "Mockups de dispositivos eletronicos",
+        "url":  "https://www.mockbooth.com/",
+        "preview":  "",
+        "acesso":  "HTTP_403",
+        "http_status":  403,
+        "alternativa_url":  "https://www.screely.com/"
+    },
+    {
+        "categoria":  "05 - Comunicação e Apresentações",
+        "nome":  "Photopea",
+        "descricao":  "Editor avancado de imagens no navegador",
+        "url":  "https://www.photopea.com/",
+        "preview":  "/assets/previews/873756fbe97a13842f69.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "05 - Comunicação e Apresentações",
+        "nome":  "Plinth Mockups",
+        "descricao":  "Mockups de celulares notebooks tablets e relogios",
+        "url":  "https://plinthmockups.com/",
+        "preview":  "/assets/previews/039044b8040dc8bba148.png",
+        "acesso":  "HTTP_403",
+        "http_status":  403,
+        "alternativa_url":  "https://penpot.app/"
     },
     {
         "nome":  "Reveal.js",
@@ -565,6 +545,16 @@
         "alternativa_url":  ""
     },
     {
+        "categoria":  "05 - Comunicação e Apresentações",
+        "nome":  "Shotframe",
+        "descricao":  "Mockups de aplicativos e dispositivos",
+        "url":  "https://shotframe.app/",
+        "preview":  "/assets/previews/219810184c4e5247bba7.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
         "nome":  "Shots",
         "descricao":  "Criacao de mockups de telas com recursos gratuitos.",
         "url":  "https://shots.so/",
@@ -576,45 +566,14 @@
         "alternativa_de":  "Free iPhone Mockup"
     },
     {
-        "categoria":  "06 - Inteligencia Artificial Local",
-        "nome":  "Ollama",
-        "descricao":  "Execucao local de modelos de IA",
-        "url":  "https://ollama.com/",
-        "preview":  "/assets/previews/1d9fc6d9882416d42345.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "alternativa_de":  "WebLLM"
-    },
-    {
-        "categoria":  "06 - Inteligencia Artificial Local",
-        "nome":  "Transformers.js",
-        "descricao":  "Modelos de IA executados no navegador",
-        "url":  "https://huggingface.co/docs/transformers.js",
+        "categoria":  "05 - Comunicação e Apresentações",
+        "nome":  "SVG Repo",
+        "descricao":  "Biblioteca de icones e vetores",
+        "url":  "https://www.svgrepo.com/",
         "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://github.com/huggingface/transformers.js"
-    },
-    {
-        "categoria":  "06 - Inteligencia Artificial Local",
-        "nome":  "Upscayl",
-        "descricao":  "Ampliacao local de imagens com IA",
-        "url":  "https://upscayl.org/",
-        "preview":  "/assets/previews/cfe28d1101cd81df250a.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "06 - Inteligencia Artificial Local",
-        "nome":  "WebLLM",
-        "descricao":  "Modelos de linguagem executados no navegador",
-        "url":  "https://webllm.mlc.ai/",
-        "preview":  "",
-        "acesso":  "HTTP_403",
-        "http_status":  403,
-        "alternativa_url":  "https://ollama.com/"
+        "acesso":  "HTTP_429",
+        "http_status":  429,
+        "alternativa_url":  "https://lucide.dev/icons/"
     },
     {
         "nome":  "GPT4All",
@@ -637,6 +596,17 @@
         "alternativa_url":  ""
     },
     {
+        "categoria":  "06 - Inteligência Artificial Local",
+        "nome":  "Ollama",
+        "descricao":  "Execucao local de modelos de IA",
+        "url":  "https://ollama.com/",
+        "preview":  "/assets/previews/1d9fc6d9882416d42345.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  "",
+        "alternativa_de":  "WebLLM"
+    },
+    {
         "nome":  "Open WebUI",
         "descricao":  "Interface para modelos locais e auto-hospedados.",
         "url":  "https://openwebui.com/",
@@ -645,6 +615,16 @@
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
+    },
+    {
+        "categoria":  "06 - Inteligência Artificial Local",
+        "nome":  "Transformers.js",
+        "descricao":  "Modelos de IA executados no navegador",
+        "url":  "https://huggingface.co/docs/transformers.js",
+        "preview":  "",
+        "acesso":  "HTTP_403",
+        "http_status":  403,
+        "alternativa_url":  "https://github.com/huggingface/transformers.js"
     },
     {
         "nome":  "Transformers.js - GitHub",
@@ -656,6 +636,26 @@
         "http_status":  0,
         "alternativa_url":  "",
         "alternativa_de":  "Transformers.js"
+    },
+    {
+        "categoria":  "06 - Inteligência Artificial Local",
+        "nome":  "Upscayl",
+        "descricao":  "Ampliacao local de imagens com IA",
+        "url":  "https://upscayl.org/",
+        "preview":  "/assets/previews/cfe28d1101cd81df250a.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "06 - Inteligência Artificial Local",
+        "nome":  "WebLLM",
+        "descricao":  "Modelos de linguagem executados no navegador",
+        "url":  "https://webllm.mlc.ai/",
+        "preview":  "",
+        "acesso":  "HTTP_403",
+        "http_status":  403,
+        "alternativa_url":  "https://ollama.com/"
     },
     {
         "categoria":  "07 - Imagens e Materiais Visuais",
@@ -802,66 +802,6 @@
         "alternativa_url":  ""
     },
     {
-        "descricao":  "Utilitarios gratuitos e de codigo aberto para documentos e imagens.",
-        "categoria":  "08 - Compartilhamento e Utilitarios",
-        "url":  "https://bundle.tools/",
-        "nome":  "Bundle Tools",
-        "preview":  "/assets/previews/11cee4d50404ef1dd83a.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "08 - Compartilhamento e Utilitarios",
-        "nome":  "ConvertCase",
-        "descricao":  "Conversao de letras maiusculas e minusculas",
-        "url":  "https://convertcase.net/",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "08 - Compartilhamento e Utilitarios",
-        "nome":  "LocalSend",
-        "descricao":  "Transferencia de arquivos em rede local",
-        "url":  "https://localsend.org/",
-        "preview":  "/assets/previews/d0c48581e1659fb4fea2.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "08 - Compartilhamento e Utilitarios",
-        "nome":  "PairDrop",
-        "descricao":  "Compartilhamento de arquivos pelo navegador",
-        "url":  "https://pairdrop.net/",
-        "preview":  "/assets/previews/65b15b71fa6f508fea67.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "08 - Compartilhamento e Utilitarios",
-        "nome":  "QR Code Monkey",
-        "descricao":  "Geracao de QR Codes personalizados",
-        "url":  "https://www.qrcode-monkey.com/",
-        "preview":  "/assets/previews/7a05d9d2ca26b5dce018.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "08 - Compartilhamento e Utilitarios",
-        "nome":  "Time.is",
-        "descricao":  "Consulta de horarios e fusos",
-        "url":  "https://time.is/",
-        "preview":  "",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
         "nome":  "7-Zip",
         "descricao":  "Compactacao e extracao de arquivos.",
         "url":  "https://www.7-zip.org/",
@@ -872,10 +812,70 @@
         "alternativa_url":  ""
     },
     {
+        "descricao":  "Utilitarios gratuitos e de codigo aberto para documentos e imagens.",
+        "categoria":  "08 - Compartilhamento e Utilitários",
+        "url":  "https://bundle.tools/",
+        "nome":  "Bundle Tools",
+        "preview":  "/assets/previews/11cee4d50404ef1dd83a.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "08 - Compartilhamento e Utilitários",
+        "nome":  "ConvertCase",
+        "descricao":  "Conversao de letras maiusculas e minusculas",
+        "url":  "https://convertcase.net/",
+        "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
         "nome":  "KeePass",
         "descricao":  "Gerenciador local de senhas.",
         "url":  "https://keepass.info/",
         "categoria":  "08 - Compartilhamento e Utilitários",
+        "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "08 - Compartilhamento e Utilitários",
+        "nome":  "LocalSend",
+        "descricao":  "Transferencia de arquivos em rede local",
+        "url":  "https://localsend.org/",
+        "preview":  "/assets/previews/d0c48581e1659fb4fea2.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "08 - Compartilhamento e Utilitários",
+        "nome":  "PairDrop",
+        "descricao":  "Compartilhamento de arquivos pelo navegador",
+        "url":  "https://pairdrop.net/",
+        "preview":  "/assets/previews/65b15b71fa6f508fea67.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "08 - Compartilhamento e Utilitários",
+        "nome":  "QR Code Monkey",
+        "descricao":  "Geracao de QR Codes personalizados",
+        "url":  "https://www.qrcode-monkey.com/",
+        "preview":  "/assets/previews/7a05d9d2ca26b5dce018.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "08 - Compartilhamento e Utilitários",
+        "nome":  "Time.is",
+        "descricao":  "Consulta de horarios e fusos",
+        "url":  "https://time.is/",
         "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
@@ -982,7 +982,7 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "10 - Video e Audio",
+        "categoria":  "10 - Vídeo e Áudio",
         "nome":  "Audacity",
         "descricao":  "Edicao de audio",
         "url":  "https://www.audacityteam.org/",
@@ -992,7 +992,7 @@
         "alternativa_url":  ""
     },
     {
-        "categoria":  "10 - Video e Audio",
+        "categoria":  "10 - Vídeo e Áudio",
         "nome":  "FFmpeg",
         "descricao":  "Processamento de audio e video",
         "url":  "https://ffmpeg.org/",
@@ -1002,7 +1002,7 @@
         "alternativa_url":  "https://handbrake.fr/"
     },
     {
-        "categoria":  "10 - Video e Audio",
+        "categoria":  "10 - Vídeo e Áudio",
         "nome":  "HandBrake",
         "descricao":  "Conversao e compactacao de videos",
         "url":  "https://handbrake.fr/",
@@ -1013,21 +1013,11 @@
         "alternativa_de":  "FFmpeg"
     },
     {
-        "categoria":  "10 - Video e Audio",
+        "categoria":  "10 - Vídeo e Áudio",
         "nome":  "OBS Studio",
         "descricao":  "Gravacao de tela e transmissao",
         "url":  "https://obsproject.com/",
         "preview":  "/assets/previews/5cc0e67257c0cc091d1b.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  ""
-    },
-    {
-        "categoria":  "10 - Video e Audio",
-        "nome":  "Shotcut",
-        "descricao":  "Editor de video open source",
-        "url":  "https://www.shotcut.org/",
-        "preview":  "/assets/previews/e647cf4fae3d0ef68d50.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""
@@ -1038,6 +1028,16 @@
         "url":  "https://shotcut.org/",
         "categoria":  "10 - Vídeo e Áudio",
         "preview":  "",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  ""
+    },
+    {
+        "categoria":  "10 - Vídeo e Áudio",
+        "nome":  "Shotcut",
+        "descricao":  "Editor de video open source",
+        "url":  "https://www.shotcut.org/",
+        "preview":  "/assets/previews/e647cf4fae3d0ef68d50.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  ""

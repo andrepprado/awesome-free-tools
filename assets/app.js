@@ -880,3 +880,223 @@ initialize();
   }
 })();
 /* FIM IDENTIFICACAO CARDS ALTERNATIVOS */
+
+/* INICIO NORMALIZACAO CATEGORIAS V5 */
+(function () {
+  "use strict";
+
+  const OFFICIAL_CATEGORIES = [
+    "01 - Documentos, PDF e Contratos",
+    "02 - Planilhas, Dados e Relatórios",
+    "03 - Automação e Integrações",
+    "04 - Processos, Fluxos e Projetos",
+    "05 - Comunicação e Apresentações",
+    "06 - Inteligência Artificial Local",
+    "07 - Imagens e Materiais Visuais",
+    "08 - Compartilhamento e Utilitários",
+    "09 - Desenvolvimento e Suporte TI",
+    "10 - Vídeo e Áudio"
+  ];
+
+  function normalize(value) {
+    return String(value || "")
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLocaleLowerCase("pt-BR")
+      .replace(/[^\p{L}\p{N}]+/gu, " ")
+      .trim();
+  }
+
+  const canonical = new Map(
+    OFFICIAL_CATEGORIES.map(category => [
+      normalize(category),
+      category
+    ])
+  );
+
+  function canonicalCategory(value) {
+    const text = String(value || "").trim();
+    const normalized = normalize(text);
+
+    if (canonical.has(normalized)) {
+      return canonical.get(normalized);
+    }
+
+    const match = text.match(/^\s*(\d{1,2})\s*[-–—.]/);
+
+    if (match) {
+      const index = Number(match[1]) - 1;
+
+      if (index >= 0 && index < OFFICIAL_CATEGORIES.length) {
+        return OFFICIAL_CATEGORIES[index];
+      }
+    }
+
+    return text;
+  }
+
+  function getTools() {
+    try {
+      if (typeof state !== "undefined" && Array.isArray(state.tools)) {
+        return state.tools;
+      }
+    } catch (_) {}
+
+    return [];
+  }
+
+  function normalizeData() {
+    const tools = getTools();
+
+    for (const tool of tools) {
+      tool.categoria = canonicalCategory(tool.categoria);
+    }
+
+    try {
+      if (typeof state !== "undefined" && state.category) {
+        if (state.category !== "Todas") {
+          state.category = canonicalCategory(state.category);
+        }
+      }
+    } catch (_) {}
+  }
+
+  function fixCategoryButtons() {
+    const buttons = Array.from(
+      document.querySelectorAll("button")
+    );
+
+    const seen = new Set();
+
+    for (const button of buttons) {
+      const text = (button.textContent || "").trim();
+
+      const match = text.match(
+        /^\s*(\d{1,2})\s*[-–—.]\s*/
+      );
+
+      if (!match) continue;
+
+      const number = Number(match[1]);
+
+      if (number < 1 || number > 10) continue;
+
+      const official = OFFICIAL_CATEGORIES[number - 1];
+      const key = normalize(official);
+
+      if (seen.has(key)) {
+        button.remove();
+        continue;
+      }
+
+      seen.add(key);
+
+      // Preserva o botao original e seus eventos.
+      // Atualiza apenas o texto da categoria quando necessario.
+      const textNodes = [];
+
+      const walker = document.createTreeWalker(
+        button,
+        NodeFilter.SHOW_TEXT
+      );
+
+      while (walker.nextNode()) {
+        textNodes.push(walker.currentNode);
+      }
+
+      const labelNode = textNodes.find(node =>
+        /^\s*\d{1,2}\s*[-–—.]/.test(node.textContent || "")
+      );
+
+      if (labelNode) {
+        labelNode.textContent = official;
+      }
+    }
+
+    const counters = Array.from(
+      document.querySelectorAll("*")
+    ).filter(element =>
+      element.children.length === 0 &&
+      /^\s*\d+\s+categorias\s*$/i.test(
+        element.textContent || ""
+      )
+    );
+
+    for (const counter of counters) {
+      const visibleCategories = new Set();
+
+      for (const button of document.querySelectorAll("button")) {
+        const text = (button.textContent || "").trim();
+        const match = text.match(/^\s*(\d{1,2})\s*[-–—.]/);
+
+        if (match) {
+          visibleCategories.add(Number(match[1]));
+        }
+      }
+
+      counter.textContent =
+        visibleCategories.size + " categorias";
+    }
+  }
+
+  let fixing = false;
+  let scheduled = false;
+
+  function apply() {
+    if (fixing) return;
+
+    fixing = true;
+
+    try {
+      normalizeData();
+      fixCategoryButtons();
+    } finally {
+      fixing = false;
+    }
+  }
+
+  function schedule() {
+    if (scheduled || fixing) return;
+
+    scheduled = true;
+
+    requestAnimationFrame(() => {
+      scheduled = false;
+      apply();
+    });
+  }
+
+  function install() {
+    normalizeData();
+
+    const observer = new MutationObserver(records => {
+      if (fixing) return;
+
+      const changed = records.some(record =>
+        record.type === "childList" &&
+        (
+          record.addedNodes.length > 0 ||
+          record.removedNodes.length > 0
+        )
+      );
+
+      if (changed) schedule();
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    apply();
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", install, {
+      once: true
+    });
+  } else {
+    install();
+  }
+})();
+/* FIM NORMALIZACAO CATEGORIAS V5 */

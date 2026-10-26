@@ -193,3 +193,26 @@ As alternativas nao sao apresentadas como simples hiperlinks dentro de outros ca
 A disponibilidade no firewall corporativo depende das politicas de rede. Respostas HTTP nao garantem liberacao institucional.
 
 <!-- FIM CARDS ALTERNATIVOS -->
+
+<!-- INICIO CATEGORIAS OFICIAIS V5 -->
+
+## Categorias oficiais
+
+O catálogo utiliza 10 categorias padronizadas, sem duplicidades causadas por diferenças de acentuação ou grafia.
+
+| Ordem | Categoria |
+| --- | --- |
+| 01 | Documentos, PDF e Contratos |
+| 02 | Planilhas, Dados e Relatórios |
+| 03 | Automação e Integrações |
+| 04 | Processos, Fluxos e Projetos |
+| 05 | Comunicação e Apresentações |
+| 06 | Inteligência Artificial Local |
+| 07 | Imagens e Materiais Visuais |
+| 08 | Compartilhamento e Utilitários |
+| 09 | Desenvolvimento e Suporte TI |
+| 10 | Vídeo e Áudio |
+
+No filtro Todas, as ferramentas permanecem agrupadas por categoria. Ao selecionar uma categoria específica, as ferramentas são apresentadas em ordem alfabética.
+
+<!-- FIM CATEGORIAS OFICIAIS V5 -->
