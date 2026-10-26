@@ -1,123 +1,114 @@
-# 🧰 Daily Tools
+# Awesome Free Tools
 
-Minha biblioteca pessoal de ferramentas úteis para desenvolvimento, design, inteligência artificial, automação e produtividade.
+Catálogo de ferramentas gratuitas para aumentar a produtividade, otimizar processos e reduzir despesas com assinaturas de softwares em cooperativas de crédito e unidades administrativas.
 
-## Critérios de seleção
+## Objetivo
 
-- Ferramentas com funcionalidades gratuitas.
-- Sem cadastro obrigatório para a função indicada.
-- Sem necessidade de cartão de crédito.
-- Preferência por processamento local.
-- Prioridade para ferramentas de código aberto.
+Reunir ferramentas úteis para atividades administrativas, operacionais, financeiras, comerciais e tecnológicas, priorizando soluções gratuitas, práticas e acessíveis.
 
-## Automacao
+O catálogo busca apoiar:
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| AutoHotkey | Automacao de teclado e mouse no Windows | [https://www.autohotkey.com/](https://www.autohotkey.com/) |
-| Bruno | Cliente de APIs com armazenamento local | [https://www.usebruno.com/](https://www.usebruno.com/) |
-| n8n | Automacao de fluxos com instalacao propria | [https://github.com/n8n-io/n8n](https://github.com/n8n-io/n8n) |
-| Node-RED | Automacao visual de fluxos e integracoes | [https://nodered.org/](https://nodered.org/) |
-| Playwright | Automacao e testes de navegadores | [https://playwright.dev/](https://playwright.dev/) |
-| Robot Framework | Framework open source de automacao | [https://robotframework.org/](https://robotframework.org/) |
-| Selenium | Automacao de navegadores | [https://www.selenium.dev/](https://www.selenium.dev/) |
+- Redução de custos com softwares e assinaturas externas.
+- Automação de tarefas repetitivas.
+- Agilidade na elaboração de documentos, planilhas e relatórios.
+- Melhoria dos fluxos e processos internos.
+- Criação de apresentações e materiais de comunicação.
+- Tratamento e análise de dados.
+- Compartilhamento de arquivos e produtividade das equipes.
+- Desenvolvimento de soluções internas.
 
-## Desenvolvimento
+## Acessar o catálogo
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| Can I Use | Compatibilidade de tecnologias web | [https://caniuse.com/](https://caniuse.com/) |
-| CyberChef | Transformacao codificacao e analise de dados | [https://gchq.github.io/CyberChef/](https://gchq.github.io/CyberChef/) |
-| Hoppscotch | Teste de APIs HTTP | [https://hoppscotch.io/](https://hoppscotch.io/) |
-| IT Tools | Colecao de ferramentas para desenvolvedores | [https://it-tools.tech/](https://it-tools.tech/) |
-| JSFiddle | Editor online HTML CSS e JavaScript | [https://jsfiddle.net/](https://jsfiddle.net/) |
-| JSON Crack | Visualizacao de estruturas JSON | [https://jsoncrack.com/editor](https://jsoncrack.com/editor) |
-| JSONPlaceholder | API publica para testes | [https://jsonplaceholder.typicode.com/](https://jsonplaceholder.typicode.com/) |
-| Regex101 | Teste de expressoes regulares | [https://regex101.com/](https://regex101.com/) |
-| RegExr | Editor visual de expressoes regulares | [https://regexr.com/](https://regexr.com/) |
-| Transform Tools | Conversao entre formatos de codigo | [https://transform.tools/](https://transform.tools/) |
+[**Abrir catálogo de ferramentas**](https://andrepprado.github.io/awesome-free-tools/)
 
-## Design e Mockups
+## Organização das ferramentas
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| Excalidraw | Desenhos wireframes e diagramas | [https://excalidraw.com/](https://excalidraw.com/) |
-| Free iPhone Mockup | Mockups 3D de iPhone | [https://freeiphonemockup.com/](https://freeiphonemockup.com/) |
-| Google Fonts | Fontes gratuitas para projetos | [https://fonts.google.com/](https://fonts.google.com/) |
-| Haikei | Gerador de fundos SVG e formas abstratas | [https://haikei.app/](https://haikei.app/) |
-| Mockbooth | Mockups de dispositivos eletronicos | [https://www.mockbooth.com/](https://www.mockbooth.com/) |
-| Photopea | Editor avancado de imagens no navegador | [https://www.photopea.com/](https://www.photopea.com/) |
-| Plinth Mockups | Mockups de celulares notebooks tablets e relogios | [https://plinthmockups.com/](https://plinthmockups.com/) |
-| Shotframe | Mockups de aplicativos e dispositivos | [https://shotframe.app/](https://shotframe.app/) |
-| SVG Repo | Biblioteca de icones e vetores | [https://www.svgrepo.com/](https://www.svgrepo.com/) |
+As ferramentas são organizadas por finalidade, considerando sua aplicação em uma cooperativa de crédito.
 
-## Documentos e PDF
+Ao selecionar **Todas**, as categorias permanecem separadas. Cada ferramenta deve aparecer exclusivamente em sua categoria, sem misturar ferramentas de finalidades diferentes.
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| LibreOffice | Editor gratuito de documentos e planilhas | [https://www.libreoffice.org/](https://www.libreoffice.org/) |
-| PDF24 Creator | Editor de PDF instalado localmente | [https://www.pdf24.org/pt/](https://www.pdf24.org/pt/) |
-| PDF24 Tools | Ferramentas gratuitas para PDF | [https://tools.pdf24.org/pt/](https://tools.pdf24.org/pt/) |
-| Stirling PDF | Ferramenta open source para PDF | [https://github.com/Stirling-Tools/Stirling-PDF](https://github.com/Stirling-Tools/Stirling-PDF) |
+| Prioridade | Categoria | Aplicações administrativas |
+| --- | --- | --- |
+| 01 | Documentos, PDF e Contratos | Edição, conversão, organização e tratamento de documentos |
+| 02 | Planilhas, Dados e Relatórios | Análise de dados, tratamento de arquivos e elaboração de relatórios |
+| 03 | Automação e Integrações | Redução de tarefas manuais e integração entre sistemas |
+| 04 | Processos, Fluxos e Projetos | Mapeamento de processos, diagramas e organização de atividades |
+| 05 | Comunicação e Apresentações | Materiais corporativos, apresentações e comunicação interna |
+| 06 | Inteligência Artificial Local | Recursos de IA executados localmente, quando disponíveis |
+| 07 | Imagens e Materiais Visuais | Edição, otimização e tratamento de imagens |
+| 08 | Compartilhamento e Utilitários | Transferência de arquivos e ferramentas de apoio |
+| 09 | Desenvolvimento e Suporte TI | Desenvolvimento, testes, APIs e suporte técnico |
+| 10 | Vídeo e Áudio | Gravação, edição e conversão de mídias |
 
-## Imagens
+## Catálogo de ferramentas
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| Background Remover fal.ai | Remocao automatica de fundo com IA | [https://fal.ai/tools/background-remover](https://fal.ai/tools/background-remover) |
-| Ezgif | Edicao conversao e criacao de GIF | [https://ezgif.com/](https://ezgif.com/) |
-| fal.ai Tools | Ferramentas online de tratamento de imagens | [https://fal.ai/tools](https://fal.ai/tools) |
-| Squoosh | Compactacao e conversao local de imagens | [https://squoosh.app/](https://squoosh.app/) |
-| SVGOMG | Otimizacao de arquivos SVG | [https://jakearchibald.github.io/svgomg/](https://jakearchibald.github.io/svgomg/) |
-| TinyPNG | Compactacao de imagens com limites gratuitos | [https://tinypng.com/](https://tinypng.com/) |
+As ferramentas abaixo são carregadas diretamente do arquivo `tools.json`, preservando suas categorias e seus links de acesso.
 
-## Inteligencia Artificial
+### Documentos, PDF e Contratos
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| Ollama | Execucao local de modelos de IA | [https://ollama.com/](https://ollama.com/) |
-| Transformers.js | Modelos de IA executados no navegador | [https://huggingface.co/docs/transformers.js](https://huggingface.co/docs/transformers.js) |
-| Upscayl | Ampliacao local de imagens com IA | [https://upscayl.org/](https://upscayl.org/) |
-| WebLLM | Modelos de linguagem executados no navegador | [https://webllm.mlc.ai/](https://webllm.mlc.ai/) |
+- **[LibreOffice](https://www.libreoffice.org/)** — Editor gratuito de documentos e planilhas
+- **[PDF24 Creator](https://www.pdf24.org/pt/)** — Editor de PDF instalado localmente
+- **[PDF24 Tools](https://tools.pdf24.org/pt/)** — Ferramentas gratuitas para PDF
+- **[Plume PDF](https://www.plumedocs.com/)** — Editar, converter e organizar PDF localmente no navegador, sem cadastro.
+- **[Stirling PDF](https://github.com/Stirling-Tools/Stirling-PDF)** — Ferramenta open source para PDF
+- **[Unfleece](https://unfleece.com/)** — Unir, dividir, converter e assinar PDFs sem enviar arquivos ao servidor.
 
-## Produtividade
+### Processos, Fluxos e Projetos
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| BPMN.io | Editor de processos BPMN | [https://demo.bpmn.io/](https://demo.bpmn.io/) |
-| diagrams.net | Fluxogramas BPMN e arquitetura de sistemas | [https://app.diagrams.net/](https://app.diagrams.net/) |
-| Markmap | Mapas mentais em Markdown | [https://markmap.js.org/repl](https://markmap.js.org/repl) |
-| Mermaid Live | Diagramas gerados por texto | [https://mermaid.live/](https://mermaid.live/) |
+- **[BPMN.io](https://demo.bpmn.io/)** — Editor de processos BPMN
+- **[diagrams.net](https://app.diagrams.net/)** — Fluxogramas BPMN e arquitetura de sistemas
+- **[Excalidraw](https://excalidraw.com/)** — Desenhos wireframes e diagramas
+- **[Free Open Tools](https://freeopentools.com/)** — Diagramas, Markdown e visualizacao de dados diretamente no navegador.
+- **[Markmap](https://markmap.js.org/repl)** — Mapas mentais em Markdown
+- **[Mermaid Live](https://mermaid.live/)** — Diagramas gerados por texto
 
-## Utilitarios
+### Imagens e Materiais Visuais
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| ConvertCase | Conversao de letras maiusculas e minusculas | [https://convertcase.net/](https://convertcase.net/) |
-| LocalSend | Transferencia de arquivos em rede local | [https://localsend.org/](https://localsend.org/) |
-| PairDrop | Compartilhamento de arquivos pelo navegador | [https://pairdrop.net/](https://pairdrop.net/) |
-| QR Code Monkey | Geracao de QR Codes personalizados | [https://www.qrcode-monkey.com/](https://www.qrcode-monkey.com/) |
-| Time.is | Consulta de horarios e fusos | [https://time.is/](https://time.is/) |
+- **[Background Remover fal.ai](https://fal.ai/tools/background-remover)** — Remocao automatica de fundo com IA
+- **[Ezgif](https://ezgif.com/)** — Edicao conversao e criacao de GIF
+- **[fal.ai Tools](https://fal.ai/tools)** — Ferramentas online de tratamento de imagens
+- **[Squoosh](https://squoosh.app/)** — Compactacao e conversao local de imagens
+- **[SVGOMG](https://jakearchibald.github.io/svgomg/)** — Otimizacao de arquivos SVG
+- **[TinyPNG](https://tinypng.com/)** — Compactacao de imagens com limites gratuitos
 
-## Video e Audio
+### Desenvolvimento e Suporte TI
 
-| Ferramenta | Descrição | Link |
-|---|---|---|
-| Audacity | Edicao de audio | [https://www.audacityteam.org/](https://www.audacityteam.org/) |
-| FFmpeg | Processamento de audio e video | [https://ffmpeg.org/](https://ffmpeg.org/) |
-| HandBrake | Conversao e compactacao de videos | [https://handbrake.fr/](https://handbrake.fr/) |
-| OBS Studio | Gravacao de tela e transmissao | [https://obsproject.com/](https://obsproject.com/) |
-| Shotcut | Editor de video open source | [https://www.shotcut.org/](https://www.shotcut.org/) |
+- **[Can I Use](https://caniuse.com/)** — Compatibilidade de tecnologias web
+- **[IT Tools](https://it-tools.tech/)** — Colecao de ferramentas para desenvolvedores
+- **[JSFiddle](https://jsfiddle.net/)** — Editor online HTML CSS e JavaScript
+- **[JSONPlaceholder](https://jsonplaceholder.typicode.com/)** — API publica para testes
+- **[Regex101](https://regex101.com/)** — Teste de expressoes regulares
+- **[RegExr](https://regexr.com/)** — Editor visual de expressoes regulares
 
----
+## Imagens das ferramentas
 
-## Como adicionar uma ferramenta
+As imagens devem representar interfaces reais das ferramentas.
 
-1. Identifique a categoria.
-2. Confirme se funciona gratuitamente e sem login.
-3. Adicione nome, descrição e link ao catálogo.
-4. Atualize o repositório.
+- Priorizar imagens autênticas encontradas no Google Imagens.
+- Não utilizar ilustrações fictícias como se fossem capturas reais.
+- Não acessar automaticamente sites que bloqueiam a captura.
+- Preservar imagens reais já existentes.
+- Quando não houver imagem confiável, manter a ferramenta disponível sem inventar uma prévia.
 
-**Objetivo:** manter uma biblioteca gratuita, organizada e constantemente atualizada.
+## Segurança e utilização
 
-**Atenção:** não utilize serviços externos para processar dados confidenciais sem avaliação de segurança.
+O catálogo é um diretório de acesso a ferramentas externas. A inclusão de uma ferramenta não representa homologação, contratação ou autorização para processamento de dados institucionais.
+
+Antes de utilizar qualquer serviço externo com informações da cooperativa, devem ser observadas as políticas internas de segurança da informação, privacidade e proteção de dados.
+
+Para informações confidenciais, dados pessoais, documentos de cooperados ou dados bancários, utilizar somente soluções expressamente autorizadas pela instituição.
+
+## Estrutura do projeto
+
+| Arquivo ou diretório | Finalidade |
+| --- | --- |
+| `index.html` | Página principal do catálogo |
+| `tools.json` | Cadastro das ferramentas e suas categorias |
+| `assets/app.js` | Busca, filtros e apresentação das ferramentas |
+| `assets/site.css` | Estilos e organização visual |
+| `assets/previews/` | Imagens das ferramentas |
+| `README.md` | Documentação do projeto |
+
+## Licença
+
+Consulte o arquivo de licença do repositório, caso disponível.
