@@ -515,3 +515,247 @@ initialize();
     }
 })();
 /* FIM AWESOME LINKS E PREVIEWS V2 */
+
+/* INICIO CORRECAO DEFINITIVA CATALOGO */
+(function () {
+  "use strict";
+
+  const CATEGORY_ORDER = [
+    "01 - Documentos, PDF e Contratos",
+    "02 - Planilhas, Dados e Relatórios",
+    "03 - Automação e Integrações",
+    "04 - Processos, Fluxos e Projetos",
+    "05 - Comunicação e Apresentações",
+    "06 - Inteligência Artificial Local",
+    "07 - Imagens e Materiais Visuais",
+    "08 - Compartilhamento e Utilitários",
+    "09 - Desenvolvimento e Suporte TI",
+    "10 - Vídeo e Áudio"
+  ];
+
+  function getToolName(card) {
+    return (card.querySelector("h3")?.textContent || "").trim();
+  }
+
+  function getToolCategory(card) {
+    return (
+      card.querySelector(".card-category")?.textContent ||
+      card.querySelector(".category")?.textContent ||
+      ""
+    ).trim();
+  }
+
+  function getSelectedCategory() {
+    if (typeof state !== "undefined" && state.category) {
+      return String(state.category);
+    }
+
+    return "Todas";
+  }
+
+  function getCatalogUrl(name) {
+    if (
+      typeof state === "undefined" ||
+      !Array.isArray(state.tools)
+    ) {
+      return "";
+    }
+
+    const tool = state.tools.find(
+      item => String(item.nome || "").trim() === name
+    );
+
+    if (!tool) return "";
+
+    try {
+      const url = new URL(tool.url, window.location.href);
+      return ["https:", "http:"].includes(url.protocol)
+        ? url.href
+        : "";
+    } catch (_) {
+      return "";
+    }
+  }
+
+  function fixLinks(card) {
+    const name = getToolName(card);
+    const url = getCatalogUrl(name);
+
+    if (!url) return;
+
+    const preview = card.querySelector(".preview");
+
+    if (preview) {
+      let link;
+
+      if (preview.tagName === "A") {
+        link = preview;
+      } else {
+        link = document.createElement("a");
+        link.className = preview.className;
+        link.innerHTML = preview.innerHTML;
+        preview.replaceWith(link);
+      }
+
+      link.href = url;
+      link.target = "_blank";
+      link.rel = "noopener noreferrer";
+      link.removeAttribute("disabled");
+      link.removeAttribute("aria-disabled");
+      link.style.pointerEvents = "auto";
+      link.style.cursor = "pointer";
+    }
+
+    const links = card.querySelectorAll(".card-link");
+
+    links.forEach(link => {
+      if (link.tagName === "A") {
+        link.href = url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+      }
+    });
+
+    if (!links.length) {
+      const body = card.querySelector(".card-body");
+
+      if (body) {
+        const link = document.createElement("a");
+        link.className = "card-link";
+        link.href = url;
+        link.target = "_blank";
+        link.rel = "noopener noreferrer";
+        link.textContent = "Acessar ferramenta";
+        body.append(link);
+      }
+    }
+  }
+
+  function organizeCards() {
+    const container = document.querySelector("#cards");
+
+    if (!container) return;
+
+    const cards = Array.from(
+      container.querySelectorAll("article.card")
+    );
+
+    if (!cards.length) return;
+
+    const selected = getSelectedCategory();
+    const groups = new Map();
+
+    cards.forEach(card => {
+      fixLinks(card);
+
+      const category = getToolCategory(card) || "Sem categoria";
+
+      if (!groups.has(category)) {
+        groups.set(category, []);
+      }
+
+      groups.get(category).push(card);
+    });
+
+    const categories = [...groups.keys()].sort((a, b) => {
+      const ia = CATEGORY_ORDER.indexOf(a);
+      const ib = CATEGORY_ORDER.indexOf(b);
+
+      return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib) ||
+        a.localeCompare(b, "pt-BR");
+    });
+
+    const fragment = document.createDocumentFragment();
+
+    for (const category of categories) {
+      const section = document.createElement("section");
+      section.className = "tool-category-section";
+
+      const title = document.createElement("h2");
+      title.className = "tool-category-title";
+      title.textContent = category;
+
+      const grid = document.createElement("div");
+      grid.className = "tool-category-grid";
+
+      groups.get(category)
+        .sort((a, b) =>
+          getToolName(a).localeCompare(getToolName(b), "pt-BR")
+        )
+        .forEach(card => grid.append(card));
+
+      if (selected !== "Todas") {
+        section.classList.add("single-category");
+      }
+
+      section.append(title, grid);
+      fragment.append(section);
+    }
+
+    container.replaceChildren(fragment);
+  }
+
+  function install() {
+    const container = document.querySelector("#cards");
+
+    if (!container) return;
+
+    let scheduled = false;
+    let organizing = false;
+
+    function schedule() {
+      if (scheduled || organizing) return;
+
+      scheduled = true;
+
+      requestAnimationFrame(() => {
+        scheduled = false;
+        organizing = true;
+
+        try {
+          organizeCards();
+        } finally {
+          organizing = false;
+        }
+      });
+    }
+
+    const observer = new MutationObserver(records => {
+      if (organizing) return;
+
+      const changed = records.some(record =>
+        Array.from(record.addedNodes).some(node =>
+          node.nodeType === 1 &&
+          (
+            node.matches?.("article.card, .tool-category-section") ||
+            node.querySelector?.("article.card")
+          )
+        )
+      );
+
+      if (changed) schedule();
+    });
+
+    observer.observe(container, {
+      childList: true,
+      subtree: true
+    });
+
+    schedule();
+
+    document.addEventListener("change", schedule);
+    document.addEventListener("input", schedule);
+    document.addEventListener("click", event => {
+      if (event.target.closest?.("button")) {
+        schedule();
+      }
+    });
+  }
+
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", install, { once: true });
+  } else {
+    install();
+  }
+})();
+/* FIM CORRECAO DEFINITIVA CATALOGO */

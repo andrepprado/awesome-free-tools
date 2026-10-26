@@ -499,3 +499,65 @@ dialog::backdrop{background:rgba(10,35,40,.68)}
     }
 }
 /* FIM AWESOME ESTILO V2 */
+/* INICIO CORRECAO VISUAL CATALOGO */
+
+#cards {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 32px !important;
+}
+
+.tool-category-section {
+    width: 100%;
+    display: block;
+}
+
+.tool-category-title {
+    font-size: 21px;
+    font-weight: 700;
+    color: #003640;
+    border-bottom: 2px solid #00A091;
+    padding-bottom: 12px;
+    margin: 0 0 18px;
+}
+
+.tool-category-grid {
+    display: grid !important;
+    grid-template-columns: repeat(
+        auto-fill,
+        minmax(min(100%, 270px), 1fr)
+    );
+    gap: 20px;
+}
+
+.tool-category-grid .card {
+    min-width: 0;
+}
+
+.card .preview {
+    pointer-events: auto !important;
+    cursor: pointer !important;
+}
+
+.card a.preview,
+.card a.card-link {
+    cursor: pointer !important;
+}
+
+.card .preview img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.preview-label,
+.card-status {
+    display: none !important;
+}
+
+@media (max-width: 600px) {
+    .tool-category-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* FIM CORRECAO VISUAL CATALOGO */
