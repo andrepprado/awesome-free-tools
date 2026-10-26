@@ -516,7 +516,7 @@ initialize();
 })();
 /* FIM AWESOME LINKS E PREVIEWS V2 */
 
-/* INICIO CORRECAO LINKS V6 */
+/* INICIO CORRECAO GRID V8 */
 (function () {
   "use strict";
 
@@ -533,57 +533,38 @@ initialize();
     "10 - Vídeo e Áudio"
   ];
 
-  const canonical = new Map(
-    CATEGORY_ORDER.map(category => [
-      category.normalize("NFD")
-        .replace(/[\u0300-\u036f]/g, "")
-        .toLowerCase(),
-      category
-    ])
-  );
+  let catalog = [];
+  let observer = null;
+  let scheduled = false;
+  let updating = false;
 
-  function getTools() {
-    try {
-      if (typeof state !== "undefined" && Array.isArray(state.tools)) {
-        return state.tools;
-      }
-    } catch (_) {}
-
-    return [];
-  }
-
-  function normalizeCategory(value) {
-    const key = String(value || "")
+  function normalize(value) {
+    return String(value || "")
       .normalize("NFD")
       .replace(/[\u0300-\u036f]/g, "")
+      .trim()
       .toLowerCase();
-
-    if (canonical.has(key)) return canonical.get(key);
-
-    const match = key.match(/^\s*(\d{1,2})\s*[-–—.]/);
-
-    if (match) {
-      return CATEGORY_ORDER[Number(match[1]) - 1] || value;
-    }
-
-    return value;
   }
 
-  function getTool(card) {
-    const name = (
-      card.querySelector("h3")?.textContent || ""
-    ).trim();
-
-    return getTools().find(tool =>
-      String(tool.nome || "").trim() === name
+  function canonicalCategory(value) {
+    const number = String(value || "").match(
+      /^\s*(\d{1,2})\s*[-–—.]/
     );
+
+    if (number) {
+      return CATEGORY_ORDER[Number(number[1]) - 1] || value;
+    }
+
+    return CATEGORY_ORDER.find(item =>
+      normalize(item) === normalize(value)
+    ) || value;
   }
 
   function safeUrl(value) {
     try {
-      const url = new URL(String(value || ""), location.href);
+      const url = new URL(String(value || ""));
 
-      return ["http:", "https:"].includes(url.protocol)
+      return ["https:", "http:"].includes(url.protocol)
         ? url.href
         : "";
     } catch (_) {
@@ -591,169 +572,229 @@ initialize();
     }
   }
 
+  function getTools() {
+    try {
+      if (
+        typeof state !== "undefined" &&
+        Array.isArray(state.tools) &&
+        state.tools.length > 0
+      ) {
+        return state.tools;
+      }
+    } catch (_) {}
+
+    return catalog;
+  }
+
+  function findTool(card) {
+    const name = (
+      card.querySelector("h3")?.textContent || ""
+    ).trim();
+
+    return getTools().find(tool =>
+      normalize(tool.nome) === normalize(name)
+    ) || catalog.find(tool =>
+      normalize(tool.nome) === normalize(name)
+    );
+  }
+
+  function statusText(tool) {
+    const status = String(tool.status_publico || "");
+
+    if (status === "ACESSO_RESTRITO") {
+      return "Bloqueado na rede Corporativo/Colaborador";
+    }
+
+    if (status === "PAGINA_NAO_ENCONTRADA") {
+      return "Página não encontrada";
+    }
+
+    if (status === "LIMITE_REQUISICOES") {
+      return "Limite temporário de requisições";
+    }
+
+    return "";
+  }
+
   function enhanceCard(card) {
-    const tool = getTool(card);
+    const tool = findTool(card);
+
     if (!tool) return;
 
     const url = safeUrl(tool.url);
+
     if (!url) return;
 
     const body = card.querySelector(".card-body") || card;
 
-    // Corrigir links e evitar navegacao para #.
-    for (const anchor of card.querySelectorAll("a")) {
-      const text = (anchor.textContent || "").trim();
+    let access = Array.from(
+      card.querySelectorAll("a")
+    ).find(anchor =>
+      /acessar ferramenta|abrir ferramenta/i.test(
+        anchor.textContent || ""
+      )
+    );
 
-      if (
-        /acessar ferramenta|abrir ferramenta|visitar ferramenta/i.test(text) ||
-        anchor.classList.contains("card-link")
-      ) {
-        anchor.href = url;
-        anchor.target = "_blank";
-        anchor.rel = "noopener noreferrer";
-      }
+    if (!access) {
+      access = document.createElement("a");
+      access.className = "card-link";
+      access.textContent = "Acessar ferramenta";
+      body.append(access);
     }
 
-    let primary = card.querySelector("a.card-link");
+    access.href = url;
+    access.target = "_blank";
+    access.rel = "noopener noreferrer";
+    access.classList.add("card-link");
 
-    if (!primary) {
-      primary = document.createElement("a");
-      primary.className = "card-link";
-      primary.textContent = "Acessar ferramenta";
-      body.append(primary);
-    }
+    const preview =
+      card.querySelector(".preview") ||
+      card.querySelector(".preview-unavailable") ||
+      card.querySelector(".card-preview");
 
-    primary.href = url;
-    primary.target = "_blank";
-    primary.rel = "noopener noreferrer";
+    if (preview) {
+      let previewLink = preview.closest("a.preview-access-link");
 
-    const previousAlternative = card.querySelector(".alternative-link");
+      if (!previewLink) {
+        previewLink = document.createElement("a");
+        previewLink.className = "preview-access-link";
 
-    if (previousAlternative) previousAlternative.remove();
-
-    // A alternativa e um card proprio, nao um hiperlink dentro do original.
-    let alternativeBadge = card.querySelector(".alternative-card-label");
-
-    if (tool.alternativa_de) {
-      if (!alternativeBadge) {
-        alternativeBadge = document.createElement("span");
-        alternativeBadge.className = "alternative-card-label";
-        body.insertBefore(alternativeBadge, body.firstChild);
+        preview.parentNode.insertBefore(previewLink, preview);
+        previewLink.appendChild(preview);
       }
 
-      alternativeBadge.textContent =
-        "Alternativa gratuita a " + tool.alternativa_de;
-    } else if (alternativeBadge) {
-      alternativeBadge.remove();
+      previewLink.href = url;
+      previewLink.target = "_blank";
+      previewLink.rel = "noopener noreferrer";
+      previewLink.title = "Abrir " + tool.nome;
+      previewLink.setAttribute(
+        "aria-label",
+        "Abrir ferramenta " + tool.nome
+      );
     }
 
-    // Status de rede inconclusivo nao vira aviso publico.
-    const status = String(tool.status_publico || "");
-
+    const label = statusText(tool);
     let badge = card.querySelector(".access-status");
 
-    if (!status) {
-      if (badge) badge.remove();
-    } else {
+    if (label) {
       if (!badge) {
         badge = document.createElement("span");
         badge.className = "access-status";
         body.insertBefore(badge, body.firstChild);
       }
 
-      const labels = {
-        ACESSO_RESTRITO: "Acesso restrito (HTTP 403)",
-        PAGINA_NAO_ENCONTRADA: "Página não encontrada (404)",
-        LIMITE_REQUISICOES: "Limite de requisições (429)"
-      };
-
-      badge.textContent = labels[status] || "";
+      badge.textContent = label;
+    } else if (badge) {
+      badge.remove();
     }
 
-    // Preview real quando existe; fallback identificado quando nao existe.
-    const preview = String(tool.preview || "").trim();
+    if (tool.alternativa_de) {
+      let alternative = card.querySelector(
+        ".alternative-card-label"
+      );
 
-    let image = card.querySelector("img");
-
-    if (preview) {
-      if (image) {
-        image.src = preview;
-        image.alt = "Prévia da interface de " + tool.nome;
-      }
-    } else {
-      if (image && image.closest(".preview")) {
-        image.remove();
+      if (!alternative) {
+        alternative = document.createElement("span");
+        alternative.className = "alternative-card-label";
+        body.insertBefore(alternative, body.firstChild);
       }
 
-      let fallback = card.querySelector(".preview-unavailable");
-
-      if (!fallback) {
-        fallback = document.createElement("div");
-        fallback.className = "preview-unavailable";
-
-        const icon = document.createElement("span");
-        icon.className = "preview-unavailable-icon";
-        icon.textContent = "▣";
-
-        const label = document.createElement("span");
-        label.textContent = "Sem captura disponível";
-
-        fallback.append(icon, label);
-
-        const previewBox = card.querySelector(".preview");
-
-        if (previewBox) {
-          previewBox.replaceChildren(fallback);
-        } else {
-          card.insertBefore(fallback, card.firstChild);
-        }
-      }
+      alternative.textContent =
+        "Alternativa gratuita a " + tool.alternativa_de;
     }
+
+    card.querySelectorAll(".alternative-link").forEach(el =>
+      el.remove()
+    );
   }
 
-  // Interceptar somente acoes de abrir ferramenta.
-  // O evento e tratado na fase de captura, antes de handlers antigos.
-  document.addEventListener("click", event => {
-    const target = event.target.closest?.(
-      "a, button, [role='button']"
+  function makeSection(category, cards) {
+    const section = document.createElement("section");
+    section.className = "tool-category-section";
+    section.dataset.category = category;
+
+    const heading = document.createElement("h2");
+    heading.className = "tool-category-title";
+    heading.textContent = category;
+
+    const grid = document.createElement("div");
+    grid.className = "tool-category-grid";
+
+    cards.forEach(card => {
+      card.style.width = "";
+      card.style.maxWidth = "";
+      card.style.gridColumn = "";
+      grid.append(card);
+    });
+
+    section.append(heading, grid);
+
+    return section;
+  }
+
+  function arrangeCards() {
+    const container = document.querySelector("#cards");
+
+    if (!container || updating) return;
+
+    const cards = Array.from(
+      container.querySelectorAll("article.card")
     );
 
-    if (!target) return;
+    if (!cards.length) return;
 
-    const card = target.closest("article.card");
+    updating = true;
 
-    if (!card) return;
+    if (observer) observer.disconnect();
 
-    const text = (target.textContent || "").trim();
+    try {
+      cards.forEach(enhanceCard);
 
-    const isAccess =
-      /^(acessar ferramenta|abrir ferramenta|visitar ferramenta)$/i.test(text) ||
-      target.classList.contains("card-link");
+      const grouped = new Map();
 
-    if (!isAccess) return;
+      for (const card of cards) {
+        const tool = findTool(card);
 
-    const tool = getTool(card);
-    const url = safeUrl(tool?.url);
+        if (!tool) continue;
 
-    if (!url) return;
+        const category = canonicalCategory(tool.categoria);
 
-    event.preventDefault();
-    event.stopImmediatePropagation();
+        if (!grouped.has(category)) {
+          grouped.set(category, []);
+        }
 
-    // Evita rolagem para o topo provocada por href="#".
-    // Abre o endereco real em nova aba.
-    window.open(url, "_blank", "noopener,noreferrer");
-  }, true);
+        grouped.get(category).push(card);
+      }
 
-  let scheduled = false;
+      if (grouped.size === 0) return;
 
-  function updateCards() {
-    for (const tool of getTools()) {
-      tool.categoria = normalizeCategory(tool.categoria);
+      const fragment = document.createDocumentFragment();
+
+      for (const category of CATEGORY_ORDER) {
+        const items = grouped.get(category);
+
+        if (!items || !items.length) continue;
+
+        items.sort((a, b) => {
+          const nameA = findTool(a)?.nome || "";
+          const nameB = findTool(b)?.nome || "";
+
+          return nameA.localeCompare(nameB, "pt-BR");
+        });
+
+        fragment.append(makeSection(category, items));
+      }
+
+      container.replaceChildren(fragment);
+    } finally {
+      updating = false;
+
+      if (observer) {
+        observer.observe(container, {
+          childList: true
+        });
+      }
     }
-
-    document.querySelectorAll("#cards article.card")
-      .forEach(enhanceCard);
   }
 
   function schedule() {
@@ -763,17 +804,17 @@ initialize();
 
     requestAnimationFrame(() => {
       scheduled = false;
-      updateCards();
+      arrangeCards();
     });
   }
 
-  function install() {
+  function installObserver() {
     const container = document.querySelector("#cards");
 
     if (!container) return;
 
-    const observer = new MutationObserver(records => {
-      const changed = records.some(record =>
+    observer = new MutationObserver(records => {
+      const externalRender = records.some(record =>
         Array.from(record.addedNodes).some(node =>
           node.nodeType === 1 &&
           (
@@ -783,15 +824,72 @@ initialize();
         )
       );
 
-      if (changed) schedule();
+      if (externalRender) schedule();
     });
 
     observer.observe(container, {
-      childList: true,
-      subtree: false
+      childList: true
     });
 
     schedule();
+  }
+
+  // Intercepta apenas links de acesso e de preview.
+  // Nao executa scrollTo, nao utiliza href="#".
+  document.addEventListener("click", event => {
+    const anchor = event.target.closest?.("a");
+
+    if (!anchor) return;
+
+    const card = anchor.closest("article.card");
+
+    if (!card) return;
+
+    const isAccess =
+      anchor.classList.contains("card-link") ||
+      anchor.classList.contains("preview-access-link") ||
+      /^(acessar ferramenta|abrir ferramenta)$/i.test(
+        (anchor.textContent || "").trim()
+      );
+
+    if (!isAccess) return;
+
+    const tool = findTool(card);
+    const url = safeUrl(tool?.url);
+
+    if (!url) return;
+
+    anchor.href = url;
+    anchor.target = "_blank";
+    anchor.rel = "noopener noreferrer";
+
+    // Bloqueia listeners antigos, preservando a navegacao nativa.
+    event.stopImmediatePropagation();
+  }, true);
+
+  async function install() {
+    try {
+      const response = await fetch(
+        "tools.json",
+        { cache: "no-store" }
+      );
+
+      if (response.ok) {
+        const data = await response.json();
+
+        catalog = Array.isArray(data)
+          ? data
+          : Array.isArray(data.tools)
+            ? data.tools
+            : Array.isArray(data.ferramentas)
+              ? data.ferramentas
+              : [];
+      }
+    } catch (error) {
+      console.warn("Catalogo auxiliar:", error.message);
+    }
+
+    installObserver();
   }
 
   if (document.readyState === "loading") {
@@ -802,4 +900,4 @@ initialize();
     install();
   }
 })();
-/* FIM CORRECAO LINKS V6 */
+/* FIM CORRECAO GRID V8 */

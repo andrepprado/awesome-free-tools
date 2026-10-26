@@ -67,17 +67,6 @@
         "status_publico":  ""
     },
     {
-        "categoria":  "01 - Documentos, PDF e Contratos",
-        "nome":  "Stirling PDF",
-        "descricao":  "Ferramenta open source para PDF",
-        "url":  "https://github.com/Stirling-Tools/Stirling-PDF",
-        "preview":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
-        "acesso":  "HTTP_OK",
-        "http_status":  200,
-        "alternativa_url":  "",
-        "status_publico":  ""
-    },
-    {
         "nome":  "Stirling PDF",
         "descricao":  "Ferramentas de PDF com possibilidade de uso local.",
         "url":  "https://www.stirlingpdf.com/",
@@ -87,6 +76,17 @@
         "http_status":  200,
         "alternativa_url":  "",
         "alternativa_de":  "PDF24 Creator",
+        "status_publico":  ""
+    },
+    {
+        "categoria":  "01 - Documentos, PDF e Contratos",
+        "nome":  "Stirling PDF",
+        "descricao":  "Ferramenta open source para PDF",
+        "url":  "https://github.com/Stirling-Tools/Stirling-PDF",
+        "preview":  "/assets/previews/a368faa9ac2a6f5c8ae0.png",
+        "acesso":  "HTTP_OK",
+        "http_status":  200,
+        "alternativa_url":  "",
         "status_publico":  ""
     },
     {
@@ -267,22 +267,22 @@
         "status_publico":  ""
     },
     {
-        "categoria":  "03 - Automação e Integrações",
         "nome":  "n8n",
-        "descricao":  "Automacao de fluxos com instalacao propria",
-        "url":  "https://github.com/n8n-io/n8n",
-        "preview":  "/assets/previews/c37165a31cd3fc399e84.png",
+        "descricao":  "Automacao de fluxos com opcao de hospedagem propria.",
+        "url":  "https://n8n.io/",
+        "categoria":  "03 - Automação e Integrações",
+        "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
         "status_publico":  ""
     },
     {
-        "nome":  "n8n",
-        "descricao":  "Automacao de fluxos com opcao de hospedagem propria.",
-        "url":  "https://n8n.io/",
         "categoria":  "03 - Automação e Integrações",
-        "preview":  "",
+        "nome":  "n8n",
+        "descricao":  "Automacao de fluxos com instalacao propria",
+        "url":  "https://github.com/n8n-io/n8n",
+        "preview":  "/assets/previews/c37165a31cd3fc399e84.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
@@ -356,22 +356,22 @@
         "status_publico":  "ACESSO_RESTRITO"
     },
     {
-        "categoria":  "04 - Processos, Fluxos e Projetos",
         "nome":  "BPMN.io",
-        "descricao":  "Editor de processos BPMN",
-        "url":  "https://demo.bpmn.io/",
-        "preview":  "/assets/previews/159d817e7c62e997bad3.png",
+        "descricao":  "Modelagem de processos BPMN.",
+        "url":  "https://bpmn.io/",
+        "categoria":  "04 - Processos, Fluxos e Projetos",
+        "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
         "status_publico":  ""
     },
     {
-        "nome":  "BPMN.io",
-        "descricao":  "Modelagem de processos BPMN.",
-        "url":  "https://bpmn.io/",
         "categoria":  "04 - Processos, Fluxos e Projetos",
-        "preview":  "",
+        "nome":  "BPMN.io",
+        "descricao":  "Editor de processos BPMN",
+        "url":  "https://demo.bpmn.io/",
+        "preview":  "/assets/previews/159d817e7c62e997bad3.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
@@ -1124,22 +1124,22 @@
         "status_publico":  ""
     },
     {
-        "categoria":  "10 - Vídeo e Áudio",
         "nome":  "Shotcut",
-        "descricao":  "Editor de video open source",
-        "url":  "https://www.shotcut.org/",
-        "preview":  "/assets/previews/e647cf4fae3d0ef68d50.png",
+        "descricao":  "Edicao gratuita de video.",
+        "url":  "https://shotcut.org/",
+        "categoria":  "10 - Vídeo e Áudio",
+        "preview":  "",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
         "status_publico":  ""
     },
     {
-        "nome":  "Shotcut",
-        "descricao":  "Edicao gratuita de video.",
-        "url":  "https://shotcut.org/",
         "categoria":  "10 - Vídeo e Áudio",
-        "preview":  "",
+        "nome":  "Shotcut",
+        "descricao":  "Editor de video open source",
+        "url":  "https://www.shotcut.org/",
+        "preview":  "/assets/previews/e647cf4fae3d0ef68d50.png",
         "acesso":  "HTTP_OK",
         "http_status":  200,
         "alternativa_url":  "",
