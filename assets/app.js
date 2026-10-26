@@ -402,11 +402,11 @@ $("clearSearch").addEventListener("click", () => {
 
 $("clearFilters").addEventListener("click", clearFilters);
 
-$("closePreview").addEventListener("click", () => {
+$("closePreview")?.addEventListener("click", () => {
   $("previewDialog").close();
 });
 
-$("previewDialog").addEventListener("click", e => {
+$("previewDialog")?.addEventListener("click", e => {
   if (e.target === $("previewDialog")) {
     $("previewDialog").close();
   }
@@ -516,11 +516,11 @@ initialize();
 })();
 /* FIM AWESOME LINKS E PREVIEWS V2 */
 
-/* INICIO CORRECAO DEFINITIVA CATALOGO */
+/* INICIO CATALOGO ADMINISTRATIVO V4 */
 (function () {
   "use strict";
 
-  const CATEGORY_ORDER = [
+  const ORDER = [
     "01 - Documentos, PDF e Contratos",
     "02 - Planilhas, Dados e Relatórios",
     "03 - Automação e Integrações",
@@ -533,197 +533,234 @@ initialize();
     "10 - Vídeo e Áudio"
   ];
 
-  function getToolName(card) {
+  let busy = false;
+  let pending = false;
+
+  function getTools() {
+    if (typeof state !== "undefined" && Array.isArray(state.tools)) {
+      return state.tools;
+    }
+    return [];
+  }
+
+  function nameOf(card) {
     return (card.querySelector("h3")?.textContent || "").trim();
   }
 
-  function getToolCategory(card) {
-    return (
-      card.querySelector(".card-category")?.textContent ||
-      card.querySelector(".category")?.textContent ||
-      ""
-    ).trim();
+  function toolOf(card) {
+    const name = nameOf(card);
+    return getTools().find(t => String(t.nome || "").trim() === name);
   }
 
-  function getSelectedCategory() {
-    if (typeof state !== "undefined" && state.category) {
-      return String(state.category);
-    }
-
-    return "Todas";
-  }
-
-  function getCatalogUrl(name) {
-    if (
-      typeof state === "undefined" ||
-      !Array.isArray(state.tools)
-    ) {
-      return "";
-    }
-
-    const tool = state.tools.find(
-      item => String(item.nome || "").trim() === name
-    );
-
-    if (!tool) return "";
-
+  function safeLink(value) {
     try {
-      const url = new URL(tool.url, window.location.href);
-      return ["https:", "http:"].includes(url.protocol)
-        ? url.href
-        : "";
+      const url = new URL(String(value || ""), location.href);
+      return ["https:", "http:"].includes(url.protocol) ? url.href : "";
     } catch (_) {
       return "";
     }
   }
 
-  function fixLinks(card) {
-    const name = getToolName(card);
-    const url = getCatalogUrl(name);
+  function createLink(text, url, className) {
+    const a = document.createElement("a");
+    a.className = className;
+    a.href = url;
+    a.target = "_blank";
+    a.rel = "noopener noreferrer";
+    a.textContent = text;
+    return a;
+  }
 
-    if (!url) return;
+  function enhanceCard(card) {
+    const tool = toolOf(card);
+    if (!tool) return;
 
+    const url = safeLink(tool.url);
+    const body = card.querySelector(".card-body") || card;
+
+    const category = String(tool.categoria || "Sem categoria");
+
+    let categoryElement = card.querySelector(".card-category");
+
+    if (!categoryElement) {
+      categoryElement = document.createElement("span");
+      categoryElement.className = "card-category";
+      body.insertBefore(categoryElement, body.firstChild);
+    }
+
+    categoryElement.textContent = category;
+
+    // A preview continua simples, sem modal.
     const preview = card.querySelector(".preview");
 
-    if (preview) {
-      let link;
+    if (preview && url) {
+      let anchor = preview;
 
-      if (preview.tagName === "A") {
-        link = preview;
-      } else {
-        link = document.createElement("a");
-        link.className = preview.className;
-        link.innerHTML = preview.innerHTML;
-        preview.replaceWith(link);
+      if (preview.tagName !== "A") {
+        anchor = document.createElement("a");
+        anchor.className = preview.className;
+        anchor.innerHTML = preview.innerHTML;
+        preview.replaceWith(anchor);
       }
 
+      anchor.href = url;
+      anchor.target = "_blank";
+      anchor.rel = "noopener noreferrer";
+      anchor.removeAttribute("disabled");
+      anchor.removeAttribute("aria-disabled");
+      anchor.style.pointerEvents = "auto";
+      anchor.style.cursor = "pointer";
+    }
+
+    let link = card.querySelector("a.card-link");
+
+    if (!link && url) {
+      link = createLink("Acessar ferramenta", url, "card-link");
+      body.append(link);
+    }
+
+    if (link && url) {
       link.href = url;
       link.target = "_blank";
       link.rel = "noopener noreferrer";
-      link.removeAttribute("disabled");
-      link.removeAttribute("aria-disabled");
-      link.style.pointerEvents = "auto";
-      link.style.cursor = "pointer";
     }
 
-    const links = card.querySelectorAll(".card-link");
-
-    links.forEach(link => {
-      if (link.tagName === "A") {
-        link.href = url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-      }
+    // Remover indicadores antigos e criar um status discreto.
+    card.querySelectorAll(".card-status, .preview-label").forEach(el => {
+      el.remove();
     });
 
-    if (!links.length) {
-      const body = card.querySelector(".card-body");
+    const previous = card.querySelector(".access-status");
+    if (previous) previous.remove();
 
-      if (body) {
-        const link = document.createElement("a");
-        link.className = "card-link";
-        link.href = url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        link.textContent = "Acessar ferramenta";
-        body.append(link);
+    const status = String(tool.acesso || "NAO_VERIFICADO");
+
+    if (status !== "HTTP_OK") {
+      const badge = document.createElement("span");
+      badge.className = "access-status";
+
+      if (status === "HTTP_403") {
+        badge.textContent = "Acesso restrito (HTTP 403)";
+        badge.classList.add("access-warning");
+      } else if (status === "HTTP_404") {
+        badge.textContent = "Página não encontrada (404)";
+        badge.classList.add("access-error");
+      } else if (status === "HTTP_429") {
+        badge.textContent = "Verificação limitada (429)";
+        badge.classList.add("access-warning");
+      } else {
+        badge.textContent = "Acesso não confirmado";
+        badge.classList.add("access-neutral");
       }
+
+      body.insertBefore(badge, body.firstChild);
+    }
+
+    const oldAlternative = card.querySelector(".alternative-link");
+    if (oldAlternative) oldAlternative.remove();
+
+    const alternative = safeLink(tool.alternativa_url);
+
+    if (alternative && status !== "HTTP_OK") {
+      const a = createLink(
+        "Alternativa gratuita com HTTP OK",
+        alternative,
+        "alternative-link"
+      );
+      body.append(a);
+    }
+
+    // Nunca desabilitar o hiperlink por falta de preview.
+    if (!preview && url) {
+      const a = createLink(
+        "Abrir ferramenta",
+        url,
+        "preview preview-simple"
+      );
+      card.insertBefore(a, card.firstChild);
     }
   }
 
-  function organizeCards() {
+  function organize() {
     const container = document.querySelector("#cards");
+    if (!container || busy) return;
 
-    if (!container) return;
-
-    const cards = Array.from(
-      container.querySelectorAll("article.card")
-    );
+    const cards = Array.from(container.querySelectorAll("article.card"));
 
     if (!cards.length) return;
 
-    const selected = getSelectedCategory();
-    const groups = new Map();
+    busy = true;
 
-    cards.forEach(card => {
-      fixLinks(card);
+    try {
+      const groups = new Map();
 
-      const category = getToolCategory(card) || "Sem categoria";
+      for (const card of cards) {
+        enhanceCard(card);
 
-      if (!groups.has(category)) {
-        groups.set(category, []);
+        const tool = toolOf(card);
+        const category = String(tool?.categoria || "Sem categoria");
+
+        if (!groups.has(category)) {
+          groups.set(category, []);
+        }
+
+        groups.get(category).push(card);
       }
 
-      groups.get(category).push(card);
-    });
+      const categories = [...groups.keys()].sort((a, b) => {
+        const ia = ORDER.indexOf(a);
+        const ib = ORDER.indexOf(b);
 
-    const categories = [...groups.keys()].sort((a, b) => {
-      const ia = CATEGORY_ORDER.indexOf(a);
-      const ib = CATEGORY_ORDER.indexOf(b);
+        return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib) ||
+          a.localeCompare(b, "pt-BR");
+      });
 
-      return (ia < 0 ? 999 : ia) - (ib < 0 ? 999 : ib) ||
-        a.localeCompare(b, "pt-BR");
-    });
+      const fragment = document.createDocumentFragment();
 
-    const fragment = document.createDocumentFragment();
+      for (const category of categories) {
+        const section = document.createElement("section");
+        section.className = "tool-category-section";
 
-    for (const category of categories) {
-      const section = document.createElement("section");
-      section.className = "tool-category-section";
+        const title = document.createElement("h2");
+        title.className = "tool-category-title";
+        title.textContent = category;
 
-      const title = document.createElement("h2");
-      title.className = "tool-category-title";
-      title.textContent = category;
+        const grid = document.createElement("div");
+        grid.className = "tool-category-grid";
 
-      const grid = document.createElement("div");
-      grid.className = "tool-category-grid";
+        groups.get(category)
+          .sort((a, b) => nameOf(a).localeCompare(nameOf(b), "pt-BR"))
+          .forEach(card => grid.append(card));
 
-      groups.get(category)
-        .sort((a, b) =>
-          getToolName(a).localeCompare(getToolName(b), "pt-BR")
-        )
-        .forEach(card => grid.append(card));
-
-      if (selected !== "Todas") {
-        section.classList.add("single-category");
+        section.append(title, grid);
+        fragment.append(section);
       }
 
-      section.append(title, grid);
-      fragment.append(section);
+      container.replaceChildren(fragment);
+    } finally {
+      busy = false;
     }
+  }
 
-    container.replaceChildren(fragment);
+  function schedule() {
+    if (pending || busy) return;
+
+    pending = true;
+
+    requestAnimationFrame(() => {
+      pending = false;
+      organize();
+    });
   }
 
   function install() {
     const container = document.querySelector("#cards");
-
     if (!container) return;
 
-    let scheduled = false;
-    let organizing = false;
-
-    function schedule() {
-      if (scheduled || organizing) return;
-
-      scheduled = true;
-
-      requestAnimationFrame(() => {
-        scheduled = false;
-        organizing = true;
-
-        try {
-          organizeCards();
-        } finally {
-          organizing = false;
-        }
-      });
-    }
-
     const observer = new MutationObserver(records => {
-      if (organizing) return;
+      if (busy) return;
 
-      const changed = records.some(record =>
+      const relevant = records.some(record =>
         Array.from(record.addedNodes).some(node =>
           node.nodeType === 1 &&
           (
@@ -733,7 +770,7 @@ initialize();
         )
       );
 
-      if (changed) schedule();
+      if (relevant) schedule();
     });
 
     observer.observe(container, {
@@ -741,15 +778,16 @@ initialize();
       subtree: true
     });
 
-    schedule();
-
-    document.addEventListener("change", schedule);
     document.addEventListener("input", schedule);
+    document.addEventListener("change", schedule);
+
     document.addEventListener("click", event => {
       if (event.target.closest?.("button")) {
         schedule();
       }
     });
+
+    schedule();
   }
 
   if (document.readyState === "loading") {
@@ -758,4 +796,4 @@ initialize();
     install();
   }
 })();
-/* FIM CORRECAO DEFINITIVA CATALOGO */
+/* FIM CATALOGO ADMINISTRATIVO V4 */
