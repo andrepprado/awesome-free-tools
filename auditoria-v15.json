@@ -1,0 +1,100 @@
+{
+  "version": 15,
+  "date": "2026-10-26T15:36:20.507Z",
+  "screenshots": [
+    {
+      "name": "Time.is",
+      "preview": "/assets/previews/436b164b2fcd8844b931.png"
+    },
+    {
+      "name": "ConvertCase",
+      "preview": "/assets/previews/46eff049213b2c912371.png"
+    },
+    {
+      "name": "PDF24 Tools",
+      "preview": "/assets/previews/3f18fc122b680ae67061.png"
+    }
+  ],
+  "attempts": [
+    {
+      "name": "Time.is",
+      "method": "browser-domcontentloaded",
+      "status": "FALHOU",
+      "detail": "HTTP 403"
+    },
+    {
+      "name": "Time.is",
+      "method": "browser-commit",
+      "status": "FALHOU",
+      "detail": "HTTP 403"
+    },
+    {
+      "name": "Time.is",
+      "method": "open-graph",
+      "status": "OK",
+      "detail": ""
+    },
+    {
+      "name": "ConvertCase",
+      "method": "browser-domcontentloaded",
+      "status": "FALHOU",
+      "detail": "HTTP 403"
+    },
+    {
+      "name": "ConvertCase",
+      "method": "browser-commit",
+      "status": "FALHOU",
+      "detail": "HTTP 403"
+    },
+    {
+      "name": "ConvertCase",
+      "method": "open-graph",
+      "status": "OK",
+      "detail": ""
+    },
+    {
+      "name": "PDF24 Tools",
+      "method": "browser-domcontentloaded",
+      "status": "FALHOU",
+      "detail": "page.goto: Timeout 22000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://tools.pdf24.org/pt/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+    },
+    {
+      "name": "PDF24 Tools",
+      "method": "browser-commit",
+      "status": "FALHOU",
+      "detail": "page.goto: net::ERR_CONNECTION_TIMED_OUT at https://tools.pdf24.org/pt/\nCall log:\n\u001b[2m  - navigating to \"https://tools.pdf24.org/pt/\", waiting until \"commit\"\u001b[22m\n"
+    },
+    {
+      "name": "PDF24 Tools",
+      "method": "open-graph",
+      "status": "FALHOU",
+      "detail": "page.goto: Timeout 20000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://tools.pdf24.org/pt/\", waiting until \"commit\"\u001b[22m\n"
+    },
+    {
+      "name": "PDF24 Tools",
+      "method": "screenshot-service",
+      "status": "OK",
+      "detail": ""
+    }
+  ],
+  "browser": {
+    "desktop": {
+      "columns": 3,
+      "cards": 37,
+      "invalidLinks": 0
+    },
+    "tablet": {
+      "columns": 2,
+      "cards": 37,
+      "invalidLinks": 0
+    },
+    "mobile": {
+      "columns": 1,
+      "cards": 37,
+      "invalidLinks": 0
+    },
+    "previews": "OK",
+    "links": "OK",
+    "errors": []
+  }
+}
