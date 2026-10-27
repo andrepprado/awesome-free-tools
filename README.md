@@ -105,6 +105,7 @@ Ferramentas com acesso não confirmado continuam com seus hiperlinks disponívei
 - **[fal.ai Tools](https://fal.ai/tools)** — Ferramentas online de tratamento de imagens
 - **[GIMP](https://www.gimp.org/)** — Editor gratuito de imagens para Windows.
 - **[ImageMagick](https://imagemagick.org/)** — Conversao e tratamento local de imagens.
+- **[ImgFlow](https://imgflow.taoliapp.com/en/)** — Compactacao e conversao de imagens no navegador (HEIC/WebP/AVIF, tamanho-alvo); processamento local via WASM, sem upload.
 - **[Inkscape](https://inkscape.org/)** — Editor gratuito de imagens vetoriais.
 - **[Krita](https://krita.org/)** — Editor grafico gratuito.
 - **[Squoosh](https://squoosh.app/)** — Compactacao e conversao local de imagens
